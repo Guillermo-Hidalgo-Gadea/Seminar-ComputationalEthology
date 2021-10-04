@@ -1,7 +1,10 @@
 # Table of contents
 
 ## Syllabus
-* [Syllabus](README.md)
+* [Project Seminar Biopsychology](README.md)
+* [Schedule]()
+* [Code of Conduct]()
+* [FAQs]()
 
 
 ## Introduction to Computational Ethology

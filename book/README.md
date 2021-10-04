@@ -37,7 +37,3 @@ Programming skills are not necessary, but technical affinity and basic computer 
 6. Measuring in Multidimensional Space
    - Goal oriented research and lost Dimensions
    - 3D Imaging, Triangulation and 2D lifting
-
-
-
-
