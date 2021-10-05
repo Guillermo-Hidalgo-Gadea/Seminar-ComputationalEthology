@@ -6,7 +6,7 @@
 
 * [Project Seminar Biopsychology](syllabus/readme.md)
 * [Schedule](syllabus/schedule.md)
-* [References and Recommended Literature](syllabus/refereneces.md)
+* [References and Recommended Literature](syllabus/references.md)
 * [FAQs](syllabus/faqs.md)
 
 ## Introduction to Computational Ethology
