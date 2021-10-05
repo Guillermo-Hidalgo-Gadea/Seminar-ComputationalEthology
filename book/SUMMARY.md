@@ -6,7 +6,6 @@
 
 * [Project Seminar Biopsychology](syllabus/readme.md)
 * [Schedule](syllabus/schedule.md)
-* [Code of Conduct](syllabus/code-of-conduct.md)
 * [FAQs](syllabus/faqs.md)
 
 ## Introduction to Computational Ethology
