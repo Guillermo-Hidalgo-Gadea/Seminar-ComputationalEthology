@@ -1,16 +1,10 @@
-# Welcome to your Jupyter Book
+# Computational Ethology WS21/22
 
-This is a small sample book to give you a feel for how book content is
-structured.
+image here
+
+This is the class manual for the project seminar Computational Ethology at the Ruhr-University Bochum for the Winter Semester 2021/22. The content was developed by [Guillermo Hidalgo Gadea](https://GuillermoHidalgoGadea.com) and is available as open source educational ressource on [GitHub](https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology), licensed under the MIT License. 
 
 :::{note}
-Here is a note!
+The content of this book will be updated throughout the course!
 :::
 
-And here is a code block:
-
-```
-e = mc^2
-```
-
-Check out the content pages bundled with this sample book to see more.
