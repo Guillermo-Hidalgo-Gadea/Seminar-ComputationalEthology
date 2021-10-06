@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Computational Ethology WS21/22 &#8212; Projectseminar Computational Ethology</title>
+    <title>Computational Ethology WS21/22 &#8212; Computational Ethology</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -44,9 +44,9 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -77,7 +77,7 @@
       <img src="_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Projectseminar Computational Ethology</h1>
+      <h1 class="site-logo" id="site-title">Computational Ethology</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -150,27 +150,15 @@
    Measuring in Multidimensional Space
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="7_HandsOnTutorials.html">
    Hands on Tutorials
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="notebooks.html">
-     Content with notebooks
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="markdown.html">
-     Markdown Files
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8_DataSets.html">
+   Data sets
+  </a>
  </li>
 </ul>
 
@@ -228,12 +216,9 @@
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
+        
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -265,11 +250,13 @@
   <div class="section" id="computational-ethology-ws21-22">
 <h1>Computational Ethology WS21/22<a class="headerlink" href="#computational-ethology-ws21-22" title="Permalink to this headline">¶</a></h1>
 <p><img alt="Cover" src="_images/cover.png" /></p>
-<p>This is the class manual for the project seminar Computational Ethology at the Ruhr-University Bochum for the Winter Semester 2021/22. The content was developed by <a class="reference external" href="https://GuillermoHidalgoGadea.com">Guillermo Hidalgo Gadea</a> and is available as open source educational ressource on <a class="reference external" href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology">GitHub</a>, licensed under the MIT License.</p>
+<p>This is the class manual for the project seminar Computational Ethology at the Ruhr-University Bochum for the Winter Semester 2021/22.</p>
+<p>In the following pages we will learn what we mean by behavior and how we can measure it. We will discuss common issues and apply some machine learning to track body parts with <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a>, triangulate coordinated with <a class="reference external" href="https://github.com/lambdaloop/anipose">Anipose</a> and classify behavior motifs with <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME">VAME</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The content of this book will be updated throughout the course!</p>
 </div>
+<p>The content was developed by <a class="reference external" href="https://GuillermoHidalgoGadea.com">Guillermo Hidalgo Gadea</a> and is available as open source educational ressource on <a class="reference external" href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology">GitHub</a>, licensed under the MIT License.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -278,8 +265,8 @@
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
