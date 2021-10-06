@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Computational Ethology</title>
+    <title>Recommended Literature &#8212; Computational Ethology</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -33,7 +33,6 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -43,16 +42,20 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="FAQs" href="FAQs.html" />
+    <link rel="prev" title="Schedule" href="Schedule.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
-
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -78,7 +81,7 @@
       <h1 class="site-logo" id="site-title">Computational Ethology</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -90,24 +93,24 @@
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Syllabus.html">
    Syllabus Computational Ethology
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="Schedule.html">
      Schedule
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="RecommendedLiterature.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Recommended Literature
     </a>
    </li>
@@ -213,6 +216,23 @@
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/RecommendedLiterature.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -221,7 +241,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2FRecommendedLiterature.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -250,27 +270,41 @@
         
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  <div id="fallback" class="admonition warning">
-  <script>$('#fallback').hide();</script>
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  <p>
-    Searching for multiple words only shows matches that contain
-    all words.
-  </p>
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  <div id="search-results">
-  
-  </div>
+  <div class="section" id="recommended-literature">
+<h1>Recommended Literature<a class="headerlink" href="#recommended-literature" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Anderson, D. J., &amp; Perona, P. (2014). Toward a Science of Computational Ethology. Neuron, 84(1), 18–31. <a class="reference external" href="https://doi.org/10.1016/j.neuron.2014.09.005">https://doi.org/10.1016/j.neuron.2014.09.005</a></p></li>
+<li><p>Calhoun, A., &amp; Hady, A. E. (2021). What is behavior? No seriously, what is it? [Preprint]. Animal Behavior and Cognition. <a class="reference external" href="https://doi.org/10.1101/2021.07.04.451053">https://doi.org/10.1101/2021.07.04.451053</a></p></li>
+<li><p>Dunn, T. W. (2021). Geometric deep learning enables 3D kinematic profiling across species and environments. Nature Methods, 18, 17. <a class="reference external" href="https://doi.org/10.1038/s41592-021-01106-6">https://doi.org/10.1038/s41592-021-01106-6</a></p></li>
+<li><p>Gomez-Marin, A., Paton, J. J., Kampff, A. R., Costa, R. M., &amp; Mainen, Z. F. (2014). Big behavioral data: Psychology, ethology and the foundations of neuroscience. Nature Neuroscience, 17(11), 1455–1462. <a class="reference external" href="https://doi.org/10.1038/nn.3812">https://doi.org/10.1038/nn.3812</a></p></li>
+<li><p>Karashchuk, P., Rupp, K. L., Dickinson, E. S., Sanders, E., Azim, E., Brunton, B. W., &amp; Tuthill, J. C. (2020). Anipose: A toolkit for robust markerless 3D pose estimation [Preprint]. Neuroscience. <a class="reference external" href="https://doi.org/10.1101/2020.05.26.117325">https://doi.org/10.1101/2020.05.26.117325</a></p></li>
+<li><p>Lauer, J., Zhou, M., Ye, S., Menegas, W., Nath, T., Rahman, M. M., Di Santo, V., Soberanes, D., Feng, G., Murthy, V. N., Lauder, G., Dulac, C., Mathis, M. W., &amp; Mathis, A. (2021). Multi-animal pose estimation and tracking with DeepLabCut [Preprint]. Animal Behavior and Cognition. <a class="reference external" href="https://doi.org/10.1101/2021.04.30.442096">https://doi.org/10.1101/2021.04.30.442096</a></p></li>
+<li><p>Luxem, K., Fuhrmann, F., Kürsch, J., Remy, S., &amp; Bauer, P. (2020). Identifying Behavioral Structure from Deep Variational Embeddings of Animal Motion. <a class="reference external" href="https://doi.org/10.1101/2020.05.14.095430">https://doi.org/10.1101/2020.05.14.095430</a></p></li>
+<li><p>Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &amp; Bethge, M. (2018). DeepLabCut: Markerless pose estimation of user-defined body parts with deep learning. Nature Neuroscience, 21(9), 1281–1289. <a class="reference external" href="https://doi.org/10.1038/s41593-018-0209-y">https://doi.org/10.1038/s41593-018-0209-y</a></p></li>
+<li><p>Nath, T., Mathis, A., Chen, A. C., Patel, A., Bethge, M., &amp; Mathis, M. W. (2019). Using DeepLabCut for 3D markerless pose estimation across species and behaviors. Nature Protocols, 14(7), 2152–2176. <a class="reference external" href="https://doi.org/10.1038/s41596-019-0176-0">https://doi.org/10.1038/s41596-019-0176-0</a></p></li>
+<li><p>Pereira, T. D., Shaevitz, J. W., &amp; Murthy, M. (2020). Quantifying behavior to understand the brain. Nature Neuroscience, 23(12), 1537–1549. <a class="reference external" href="https://doi.org/10.1038/s41593-020-00734-z">https://doi.org/10.1038/s41593-020-00734-z</a></p></li>
+</ul>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -281,6 +315,24 @@
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="Schedule.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Schedule</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="FAQs.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">FAQs</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
 
 </div>
         
