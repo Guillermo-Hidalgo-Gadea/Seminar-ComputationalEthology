@@ -21,3 +21,4 @@ chapters:
   sections:
   - file: notebooks
   - file: markdown
+  - file: testnotebook
