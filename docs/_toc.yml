@@ -4,11 +4,11 @@
 format: jb-book
 root: intro
 chapters:
-- file: syllabus/Syllabus
+- file: Syllabus
   sections:
-  - file: syllabus/Schedule
-  - file: syllabus/RecommendedLiterature
-  - file: syllabus/FAQs
+  - file: Schedule
+  - file: RecommendedLiterature
+  - file: FAQs
 - file: 1_IntroductionToComputationalEthology
 - file: 2_WhyTrackingIsNotBehavior
 - file: 3_LevelsOfAnalysisAndQuantificationOfBehavior
