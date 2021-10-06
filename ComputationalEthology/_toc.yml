@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: 1_IntroductionToComputationalEthology
+- file: 2_WhyTrackingIsNotBehavior
+- file: 3_LevelsOfAnalysisAndQuantificationOfBehavior
+- file: 4_ClassificationOfAnimalBehavior
+- file: 5_TheProblemsOfSpacetime
+- file: 6_MeasuringInMultidimensionalSpace
+- file: 7_HandsOnTutorials
+  sections:
+  - file: notebooks
+  - file: markdown
