@@ -1,2 +1,0 @@
-# Methods and goals
-

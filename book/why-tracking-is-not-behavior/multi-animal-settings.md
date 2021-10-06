@@ -1,2 +1,0 @@
-# Multi-animal settings
-

@@ -1,2 +1,0 @@
-# Ethograms and Expert-Annotations
-
