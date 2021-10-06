@@ -16,6 +16,8 @@ chapters:
 - file: 5_TheProblemsOfSpacetime
 - file: 6_MeasuringInMultidimensionalSpace
 - file: 7_HandsOnTutorials
+- file: 8_DataSets
+- file: archive
   sections:
   - file: notebooks
   - file: markdown
