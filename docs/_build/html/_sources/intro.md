@@ -10,10 +10,5 @@ In the following pages we will learn what we mean by behavior and how we can mea
 The content of this book will be updated throughout the course!
 :::
 
-````
-```{code-cell}
-print("This is working!")
-```
-````
 
 The content was developed by [Guillermo Hidalgo Gadea](https://GuillermoHidalgoGadea.com) and is available as open source educational ressource on [GitHub](https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology), licensed under the MIT License. 

@@ -2,23 +2,32 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: Syllabus
-  sections:
-  - file: Schedule
-  - file: RecommendedLiterature
-  - file: FAQs
-- file: 1_IntroductionToComputationalEthology
-- file: 2_WhyTrackingIsNotBehavior
-- file: 3_LevelsOfAnalysisAndQuantificationOfBehavior
-- file: 4_ClassificationOfAnimalBehavior
-- file: 5_TheProblemsOfSpacetime
-- file: 6_MeasuringInMultidimensionalSpace
-- file: 7_HandsOnTutorials
-- file: 8_DataSets
-- file: archive
-  sections:
-  - file: notebooks
-  - file: markdown
-  - file: testnotebook
+root: welcome
+parts: 
+  - caption: Course syllabus
+    chapters:
+    - file: Syllabus
+    - file: Schedule
+    - file: RecommendedLiterature
+    - file: FAQs
+  - caption: Lectures
+    chapters:
+    - file: 1_IntroductionToComputationalEthology
+    - file: 2_WhyTrackingIsNotBehavior
+    - file: 3_LevelsOfAnalysisAndQuantificationOfBehavior
+    - file: 4_ClassificationOfAnimalBehavior
+    - file: 5_TheProblemsOfSpacetime
+    - file: 6_MeasuringInMultidimensionalSpace
+  - caption: Exercises
+    chapters:
+    - file: 7_HandsOnTutorials
+  - caption: Data sets
+    chapters:
+    - file: 8_DataSets
+  - caption: Feedback
+    chapters:
+    - file: archive
+      sections:
+      - file: notebooks
+      - file: markdown
+      - file: testnotebook
