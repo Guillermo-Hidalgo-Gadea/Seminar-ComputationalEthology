@@ -2,13 +2,13 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: welcome
+root: intro
 parts: 
-  - caption: Course syllabus
+  - caption: Course Information
     chapters:
     - file: Syllabus
     - file: Schedule
-    - file: RecommendedLiterature
+    - file: Literature
     - file: FAQs
   - caption: Lectures
     chapters:
@@ -20,14 +20,16 @@ parts:
     - file: 6_MeasuringInMultidimensionalSpace
   - caption: Exercises
     chapters:
-    - file: 7_HandsOnTutorials
+    - file: HandsOnTutorials
   - caption: Data sets
     chapters:
-    - file: 8_DataSets
+    - file: DataSets
   - caption: Feedback
     chapters:
-    - file: archive
-      sections:
-      - file: notebooks
-      - file: markdown
-      - file: testnotebook
+    - file: feedbackform
+    - file: contactform
+#    - file: archive
+#      sections:
+#      - file: notebooks
+#      - file: markdown
+#      - file: testnotebook

@@ -1,9 +1,11 @@
-# Syllabus Computational Ethology
+# Syllabus
 
-Project Seminar Biopsychology, 
-WS 21/22 Ruhr-University Bochum
-
-Guillermo Hidalgo Gadea
+**Title:** S Project Seminar Biopsychologie - Computational Ethology  
+**ID:** 112726  
+**Credits:** 5  
+**Workload:** 2 semester hours per week  
+**Semester:** WS 21/22 Ruhr-University Bochum  
+**Lecturer:** Guillermo Hidalgo Gadea  
 
 ## Description
 

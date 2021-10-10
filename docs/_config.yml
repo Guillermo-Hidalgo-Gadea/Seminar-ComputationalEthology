@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Computational Ethology
-author: Guillermo Hidalgo Gadea
+author: Guillermo Hidlago Gadea
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
@@ -38,3 +38,5 @@ launch_buttons:
 html:
   use_issues_button: true
   use_repository_button: false
+  comments:
+    hypothesis              : false

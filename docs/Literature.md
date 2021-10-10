@@ -1,4 +1,4 @@
-# Recommended Literature
+# Literature
 
 * Anderson, D. J., & Perona, P. (2014). Toward a Science of Computational Ethology. Neuron, 84(1), 18–31. https://doi.org/10.1016/j.neuron.2014.09.005
 
