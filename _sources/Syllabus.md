@@ -1,9 +1,11 @@
-# Syllabus Computational Ethology
+# Syllabus
 
-Project Seminar Biopsychology, 
-WS 21/22 Ruhr-University Bochum
-
-Guillermo Hidalgo Gadea
+**Title:** S Project Seminar Biopsychologie - Computational Ethology  
+**ID:** 112726  
+**Credits:** 5  
+**Workload:** 2 semester hours per week  
+**Semester:** WS 21/22 Ruhr-University Bochum  
+**Lecturer:** Guillermo Hidalgo Gadea  
 
 ## Description
 
@@ -11,7 +13,7 @@ What is behavior, and how can we measure it? Experimental Psychologists operatio
 
 ## Expectations
 
-Programming skills are not necessary, but technical affinity and basic computer skills will be advantageous. The course language may be either English or German, depending on students’ background. The **seminar will not be graded**, but active participation and classroom interaction is expected. Students will have to read some of the provided literature prior to the respective paper-discussions. Wherever possible, the content of the seminar will be tailored to prospective bachelor dissertation projects. After this seminar students will have learned to use Python for data analysis, as well as some state-of-the-art machine learning techniques for computational ethology such as DeepLabCut \(Mathis et al., 2018\), Anipose \(Karashchuk et al., 2020\) and VAME \(Luxem et al., 2020\).
+Programming skills are not necessary, but technical affinity and basic computer skills will be advantageous. The course language may be either English or German, depending on students’ background. The **seminar will be graded** by (1) active participation in classroom interactions and (2) a final poster presentation. Students will have to read some of the provided literature prior to the respective paper-discussions. Wherever possible, the content of the seminar will be tailored to prospective bachelor dissertation projects. After this seminar students will have learned to use Python for data analysis, as well as some state-of-the-art machine learning techniques for computational ethology such as DeepLabCut \(Mathis et al., 2018\), Anipose \(Karashchuk et al., 2020\) and VAME \(Luxem et al., 2020\).
 
 ## Contents
 

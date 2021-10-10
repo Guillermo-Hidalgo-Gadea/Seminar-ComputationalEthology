@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Syllabus" href="Syllabus.html" />
+    <link rel="next" title="Syllabus Computational Ethology" href="Syllabus.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -94,13 +94,13 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Course Information
+  Course syllabus
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Syllabus.html">
-   Syllabus
+   Syllabus Computational Ethology
   </a>
  </li>
  <li class="toctree-l1">
@@ -109,8 +109,8 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Literature.html">
-   Literature
+  <a class="reference internal" href="RecommendedLiterature.html">
+   Recommended Literature
   </a>
  </li>
  <li class="toctree-l1">
@@ -163,7 +163,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="HandsOnTutorials.html">
+  <a class="reference internal" href="7_HandsOnTutorials.html">
    Hands on Tutorials
   </a>
  </li>
@@ -175,7 +175,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="DataSets.html">
+  <a class="reference internal" href="8_DataSets.html">
    Data sets
   </a>
  </li>
@@ -186,15 +186,32 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="feedbackform.html">
-   Suggestion Box
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="archive.html">
+   nothing to see here…
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="contactform.html">
-   Get in touch
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notebooks.html">
+     Content with notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="markdown.html">
+     Markdown Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="testnotebook.html">
+     testnotebook
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -237,7 +254,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/welcome.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -254,7 +271,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2Fwelcome.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -281,8 +298,8 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#course-handbook">
-   Course Handbook
+  <a class="reference internal nav-link" href="#course-handbbok">
+   Course Handbbok
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -304,15 +321,12 @@
   <div class="section" id="welcome">
 <h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
 <p><img alt="Cover" src="_images/cover.png" /></p>
-<div class="section" id="course-handbook">
-<h2>Course Handbook<a class="headerlink" href="#course-handbook" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="course-handbbok">
+<h2>Course Handbbok<a class="headerlink" href="#course-handbbok" title="Permalink to this headline">¶</a></h2>
 <p><strong>This is the course handbook for the project seminar Computational Ethology at the Ruhr-University Bochum for the Winter Semester 2021/22.</strong></p>
 <p>In the following pages we will learn what we mean by behavior and how we can measure it. We will discuss common issues and apply some machine learning to track body parts with <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a>, triangulate coordinated with <a class="reference external" href="https://github.com/lambdaloop/anipose">Anipose</a> and classify behavior motifs with <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME">VAME</a>.</p>
-<p>You can access this handbook online from <span class="xref myst">GuillermoHidalgoGadea.com</span> or <a class="reference external" href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology">GitHub</a>, and download specific sections as pdf in the upper right corner:</p>
-<div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="_images/downloadpdf.png"><img alt="_images/downloadpdf.png" src="_images/downloadpdf.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">see PDF download button in upper right corner</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<p>You can access this handbook online from <span class="xref myst"></span> or here <span class="xref myst"></span>, and download specific sections as pdf in the upper right corner:</p>
+<p><img alt="Download" src="_images/downloadpdf.png" />{width=20%}</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The content of this book will be expanded and updated throughout the course!</p>
@@ -321,7 +335,6 @@
 </div>
 <div class="section" id="about-me">
 <h2>About Me<a class="headerlink" href="#about-me" title="Permalink to this headline">¶</a></h2>
-<iframe src="https://www.bio.psy.ruhr-uni-bochum.de/members_guillermo.html" frameborder="0.1" width="800" height="600"></iframe>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -368,7 +381,7 @@
         <a class="right-next" href="Syllabus.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Syllabus</p>
+                <p class="prevnext-title">Syllabus Computational Ethology</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
@@ -382,7 +395,7 @@
     <div class="container">
       <p>
         
-          By Guillermo Hidlago Gadea<br/>
+          By Guillermo Hidalgo Gadea<br/>
         
             &copy; Copyright 2021.<br/>
       </p>
