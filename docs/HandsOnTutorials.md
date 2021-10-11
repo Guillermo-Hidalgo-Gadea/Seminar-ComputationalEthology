@@ -18,7 +18,7 @@ Anipose is an open-source toolkit for robust, markerless 3D pose estimation of a
 VAME is a framework to cluster behavioral signals obtained from pose-estimation tools with unsupervised machine learning.
 
 ## Literature
-Karashchuk, P., Rupp, K. L., Dickinson, E. S., Sanders, E., Azim, E., Brunton, B. W., & Tuthill, J. C. (2020). Anipose: A toolkit for robust markerless 3D pose estimation [Preprint]. Neuroscience. https://doi.org/10.1101/2020.05.26.117325
+Karashchuk, P., Rupp, K. L., Dickinson, E. S., Walling-Bell, S., Sanders, E., Azim, E., Brunton, B. W., & Tuthill, J. C. (2021). Anipose: A toolkit for robust markerless 3D pose estimation. Cell Reports, 36(13), 109730. https://doi.org/10.1016/j.celrep.2021.109730
 
 ```{toggle}
 <iframe width="800" height="500" src="https://reader.elsevier.com/reader/sd/pii/S2211124721011797?token=888AAEEFFE37774A90E5ACE98745A0DCE22969FCDF8AEF47592B92945B1AFB146F9F15E7A8A83F835970E6BCD288012F&originRegion=eu-west-1&originCreation=20211011171524"></iframe>
