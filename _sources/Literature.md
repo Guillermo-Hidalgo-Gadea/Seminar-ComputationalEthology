@@ -10,7 +10,7 @@
 
 * Gomez-Marin, A., Paton, J. J., Kampff, A. R., Costa, R. M., & Mainen, Z. F. (2014). Big behavioral data: Psychology, ethology and the foundations of neuroscience. Nature Neuroscience, 17(11), 1455–1462. https://doi.org/10.1038/nn.3812
 
-* Karashchuk, P., Rupp, K. L., Dickinson, E. S., Sanders, E., Azim, E., Brunton, B. W., & Tuthill, J. C. (2020). Anipose: A toolkit for robust markerless 3D pose estimation [Preprint]. Neuroscience. https://doi.org/10.1101/2020.05.26.117325
+* Karashchuk, P., Rupp, K. L., Dickinson, E. S., Walling-Bell, S., Sanders, E., Azim, E., Brunton, B. W., & Tuthill, J. C. (2021). Anipose: A toolkit for robust markerless 3D pose estimation. Cell Reports, 36(13), 109730. https://doi.org/10.1016/j.celrep.2021.109730
 
 * Lauer, J., Zhou, M., Ye, S., Menegas, W., Nath, T., Rahman, M. M., Di Santo, V., Soberanes, D., Feng, G., Murthy, V. N., Lauder, G., Dulac, C., Mathis, M. W., & Mathis, A. (2021). Multi-animal pose estimation and tracking with DeepLabCut [Preprint]. Animal Behavior and Cognition. https://doi.org/10.1101/2021.04.30.442096
 
