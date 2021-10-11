@@ -2,6 +2,8 @@
 
 * Anderson, D. J., & Perona, P. (2014). Toward a Science of Computational Ethology. Neuron, 84(1), 18–31. https://doi.org/10.1016/j.neuron.2014.09.005
 
+* Bohnslav, J. P., Wimalasena, N. K., Clausing, K. J., Dai, Y. Y., Yarmolinsky, D. A., Cruz, T., Kashlan, A. D., Chiappe, M. E., Orefice, L. L., Woolf, C. J., & Harvey, C. D. (2021). DeepEthogram, a machine learning pipeline for supervised behavior classification from raw pixels. ELife, 10, e63377. https://doi.org/10.7554/eLife.63377
+
 * Calhoun, A., & Hady, A. E. (2021). What is behavior? No seriously, what is it? [Preprint]. Animal Behavior and Cognition. https://doi.org/10.1101/2021.07.04.451053
 
 * Dunn, T. W. (2021). Geometric deep learning enables 3D kinematic profiling across species and environments. Nature Methods, 18, 17. https://doi.org/10.1038/s41592-021-01106-6
@@ -19,3 +21,5 @@
 * Nath, T., Mathis, A., Chen, A. C., Patel, A., Bethge, M., & Mathis, M. W. (2019). Using DeepLabCut for 3D markerless pose estimation across species and behaviors. Nature Protocols, 14(7), 2152–2176. https://doi.org/10.1038/s41596-019-0176-0
 
 * Pereira, T. D., Shaevitz, J. W., & Murthy, M. (2020). Quantifying behavior to understand the brain. Nature Neuroscience, 23(12), 1537–1549. https://doi.org/10.1038/s41593-020-00734-z
+
+
