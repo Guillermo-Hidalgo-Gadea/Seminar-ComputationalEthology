@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Data sets" href="DataSets.html" />
+    <link rel="next" title="Introduction to DeepLabCut" href="DemoDeepLabCut.html" />
     <link rel="prev" title="Measuring in Multidimensional Space" href="6_MeasuringInMultidimensionalSpace.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -168,6 +168,43 @@
    Hands on Tutorials
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="DemoDeepLabCut.html">
+   Introduction to DeepLabCut
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part1DLC.html">
+     Part 1: Create a DeepLabCut Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part2DLC.html">
+     Part 2: Edit a DeepLabCut Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part3DLC.html">
+     Part 3: Expanding your Model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DemoAnipose.html">
+   Introduction to Anipose
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DemoVAME.html">
+   Introduction to VAME
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -189,35 +226,13 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="feedbackform.html">
-   Anonymous Feedback
+   Suggestion Box
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="archive.html">
-   nothing to see here…
+ <li class="toctree-l1">
+  <a class="reference internal" href="contactform.html">
+   Get in touch
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="notebooks.html">
-     Content with notebooks
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="markdown.html">
-     Markdown Files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="testnotebook.html">
-     testnotebook
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -305,17 +320,23 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#deeplabcut">
-   DeepLabCut
+   <span class="xref myst">
+    DeepLabCut
+   </span>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#anipose">
-   Anipose
+   <span class="xref myst">
+    Anipose
+   </span>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#vame">
-   VAME
+   <span class="xref myst">
+    VAME
+   </span>
   </a>
  </li>
 </ul>
@@ -331,21 +352,23 @@
                 
   <div class="section" id="hands-on-tutorials">
 <h1>Hands on Tutorials<a class="headerlink" href="#hands-on-tutorials" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="deeplabcut">
-<h2>DeepLabCut<a class="headerlink" href="#deeplabcut" title="Permalink to this headline">¶</a></h2>
-<p>Tracking animal pose from video data</p>
-</div>
-<div class="section" id="anipose">
-<h2>Anipose<a class="headerlink" href="#anipose" title="Permalink to this headline">¶</a></h2>
-<p>Triangulation of animal pose</p>
-</div>
-<div class="section" id="vame">
-<h2>VAME<a class="headerlink" href="#vame" title="Permalink to this headline">¶</a></h2>
-<p>Unsupervised classification of behavior</p>
+<p>During the seminar you will get a first impression on how to work with methods for computational ethology such as  <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a> to track body parts, <a class="reference external" href="https://github.com/lambdaloop/anipose">Anipose</a> to triangulate coordinated, and <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME">VAME</a> to classify behavior motifs.<br />
+These methods are <strong>not always easy</strong> to use, and sometimes require a little programming with Python and basic understanding of machine learning and data science. Your goal should be to understand the value of these tools for computational ethology and try to get your hands dirty with a little code.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The content of this book will be expanded and updated throughout the course!</p>
+<p>The following tutorials were created as user friendly as possible, but feel free to approach the lecturer with any questions or use the <strong>Suggestion Box</strong> to give feedback.</p>
 </div>
+<div class="section" id="deeplabcut">
+<h2><a class="reference internal" href="DemoDeepLabCut.html"><span class="doc std std-doc">DeepLabCut</span></a><a class="headerlink" href="#deeplabcut" title="Permalink to this headline">¶</a></h2>
+<p>DeepLabCut is a toolbox for markerless pose estimation of animals performing various tasks.</p>
+</div>
+<div class="section" id="anipose">
+<h2><a class="reference internal" href="DemoAnipose.html"><span class="doc std std-doc">Anipose</span></a><a class="headerlink" href="#anipose" title="Permalink to this headline">¶</a></h2>
+<p>Anipose is an open-source toolkit for robust, markerless 3D pose estimation of animal behavior from multiple camera views.</p>
+</div>
+<div class="section" id="vame">
+<h2><a class="reference internal" href="DemoVAME.html"><span class="doc std std-doc">VAME</span></a><a class="headerlink" href="#vame" title="Permalink to this headline">¶</a></h2>
+<p>VAME is a framework to cluster behavioral signals obtained from pose-estimation tools with unsupervised machine learning.</p>
 </div>
 </div>
 
@@ -388,10 +411,10 @@
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="DataSets.html" title="next page">
+        <a class="right-next" href="DemoDeepLabCut.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Data sets</p>
+                <p class="prevnext-title">Introduction to DeepLabCut</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Measuring in Multidimensional Space &#8212; Computational Ethology</title>
+    <title>Introduction to DeepLabCut &#8212; Computational Ethology</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Hands on Tutorials" href="HandsOnTutorials.html" />
-    <link rel="prev" title="The Problems of Spacetime" href="5_TheProblemsOfSpacetime.html" />
+    <link rel="next" title="Part 1: Create a DeepLabCut Project" href="Part1DLC.html" />
+    <link rel="prev" title="Hands on Tutorials" href="HandsOnTutorials.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -125,7 +125,7 @@
   Lectures
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="1_IntroductionToComputationalEthology.html">
    Introduction to Computational Ethology
@@ -151,8 +151,8 @@
    The Problems of Spacetime
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="6_MeasuringInMultidimensionalSpace.html">
    Measuring in Multidimensional Space
   </a>
  </li>
@@ -162,17 +162,17 @@
   Exercises
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="HandsOnTutorials.html">
    Hands on Tutorials
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="DemoDeepLabCut.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
    Introduction to DeepLabCut
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
@@ -275,7 +275,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/6_MeasuringInMultidimensionalSpace.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/DemoDeepLabCut.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -292,7 +292,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2F6_MeasuringInMultidimensionalSpace.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2FDemoDeepLabCut.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -319,8 +319,13 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bonus-jesse-marshall-harvard-university">
-   Bonus: Jesse Marshall (Harvard University)
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentation">
+   Documentation
   </a>
  </li>
 </ul>
@@ -334,16 +339,35 @@
         
               <div>
                 
-  <div class="section" id="measuring-in-multidimensional-space">
-<h1>Measuring in Multidimensional Space<a class="headerlink" href="#measuring-in-multidimensional-space" title="Permalink to this headline">¶</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The content of this book will be expanded and updated throughout the course!</p>
+  <div class="section" id="introduction-to-deeplabcut">
+<h1>Introduction to DeepLabCut<a class="headerlink" href="#introduction-to-deeplabcut" title="Permalink to this headline">¶</a></h1>
+<p>DeepLabCut is a toolbox for markerless pose estimation of animals performing various tasks.</p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://deeplabcut.github.io/DeepLabCut/docs/intro.html">https://deeplabcut.github.io/DeepLabCut/docs/intro.html</a><br />
+<strong>Sourcecode:</strong> <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut">https://github.com/DeepLabCut/DeepLabCut</a></p>
+<p>DeepLabCut is an open source package for markerless pose estimation based on transfer learning with deep neural networks (<a class="reference external" href="https://www.nature.com/articles/s41593-018-0209-y">Mathis et al., 2018</a>). It uses algorithms from <a class="reference external" href="https://link.springer.com/chapter/10.1007/978-3-319-46466-4_3">DeeperCut</a>, and an extremely deep neural network pretrained on a dataset for object detection (<a class="reference external" href="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html">ImageNet</a>). DeepLabCut was originally developed for animal pose estimation, which does not exclude humans, see <a class="reference external" href="https://www.nature.com/articles/s41598-021-83077-4">Namba et al. (2021)</a>, and can also be used to track inanimate objects.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>DeepLabCut will need to use python and several python related libraries (i.e, a specific python environment), so the first step should be installing <a class="reference external" href="https://docs.anaconda.com/anaconda/install/">Anaconda</a>.<br />
+You can then create a designated environment and install DeepLabCut:</p>
+<ol class="simple">
+<li><p>Download this <a class="reference external" href="http://www.mackenziemathislab.org/s/DEEPLABCUT.yaml">installation file</a></p></li>
+<li><p>Open Terminal and execute:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">Downloads</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">DEEPLABCUT.yaml</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">DEEPLABCUT</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">deeplabcut</span></code></p></li>
+</ul>
+</li>
+</ol>
 </div>
-<div class="section" id="bonus-jesse-marshall-harvard-university">
-<h2>Bonus: Jesse Marshall (Harvard University)<a class="headerlink" href="#bonus-jesse-marshall-harvard-university" title="Permalink to this headline">¶</a></h2>
-<p>Exiting flatland: measuring, modeling, and synthesizing animal behavior in 3D</p>
-<iframe width="935" height="526" src="https://www.youtube.com/embed/JjFKGQmcgJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>Check the DeepLabCut documentation for more background and tips on how to get started.</p>
+<iframe src="https://deeplabcut.github.io/DeepLabCut/docs/intro.html" frameborder="0.1" width="800" height="600"></iframe>
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -376,19 +400,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="5_TheProblemsOfSpacetime.html" title="previous page">
+        <a class="left-prev" href="HandsOnTutorials.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">The Problems of Spacetime</p>
+                <p class="prevnext-title">Hands on Tutorials</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="HandsOnTutorials.html" title="next page">
+        <a class="right-next" href="Part1DLC.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Hands on Tutorials</p>
+                <p class="prevnext-title">Part 1: Create a DeepLabCut Project</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
