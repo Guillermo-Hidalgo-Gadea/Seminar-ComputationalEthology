@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hands on Tutorials &#8212; Computational Ethology</title>
+    <title>Introduction to VAME &#8212; Computational Ethology</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction to DeepLabCut" href="DemoDeepLabCut.html" />
-    <link rel="prev" title="Measuring in Multidimensional Space" href="6_MeasuringInMultidimensionalSpace.html" />
+    <link rel="next" title="Data sets" href="DataSets.html" />
+    <link rel="prev" title="Introduction to Anipose" href="DemoAnipose.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -163,8 +163,8 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="HandsOnTutorials.html">
    Hands on Tutorials
   </a>
  </li>
@@ -200,8 +200,8 @@
    Introduction to Anipose
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="DemoVAME.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Introduction to VAME
   </a>
  </li>
@@ -275,7 +275,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/HandsOnTutorials.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/DemoVAME.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -292,7 +292,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2FHandsOnTutorials.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2FDemoVAME.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -313,35 +313,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#deeplabcut">
-   <span class="xref myst">
-    DeepLabCut
-   </span>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#anipose">
-   <span class="xref myst">
-    Anipose
-   </span>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#vame">
-   <span class="xref myst">
-    VAME
-   </span>
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -350,25 +321,14 @@
         
               <div>
                 
-  <div class="section" id="hands-on-tutorials">
-<h1>Hands on Tutorials<a class="headerlink" href="#hands-on-tutorials" title="Permalink to this headline">¶</a></h1>
-<p>During the seminar you will get a first impression on how to work with methods for computational ethology such as  <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a> to track body parts, <a class="reference external" href="https://github.com/lambdaloop/anipose">Anipose</a> to triangulate coordinated, and <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME">VAME</a> to classify behavior motifs.<br />
-These methods are <strong>not always easy</strong> to use, and sometimes require a little programming with Python and basic understanding of machine learning and data science. Your goal should be to understand the value of these tools for computational ethology and try to get your hands dirty with a little code.</p>
+  <div class="section" id="introduction-to-vame">
+<h1>Introduction to VAME<a class="headerlink" href="#introduction-to-vame" title="Permalink to this headline">¶</a></h1>
+<p>VAME is a framework to cluster behavioral signals obtained from pose-estimation tools.</p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME/wiki">https://github.com/LINCellularNeuroscience/VAME/wiki</a><br />
+<strong>Sourcecode:</strong> <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME/">https://github.com/LINCellularNeuroscience/VAME/</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The following tutorials were created as user friendly as possible, but feel free to approach the lecturer with any questions or use the <strong>Suggestion Box</strong> to give feedback.</p>
-</div>
-<div class="section" id="deeplabcut">
-<h2><a class="reference internal" href="DemoDeepLabCut.html"><span class="doc std std-doc">DeepLabCut</span></a><a class="headerlink" href="#deeplabcut" title="Permalink to this headline">¶</a></h2>
-<p>DeepLabCut is a toolbox for markerless pose estimation of animals performing various tasks.</p>
-</div>
-<div class="section" id="anipose">
-<h2><a class="reference internal" href="DemoAnipose.html"><span class="doc std std-doc">Anipose</span></a><a class="headerlink" href="#anipose" title="Permalink to this headline">¶</a></h2>
-<p>Anipose is an open-source toolkit for robust, markerless 3D pose estimation of animal behavior from multiple camera views.</p>
-</div>
-<div class="section" id="vame">
-<h2><a class="reference internal" href="DemoVAME.html"><span class="doc std std-doc">VAME</span></a><a class="headerlink" href="#vame" title="Permalink to this headline">¶</a></h2>
-<p>VAME is a framework to cluster behavioral signals obtained from pose-estimation tools with unsupervised machine learning.</p>
+<p>The content of this book will be expanded and updated throughout the course!</p>
 </div>
 </div>
 
@@ -402,19 +362,19 @@ These methods are <strong>not always easy</strong> to use, and sometimes require
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="6_MeasuringInMultidimensionalSpace.html" title="previous page">
+        <a class="left-prev" href="DemoAnipose.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Measuring in Multidimensional Space</p>
+                <p class="prevnext-title">Introduction to Anipose</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="DemoDeepLabCut.html" title="next page">
+        <a class="right-next" href="DataSets.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Introduction to DeepLabCut</p>
+                <p class="prevnext-title">Data sets</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

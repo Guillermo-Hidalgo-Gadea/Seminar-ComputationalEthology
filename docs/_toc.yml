@@ -21,6 +21,13 @@ parts:
   - caption: Exercises
     chapters:
     - file: HandsOnTutorials
+    - file: DemoDeepLabCut
+      sections: 
+      - file: Part1DLC
+      - file: Part2DLC
+      - file: Part3DLC
+    - file: DemoAnipose
+    - file: DemoVAME 
   - caption: Data sets
     chapters:
     - file: DataSets
