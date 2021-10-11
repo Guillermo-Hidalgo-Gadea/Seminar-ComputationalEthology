@@ -10,8 +10,8 @@ DeepLabCut is an open source package for markerless pose estimation based on tra
 ## Installation
 DeepLabCut will need to use python and several python related libraries (i.e, a specific python environment), so the first step should be installing [Anaconda](https://docs.anaconda.com/anaconda/install/).  
 You can then create a designated environment and install DeepLabCut:  
-1) Download [file](http://www.mackenziemathislab.org/s/DEEPLABCUT.yaml)
-2) Open Terminal and type
+1) Download this [installation file](http://www.mackenziemathislab.org/s/DEEPLABCUT.yaml)
+2) Open Terminal and execute:
     - ```cd Downloads```
     - ```conda env create -f DEEPLABCUT.yaml```
     - ```conda activate DEEPLABCUT```
