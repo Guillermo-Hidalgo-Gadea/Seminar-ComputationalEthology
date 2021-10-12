@@ -6,7 +6,7 @@
 # ## Editing DeepLabCut Models
 # 
 
-# In[1]:
+# In[ ]:
 
 
 try:
@@ -22,7 +22,7 @@ except:
 
 # Load existing model by selecting the corresponding config.yaml file:
 
-# In[2]:
+# In[ ]:
 
 
 config_path = filedialog.askopenfilename(title='Choose the config.yaml file of your DeepLabCut project:')

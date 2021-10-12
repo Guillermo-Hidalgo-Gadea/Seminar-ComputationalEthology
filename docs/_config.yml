@@ -3,12 +3,13 @@
 
 title: Computational Ethology
 author: Guillermo Hidlago Gadea
+email: g.hidalgo-gadea@web.de
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: "off"
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -36,7 +37,10 @@ launch_buttons:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: icon.ico
   use_issues_button: true
   use_repository_button: false
+  home_page_in_navbar       : false
+  use_multitoc_numbering    : true
   comments:
     hypothesis              : false
