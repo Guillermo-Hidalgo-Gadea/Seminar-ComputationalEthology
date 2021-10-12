@@ -1,5 +1,9 @@
 # Data sets
 
+This short collection of datasets will help you get your hands dirty with actual examples in animal behavior! The videos provided serve the purpose of getting started with animal tracking software and data analysis, but do not cover entire experiments necessary for appropriate statistical analysis.
+
+The following datasets were kindly provided as open source material by the authors and developers mentioned below, as well as by colleagues from the Biopsychology department at the Ruhr-University Bochum. Please **refrain from any misuse** of this content. Consult with the lecturer before sharing any material on social media.   
+
 :::{note}
 The content of this book will be expanded and updated throughout the course!
 :::
@@ -13,7 +17,7 @@ Freely behaving mice in open field exploration experiment. Mice were placed in t
 **Luxem, K., Fuhrmann, F., Kürsch, J., Remy, S., & Bauer, P. (2020). Identifying Behavioral Structure from Deep Variational Embeddings of Animal Motion. https://doi.org/10.1101/2020.05.14.095430**
 
 ```{toggle}
-<iframe width="800" height="500" src="../../datasets/demo_mouse.mp4"></iframe>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/GEvhCqAqFX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 ### Fly data for 3D analysis by [Pavan Ramdya](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PKKXOE)
@@ -24,7 +28,7 @@ We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrass
 **Günel, S., Rhodin, H., Morales, D., Campagnolo, J., Ramdya, P., & Fua, P. (2019). DeepFly3D, a deep learning-based approach for 3D limb and appendage tracking in tethered, adult Drosophila. ELife, 8, e48571. https://doi.org/10.7554/eLife.48571**
 
 ```{toggle}
-<iframe width="800" height="500" src="../../datasets/demo_fly.mp4"></iframe>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/9iD2tnw1HrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 
@@ -33,7 +37,7 @@ We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrass
 A single pigeon was recorded in a Skinnerbox for a short habituation period of 5 minutes. Six synchronized cameras (FLIR BFS) were mounted on the four upper corners of the box and in the two lower corners of the fron side. The pigeon did not perform any specific task during the recording.
 
 ```{toggle}
-video
+video here
 ```
 
 ### Pigeon in Arena for 3D analysis by [Mengmeng Li](https://www.bio.psy.ruhr-uni-bochum.de/members_mengmeng.html)
@@ -41,13 +45,13 @@ video
 A single pigeon was recorded in a hexagonal arena for a 17 minute session in an open field exploration experiment. Six synchronized cameras (FLIR BFS) were mounted on the upper corners of the arena at 180cm from the ground. The pigeon did not perform any specific task during the recording.
 
 ```{toggle}
-<iframe width="800" height="500" src="../../datasets/demo_pigeonarena.mp4"></iframe>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/HMU0gqezyX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 ### Pigeon top view by [Neslihan Wittek](https://www.bio.psy.ruhr-uni-bochum.de/members_neslihan.html)
 
 ```{toggle}
-video
+video here
 ```
 
 ## Human animals
@@ -55,7 +59,7 @@ video
 ### Human Hand for Anipose demo by [Katie Rupp](https://anipose.readthedocs.io/en/latest/tutorial.html#setting-up-the-project)
 
 ```{toggle}
-video
+<iframe width="800" height="500" src="https://www.youtube.com/embed/dLTri9k8-hI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 
@@ -64,7 +68,7 @@ video
 Six subjects were recorded for up to 60 seconds in a synchronized multi-view setting with six cameras (FLIR BFS). Subjects were instructed to display a short sequence of facial expressions of their choice for trainig purposes.
 
 ```{toggle}
-<iframe width="950" height="501" src="https://www.youtube.com/embed/RoaPwEWcHF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/RoaPwEWcHF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 ## Individual data collection
