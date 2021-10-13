@@ -38,7 +38,7 @@ We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrass
 A single pigeon was recorded in a Skinnerbox for a short habituation period of 5 minutes. Six synchronized cameras (FLIR BFS) were mounted on the four upper corners of the box and in the two lower corners of the fron side. The pigeon did not perform any specific task during the recording.
 
 ```{toggle}
-video here
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/T0tq1m9L.html?at=eyJpdiI6Ilp6dGg0Uld3Z3BDcFdGNXpQakowd3c9PSIsInZhbHVlIjoiRmZhZmFmYml0dTJcL3d2MHhhQzZ0RFU5Q2J5Y0lXVVNja0ZycFI0Zmk2SXc9IiwibWFjIjoiNmJmZDQ5MWU5ZTM0NzZmZjQ5MzgxZjczOWQ2MjU1MzQ1YjczOWMxNTkwZDJjNjJmNjM1MDZiZTcyNjNkM2M3YyJ9" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 ### Pigeon in Arena for 3D analysis by [Mengmeng Li](https://www.bio.psy.ruhr-uni-bochum.de/members_mengmeng.html)
@@ -69,7 +69,7 @@ video here
 Six subjects were recorded for up to 60 seconds in a synchronized multi-view setting with six cameras (FLIR BFS). Subjects were instructed to display a short sequence of facial expressions of their choice for trainig purposes.
 
 ```{toggle}
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 52.81%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 52.81%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-facial-expression.html?at=eyJpdiI6InRDTW9CVkNmcWNqeXV3YUZlRlQyZlE9PSIsInZhbHVlIjoiQWRMaWNvMUpCMWJcL1hudDhIS3puakxzNnZob1JKNFVUanRXVGxoOTg5NlE9IiwibWFjIjoiZTE1ZTkyYmNmZjlhOTkyZGRlYmFiZDMwOWFkMzZjM2RhODgwYTU5NjRkZDZmZjEwNmVlZDk3OTdlMjdjYjhhNCJ9" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/rTSGjBMq.html?at=eyJpdiI6IlI0Q2hKSklydG9VMzV0TDJlQ2FVNmc9PSIsInZhbHVlIjoiMEJPSGd1eEVuUHkwOEF6SElFZVJGSUpWNlg1TEQ0bjF2eVdjd0JJQzRUaz0iLCJtYWMiOiIwZTI2OGFmMDVkM2I3YjQ5YzVlNTFiMjVjMjdjMjU0N2ZmZDM3NGNjY2ZlMjIxYjJmMTk5ODRjMzc5MDg1MzE5In0=" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 ## Individual data collection
