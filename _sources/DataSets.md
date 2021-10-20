@@ -17,7 +17,7 @@ Freely behaving mice in open field exploration experiment. Mice were placed in t
 **Luxem, K., Fuhrmann, F., Kürsch, J., Remy, S., & Bauer, P. (2020). Identifying Behavioral Structure from Deep Variational Embeddings of Animal Motion. https://doi.org/10.1101/2020.05.14.095430**
 
 ```{toggle}
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-mouse.html?at=eyJpdiI6IjBibnNHeGdXMWk5NDBmRUJUaUJmZGc9PSIsInZhbHVlIjoiQXJnN3VMRDRBdmxOZTZoeU1GSmlXd0F4d3dqY1IzTWI3YUR4a3ZjTFRVaz0iLCJtYWMiOiIzZDMyNGQ0YzRmNmI1NzFlMGI1Y2NiZmNjMTIxZTZjMTYxMmRkZDFiOGUzMDI3NTg4MDUzMjQzZWIwNmI5MDI2In0=" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-mouse.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 ### Fly data for 3D analysis by [Pavan Ramdya](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PKKXOE)
@@ -28,8 +28,7 @@ We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrass
 **Günel, S., Rhodin, H., Morales, D., Campagnolo, J., Ramdya, P., & Fua, P. (2019). DeepFly3D, a deep learning-based approach for 3D limb and appendage tracking in tethered, adult Drosophila. ELife, 8, e48571. https://doi.org/10.7554/eLife.48571**
 
 ```{toggle}
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-fly.html?at=eyJpdiI6IlhUSkw1QUdWTjFSWU9JaFd2SUkyZ0E9PSIsInZhbHVlIjoiNUFTRnpWeXpJZzVVeUVMbW4yWVwveHhYd0dDZVhGdGlEUjVTd1JDUjZrSlU9IiwibWFjIjoiOTRiYThkZmE2ZjYzZmQ3NTA5NzhkNzUzMTllZDhmNTZlMWY5YTA1ZGEwMGEwZGE5NzgyOWUyZjQ1ZTEyOThmNCJ9" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
-
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-fly.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 
@@ -38,7 +37,7 @@ We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrass
 A single pigeon was recorded in a Skinnerbox for a short habituation period of 5 minutes. Six synchronized cameras (FLIR BFS) were mounted on the four upper corners of the box and in the two lower corners of the fron side. The pigeon did not perform any specific task during the recording.
 
 ```{toggle}
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/T0tq1m9L.html?at=eyJpdiI6Ilp6dGg0Uld3Z3BDcFdGNXpQakowd3c9PSIsInZhbHVlIjoiRmZhZmFmYml0dTJcL3d2MHhhQzZ0RFU5Q2J5Y0lXVVNja0ZycFI0Zmk2SXc9IiwibWFjIjoiNmJmZDQ5MWU5ZTM0NzZmZjQ5MzgxZjczOWQ2MjU1MzQ1YjczOWMxNTkwZDJjNjJmNjM1MDZiZTcyNjNkM2M3YyJ9" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/T0tq1m9L.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 ### Pigeon in Arena for 3D analysis by [Mengmeng Li](https://www.bio.psy.ruhr-uni-bochum.de/members_mengmeng.html)
@@ -46,21 +45,25 @@ A single pigeon was recorded in a Skinnerbox for a short habituation period of 5
 A single pigeon was recorded in a hexagonal arena for a 17 minute session in an open field exploration experiment. Six synchronized cameras (FLIR BFS) were mounted on the upper corners of the arena at 180cm from the ground. The pigeon did not perform any specific task during the recording.
 
 ```{toggle}
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/Demo-Pigeon-Arena.html?at=eyJpdiI6IkxGS2tsOHVlcm5Nb1ZmdFlYcG9KNXc9PSIsInZhbHVlIjoibkc4MjVNOVJnUWpSeVdBSVNRN20zcjcyUTl1d21kQ2lmZDVjOFFTSHVBUT0iLCJtYWMiOiIxMjlhZDJiNDg1ZTk5MDFjOWE2M2QwYWJmNDdkMDcwZjQxNTJhNjEzZDI4YjBkNzFiZmJjOGYzMWFhOTc5OTg5In0=" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/Demo-Pigeon-Arena.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 ### Pigeon top view by [Neslihan Wittek](https://www.bio.psy.ruhr-uni-bochum.de/members_neslihan.html)
 
+A single pigeon was recorded in a rectangular box separated by a clear plexiglas screen. The pigeon had continuous access to food and was recorded from the front and from top view. The pigeon did not perform any specific task during the recording.
+
 ```{toggle}
-video here
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo_pigeon_topview.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 ## Human animals
 
 ### Human Hand for Anipose demo by [Katie Rupp](https://anipose.readthedocs.io/en/latest/tutorial.html#setting-up-the-project)
 
+Human hand recorded with three GoPro cameras for tracking and triangulation. Demo data provided by [anipose.org](https://anipose.readthedocs.io/en/latest/_images/hand-demo.gif).
+
 ```{toggle}
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-hand.html?at=eyJpdiI6IlNGUUtaejlhS040Um1hTm42a2lUNkE9PSIsInZhbHVlIjoiZTRPbDh2bTB2eHZoNHhZK1ltUXRuMEg3cVNFQW16Uk0xODNiUXFTQlRNdz0iLCJtYWMiOiI0MWY3NTMyMDMyNDNmMmRlNTI1NmE0N2E0MWNiOWNjOGFmYWIxNDA0ZWQ4NDRhMTE2ODI2ZGU1YjEzNzgwOGJhIn0=" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-hand.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 
@@ -69,7 +72,7 @@ video here
 Six subjects were recorded for up to 60 seconds in a synchronized multi-view setting with six cameras (FLIR BFS). Subjects were instructed to display a short sequence of facial expressions of their choice for trainig purposes.
 
 ```{toggle}
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/rTSGjBMq.html?at=eyJpdiI6IlI0Q2hKSklydG9VMzV0TDJlQ2FVNmc9PSIsInZhbHVlIjoiMEJPSGd1eEVuUHkwOEF6SElFZVJGSUpWNlg1TEQ0bjF2eVdjd0JJQzRUaz0iLCJtYWMiOiIwZTI2OGFmMDVkM2I3YjQ5YzVlNTFiMjVjMjdjMjU0N2ZmZDM3NGNjY2ZlMjIxYjJmMTk5ODRjMzc5MDg1MzE5In0=" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/rTSGjBMq.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 ## Individual data collection
