@@ -37,7 +37,7 @@ We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrass
 A single pigeon was recorded in a Skinnerbox for a short habituation period of 5 minutes. Six synchronized cameras (FLIR BFS) were mounted on the four upper corners of the box and in the two lower corners of the fron side. The pigeon did not perform any specific task during the recording.
 
 ```{toggle}
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/T0tq1m9L.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo_pigeon_skinnerbox.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
 ### Pigeon in Arena for 3D analysis by [Mengmeng Li](https://www.bio.psy.ruhr-uni-bochum.de/members_mengmeng.html)
