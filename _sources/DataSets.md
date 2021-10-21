@@ -1,4 +1,4 @@
-# Data sets
+# Datasets
 
 This short collection of datasets will help you get your hands dirty with actual examples in animal behavior! The videos provided serve the purpose of getting started with animal tracking software and data analysis, but do not cover entire experiments necessary for appropriate statistical analysis.
 
