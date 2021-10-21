@@ -16,3 +16,9 @@ Dunn, T. W. (2021). Geometric deep learning enables 3D kinematic profiling acros
 Exiting flatland: measuring, modeling, and synthesizing animal behavior in 3D
 
 <iframe width="935" height="526" src="https://www.youtube.com/embed/JjFKGQmcgJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Bonus II: Angjoo Kanazawa (Berkley University)
+
+TUM AI Lecture Series - Perceiving Humans in the 3D World
+
+<iframe width="935" height="526" src="https://www.youtube.com/embed/WOuCPT0lXio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

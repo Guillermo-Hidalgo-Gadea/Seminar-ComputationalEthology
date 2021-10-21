@@ -9,7 +9,7 @@
 
 ## Description
 
-What is behavior, and how can we measure it? Experimental Psychologists operationalize behavior as task relevant interactions with stimuli and rewards, such as frequency of key pecking, reaction times, and the number of errors is specific tasks, while biologists classify behavior in qualitative clusters and analyze time spent on grooming behavior, or the frequency and intensity of aggressive interactions. New advances in computer vision and machine learning have changed the way we measure spatiotemporal dynamics of animal movement, but do we really understand Animal Behavior? In this Seminar we will work with video data of human and non-human animals in different setting and apply cutting edge machine learning techniques to extract spatial and temporal data to describe the continuous stream of behavior.
+What is behavior, and how can we measure it? Experimental Psychologists operationalize behavior as task relevant interactions with stimuli and rewards, such as frequency of key pecking, reaction times, and the number of errors in specific tasks, while biologists classify behavior in qualitative clusters and analyze time spent on grooming behavior, or the frequency and intensity of aggressive interactions. New advances in computer vision and machine learning have changed the way we measure spatiotemporal dynamics of animal movement, but do we really understand Animal Behavior? In this seminar we will work with video data of human and non-human animals in different settings and apply cutting edge machine learning techniques to extract spatial and temporal data to describe the continuous stream of behavior.
 
 ## Expectations
 
