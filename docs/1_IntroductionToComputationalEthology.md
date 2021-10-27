@@ -112,7 +112,7 @@ Steps in typical computational ethology systems, from Anderson & Perona (2014).
 ### Difficulties
 * A new, tech-savvy generation of students is needed willing to cooperate in interdisciplinary teams of biologists, psychologists and computer scientists
 * 3D tracking needs multiple cameras and triangulation, or specialized depth sensors to capture a complete picture of behavior. Skeleton vs surface? 
-* Generalization: specialized trackers for specific individuals, many methods and no standards, machine teachind is still time consuming, transfer learning, active learning, self-supervised learning
+* Generalization: specialized trackers for specific individuals, many methods and no standards, machine teaching is still time consuming, transfer learning, active learning, self-supervised learning
 * Discovery: handcraftet criteria, supervised machine learning, new behaviors, unsupervised learning
 
 ## Describing Behavior
