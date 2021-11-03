@@ -5,7 +5,7 @@ The content of this book will be expanded and updated throughout the course!
 :::
 
 ## Behavior - the what, how, why and when
-We can think of behavior as *relatively fast* changes in the spatiotemporal position of an organism in the environment. Behavior is what allows individuals to **move, navigate and interact** with their surroundings, and helps them adapt to changing environments on a timescale much faster than natural selection. From an ecological perspective, behavior may be considered a **selection for flexibility** .
+We can think of behavior as *relatively fast* changes in the spatiotemporal position of an organism in the environment. Behavior is what allows individuals to **move, navigate and interact** with their surroundings, and helps them adapt to changing environments on a timescale much faster than natural selection. From an ecological perspective, behavior may be considered a **selection for flexibility**.
 
 The biological study of animal behavior is called ethology (see [Konrad Lorenz](https://en.wikipedia.org/wiki/Konrad_Lorenz), [Niko Tinbergen](https://en.wikipedia.org/wiki/Nikolaas_Tinbergen) and [Karl von Frisch](https://en.wikipedia.org/wiki/Karl_von_Frisch)), while psychologists may approach similar questions from perspectives like [behavioral ecology](https://en.wikipedia.org/wiki/Behavioral_ecology) or [comparative cognition](https://en.wikipedia.org/wiki/Comparative_psychology). 
 
@@ -112,7 +112,7 @@ Steps in typical computational ethology systems, from Anderson & Perona (2014).
 ### Difficulties
 * A new, tech-savvy generation of students is needed willing to cooperate in interdisciplinary teams of biologists, psychologists and computer scientists
 * 3D tracking needs multiple cameras and triangulation, or specialized depth sensors to capture a complete picture of behavior. Skeleton vs surface? 
-* Generalization: specialized trackers for specific individuals, many methods and no standards, machine teachind is still time consuming, transfer learning, active learning, self-supervised learning
+* Generalization: specialized trackers for specific individuals, many methods and no standards, machine teaching is still time consuming, transfer learning, active learning, self-supervised learning
 * Discovery: handcraftet criteria, supervised machine learning, new behaviors, unsupervised learning
 
 ## Describing Behavior
