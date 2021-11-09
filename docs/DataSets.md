@@ -34,7 +34,7 @@ We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrass
 
 ### Pigeon in Skinnerbox for 3D analysis by [Guillermo Hidalgo Gadea](https://www.bio.psy.ruhr-uni-bochum.de/members_guillermo.html)
 
-A single pigeon was recorded in a Skinnerbox for a short habituation period of 5 minutes. Six synchronized cameras (FLIR BFS) were mounted on the four upper corners of the box and in the two lower corners of the fron side. The pigeon did not perform any specific task during the recording.
+A single pigeon was recorded in a Skinnerbox for a short habituation period of 5 minutes. Six synchronized cameras (FLIR BFS) were mounted on the four upper corners of the box and in the two lower corners of the from side. The pigeon did not perform any specific task during the recording.
 
 ```{toggle}
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo_pigeon_skinnerbox.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
@@ -69,7 +69,7 @@ Human hand recorded with three GoPro cameras for tracking and triangulation. Dem
 
 ### Human Facial Expression for 3D analysis by [Guillermo Hidalgo Gadea](https://www.bio.psy.ruhr-uni-bochum.de/members_guillermo.html)
 
-Six subjects were recorded for up to 60 seconds in a synchronized multi-view setting with six cameras (FLIR BFS). Subjects were instructed to display a short sequence of facial expressions of their choice for trainig purposes.
+Six subjects were recorded for up to 60 seconds in a synchronized multi-view setting with six cameras (FLIR BFS). Subjects were instructed to display a short sequence of facial expressions of their choice for training purposes.
 
 ```{toggle}
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/rTSGjBMq.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
@@ -79,7 +79,7 @@ Six subjects were recorded for up to 60 seconds in a synchronized multi-view set
 
 1) You are welcome to perform your own data collection and use any video data you may already have. Any (relatively) modern smartphone or action camera will be sufficient to record a few short videos of animals in the wild. Please be careful to **respect the privacy of bystanders** when filming in public.
 
-2) There are some great open source iniciatives you could check out that share video repositories of animal behavior data such as [OpenBehavior](https://edspace.american.edu/openbehavior/video-repository/video-repository-2/). Additionally, more and more authors make their video data partially available.  
+2) There are some great open source initiatives you could check out that share video repositories of animal behavior data such as [OpenBehavior](https://edspace.american.edu/openbehavior/video-repository/video-repository-2/). Additionally, more and more authors make their video data partially available.  
 
 3) You can also gather video material from online sources like youtube with [Youtube-dl](https://youtube-dl.org/). Please **handle with care**. Downloaded videos should be used only for educational purposes and are not to be distributed. 
 
