@@ -5,7 +5,7 @@ The content of this book will be expanded and updated throughout the course!
 :::
 
 ## Behavior - the what, how, why and when
-We can think of behavior as *relatively fast* changes in the spatiotemporal position of an organism in the environment. Behavior is what allows individuals to **move, navigate and interact** with their surroundings, and helps them adapt to changing environments on a timescale much faster than natural selection. From an ecological perspective, behavior may be considered a **selection for flexibility** .
+We can think of behavior as *relatively fast* changes in the spatiotemporal position of an organism in the environment. Behavior is what allows individuals to **move, navigate and interact** with their surroundings, and helps them adapt to changing environments on a timescale much faster than natural selection. From an ecological perspective, behavior may be considered a **selection for flexibility**.
 
 The biological study of animal behavior is called ethology (see [Konrad Lorenz](https://en.wikipedia.org/wiki/Konrad_Lorenz), [Niko Tinbergen](https://en.wikipedia.org/wiki/Nikolaas_Tinbergen) and [Karl von Frisch](https://en.wikipedia.org/wiki/Karl_von_Frisch)), while psychologists may approach similar questions from perspectives like [behavioral ecology](https://en.wikipedia.org/wiki/Behavioral_ecology) or [comparative cognition](https://en.wikipedia.org/wiki/Comparative_psychology). 
 
