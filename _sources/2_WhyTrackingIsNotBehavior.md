@@ -6,9 +6,9 @@ The content of this book will be expanded and updated throughout the course!
 
 
 ## What is Behavior - a short recap
-In the last session we considered behavior as a **selection for flexibility**, as the ability of on individual to **move, navigate and interact** with their surrounding in an ever **changing environment**. We learned that behavior can be descibed from different points of view to focus on either the phenomenological, mechanistic, developmental, functional or evolutional charachteristics of behavior.  
+In the last session we considered behavior as a **selection for flexibility**, as the ability of on individual to **move, navigate and interact** with their surrounding in an ever **changing environment**. We learned that behavior can be described from different points of view to focus on either the phenomenological, mechanistic, developmental, functional or evolutional characteristics of behavior.  
 
-We also concluded that a closer look at *behavior* should differentiate between **dimensionalities of behavior**, from short behavioral motifs, syllabels or movems to short actions and large-scale behavioral patterns. Furthermore, we found it useful to distinguish between the **structure**, the **consequences** and the **spatial relation** of behavior.  
+We also concluded that a closer look at *behavior* should differentiate between **dimensionalities of behavior**, from short behavioral motifs, syllables or movems to short actions and large-scale behavioral patterns. Furthermore, we found it useful to distinguish between the **structure**, the **consequences** and the **spatial relation** of behavior.  
 
 
 ## From Tracking to Behavior
@@ -16,10 +16,10 @@ In {numref}`steps` of the last section we saw how Anderson & Perona (2014) lay o
 
 ```{admonition} Quote
 :class: tip
-"[...] particular techniques in an academic field can lead to methodological bias which itself delineates the meaning of *behavior*." -  Calhoun & Hady (2021)
+"[...] particular techniques in an academic field can lead to methodological bias which itself delineates the meaning of *behavior*."  -  Calhoun & Hady (2021)
 ```
 
-Technological advances in computational ethology have opened new doors for detecting, identifying and tracking individuals, or even multiple bodyparts of individuals simultaneously. But the segmentation of the stream of tracking data into broader anctions, and the clustering of generalized behavioral patterns remains a challenging task, given the little agreement on what *behavior* actually is. 
+Technological advances in computational ethology have opened new doors for detecting, identifying and tracking individuals, or even multiple body parts of individuals simultaneously. But the segmentation of the stream of tracking data into broader actions, and the clustering of generalized behavioral patterns remains a challenging task, given the little agreement on what *behavior* actually is. 
 
 
 ## Definitions of Behavior
@@ -38,7 +38,7 @@ Some of the most common definitions of *behavior* among behavioral biologists:
 6. Davis (1966): What an animal (or plant) does.
 7. Grier & Burk (1992): ‘All observable or otherwise measurable muscular and secretory responses (or lack thereof in some cases) and related phenomena such as changes in blood flow and surface pigments in response to changes in an animal’s internal and external environment’
 
-True statements about behavior:
+**True** statements about behavior (by majority vote, see Levitis et al. 2009):
 ```{toggle}
 * ‘A developmental change is usually not a behavior.’
 * ‘Behavior is always influenced by the internal processes of the individual.’
@@ -46,7 +46,7 @@ True statements about behavior:
 * ‘A behavior is always in response to a stimulus or set of stimuli, but the stimulus can be either internal or external.’
 ```
 
-False statements about behavior:
+**False** statements about behavior (by majority vote, see Levitis et al. 2009):
 ```{toggle}
 * ‘Behavior is always in response to the external environment.’
 * ‘A behavior is always an action, rather than a lack of action.’
@@ -58,6 +58,7 @@ False statements about behavior:
 ```
 
 ## Disagreement defining Behavior
+In their preprint, Calhoun and Hady (2021) develop a survey about what scientists in different disciplines really understand by behavior. As expected from Levitis et al. (2009), they find high disagreement between groups in their views of what does and what doesn't constitute behavior, but most interestingly they identify stable response clusters to different qualitative definitions of behavior. In {numref}`behaviorclusters` the different clusters indicate consistent differences among disciplines, sub-disciplines of neuroscience, as well as model organism and academic seniority. 
 
 ```{figure} content/behaviorclusters.png
 ---
@@ -68,6 +69,7 @@ Disagreement defining behavior, from Calhoun & Hady, 2021.
 ```
 
 ### Definition clusters and Archetypes
+{numref}`definitionarchetypes` below summarizes the different qualitative definitions of behavior based on the survey questions, as well as seven distinct archetypes of response type.
 
 ```{figure} content/definitionarchetypes.png
 ---
@@ -121,7 +123,7 @@ Now that you may have a clearer picture of the mess you are getting into, lets t
 
 1. Take 5 minutes to think about your research project idea
 2. Take 5 more minutes to think about why you are interested in behavior in this particular setting
-3. Take 5 the last 5 minutes to think about how others could misunderstand what you mean by *behavior*, and how you could remedy that
+3. Take 5 the last 5 minutes to think about how others could misunderstand what you mean by *behavior*, and how you could remedy that.
 
 
 ## Literature

@@ -23,7 +23,7 @@ Tinbergens' four levels of analysis, from Wikipedia.
 ## Measuring Behavior
 The study of behavior started with rich, naturalistic observations of animals in their natural environments. But these observations were mostly qualitative and anecdotal descriptions, rather than quantitative measurements of behavior (see [George Romanes' *Animal Intelligence*](https://dl.tufts.edu/concern/pdfs/47429n35w) and [Desmond Morris' *The Naked Ape*](https://en.wikipedia.org/wiki/The_Naked_Ape) for such examples).  
 
-A more systematic approach to measuring behavior was achieved by using scoring sheets of pre-defined behaviors of interest, and manually logging the occurence and duration of these behaviors at a given temporal resolution in specific time intervals. This allowed the quantification of behavior with simple statistics such as the frequency, latency and duration of given behaviors, as well as the relative proportion of several behaviors in given environments.
+A more systematic approach to measuring behavior was achieved by using scoring sheets of pre-defined behaviors of interest, and manually logging the occurrence and duration of these behaviors at a given temporal resolution in specific time intervals. This allowed the quantification of behavior with simple statistics such as the frequency, latency and duration of given behaviors, as well as the relative proportion of several behaviors in given environments.
 
 These observations and manual coding techniques are still popular today, although video recording techniques allow to store data, and score behavior from the lab, instead of in the field. Furthermore, computer-assisted tools allow to score behavior frame-by-frame. More on this will be covered in a future session on [Levels of Analysis and Quantification of Animal Behavior](3_LevelsOfAnalysisAndQuantificationOfBehavior.md).
 
@@ -58,7 +58,7 @@ Key ML models, from Stack Overflow.
 For a more in-depth understanding of machine learning techniques feel free to ask the internet or brows the online materials for the [Computational Neuroscience course from the Neuromatch Academy](https://compneuro.neuromatch.io/tutorials/W2D1_DeepLearning/chapter_title.html). 
 
 ### Promises 
-By successfully and skillfully applying machine learning methods the study of behavior will profit from a more accurate quantification of behavior, while outsourcing the painstaking manual labor of video coding. Computational models will increase the throughput of behavioral experiments by tracking multiple subjects at once, measuring over prolonged timewindows, or even in real time. Real time measurements, in turn, pose new possibilities to designe closed-loop experiments reactive to subjects' behavior.  
+By successfully and skillfully applying machine learning methods the study of behavior will profit from a more accurate quantification of behavior, while outsourcing the painstaking manual labor of video coding. Computational models will increase the throughput of behavioral experiments by tracking multiple subjects at once, measuring over prolonged time windows, or even in real time. Real time measurements, in turn, pose new possibilities to design closed-loop experiments reactive to subjects' behavior.  
 Computational methods will also increase the dimensionality of behavior, differentiating between short actions and large-scale behavioral patterns, and setting time-accurate context to subjects behavior in the environment.  
 Lastly, specific advances in computer vision revolutionize the way we operationalize the behavior of subjects. See {numref}`levelsofdetail` for an overview of different levels of detail in the tracking of subjects movement.
 
@@ -113,7 +113,7 @@ Steps in typical computational ethology systems, from Anderson & Perona (2014).
 * A new, tech-savvy generation of students is needed willing to cooperate in interdisciplinary teams of biologists, psychologists and computer scientists
 * 3D tracking needs multiple cameras and triangulation, or specialized depth sensors to capture a complete picture of behavior. Skeleton vs surface? 
 * Generalization: specialized trackers for specific individuals, many methods and no standards, machine teaching is still time consuming, transfer learning, active learning, self-supervised learning
-* Discovery: handcraftet criteria, supervised machine learning, new behaviors, unsupervised learning
+* Discovery: handcrafted criteria, supervised machine learning, new behaviors, unsupervised learning
 
 ## Describing Behavior
 Working on a new understanding of behavior quantification will need a standardized language to describe behavior. Lets get started with {numref}`terminology`: 

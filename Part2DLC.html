@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Part 2: Edit a DeepLabCut Project &#8212; Computational Ethology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Part 2: Edit an existing DeepLabCut Project &#8212; Computational Ethology</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -33,17 +34,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe,.cell"
         const thebe_selector_input = "pre,.cell_input div.highlight"
         const thebe_selector_output = ".output,.cell_output"
@@ -87,7 +88,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p class="caption" role="heading">
  <span class="caption-text">
   Course Information
  </span>
@@ -114,7 +115,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Lectures
  </span>
@@ -151,7 +152,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Exercises
  </span>
@@ -179,7 +180,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Part 2: Edit a DeepLabCut Project
+     Part 2: Edit an existing DeepLabCut Project
     </a>
    </li>
    <li class="toctree-l2">
@@ -200,7 +201,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Data sets
  </span>
@@ -212,7 +213,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Feedback
  </span>
@@ -333,8 +334,33 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#editing-deeplabcut-models">
-   Editing DeepLabCut Models
+  <a class="reference internal nav-link" href="#load-existing-deeplabcut-models">
+   Load existing DeepLabCut Models
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyze-new-videos-with-the-previously-trained-model">
+   Analyze new videos with the previously trained model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extract-outlier-frames">
+   Extract outlier frames
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#merge-datasets">
+   Merge Datasets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-train-network">
+   Re-Train Network
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyze-your-new-model-starting-with-part-1">
+   Analyze your new model starting with Part 1
   </a>
  </li>
 </ul>
@@ -348,10 +374,12 @@
         
               <div>
                 
-  <div class="section" id="part-2-edit-a-deeplabcut-project">
-<h1>Part 2: Edit a DeepLabCut Project<a class="headerlink" href="#part-2-edit-a-deeplabcut-project" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="editing-deeplabcut-models">
-<h2>Editing DeepLabCut Models<a class="headerlink" href="#editing-deeplabcut-models" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="part-2-edit-an-existing-deeplabcut-project">
+<h1>Part 2: Edit an existing DeepLabCut Project<a class="headerlink" href="#part-2-edit-an-existing-deeplabcut-project" title="Permalink to this headline">¶</a></h1>
+<p>Note: Open this jupyter notebook in your DeepLabCut environment.</p>
+<section id="load-existing-deeplabcut-models">
+<h2>Load existing DeepLabCut Models<a class="headerlink" href="#load-existing-deeplabcut-models" title="Permalink to this headline">¶</a></h2>
+<p>Import python libraries needed for this notebook</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
@@ -377,7 +405,7 @@
 </div>
 </div>
 </div>
-<p>Load new videos to analyze and or merge to the project:</p>
+<p>Load new videos to analyze and/or merge to the project:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">video_files</span> <span class="o">=</span> <span class="n">filedialog</span><span class="o">.</span><span class="n">askopenfilenames</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Choose new video files to analyze in DeepLabCut:&#39;</span><span class="p">)</span>
@@ -390,7 +418,10 @@
 </div>
 </div>
 </div>
-<p>Analyze new videos with the previously trained model:</p>
+</section>
+<section id="analyze-new-videos-with-the-previously-trained-model">
+<h2>Analyze new videos with the previously trained model<a class="headerlink" href="#analyze-new-videos-with-the-previously-trained-model" title="Permalink to this headline">¶</a></h2>
+<p>The analysis results in this step will most probably not look as desired, but this is to be expected. Bare in mind, that we are trying to analyze new, unseen videos with a model trained on different data (i.e., either other individuals, other sessions and maybe even different light conditions or camera angles). The goal of this step is to find out where the model fails to generalize and cover this shortcomings.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">analyze_videos</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">new_videos</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">save_as_csv</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">videotype</span><span class="o">=</span><span class="s1">&#39;mp4&#39;</span> <span class="p">)</span>
@@ -407,18 +438,23 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">create_labeled_video</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">new_videos</span><span class="p">,</span> <span class="n">filtered</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">videotype</span> <span class="o">=</span> <span class="s1">&#39;mp4&#39;</span><span class="p">,</span> <span class="n">save_frames</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="extract-outlier-frames">
+<h2>Extract outlier frames<a class="headerlink" href="#extract-outlier-frames" title="Permalink to this headline">¶</a></h2>
+<p>Now this is the interesting part. Instead of including more videos to the project directly, and extracting frames as usual with kmeans, we are taking advantage of the previous model to tell us what frames exactly to label. This active learning step helps us recognize the shortcomings of our model and correct it in a targeted manner.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">extract_outlier_frames</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">new_videos</span><span class="p">,</span> <span class="n">automatic</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">create_labeled_video</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">new_videos</span><span class="p">,</span> <span class="n">videotype</span> <span class="o">=</span> <span class="s1">&#39;mp4&#39;</span><span class="p">,</span> <span class="n">save_frames</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p>Now that we have extracted new frames, we need to go back and start labeling. Instead of starting from the beginning, though, we are provided the model predictions and have to drag and drop them in place. <strong>Note:</strong> Make sure to remove labels that are not visible, the model will often guess the expected position based on learned geometric constraints.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">refine_labels</span><span class="p">(</span><span class="n">config_path</span><span class="p">)</span>
@@ -426,6 +462,27 @@
 </div>
 </div>
 </div>
+<p>You can again plot your labeled frames to check annotation accuracy.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">check_labels</span><span class="p">(</span><span class="n">config_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>At this point you could get an error message like <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut/issues/232">this</a> telling you that saving the video path failed. In this case, you need to add the new video paths manually for DLC to include these in the new training set. You can either add them by hand, writing in the config.yaml file in the same format as the first video paths (see <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut/issues/663#issuecomment-619274975">here</a>), or you can run the following command to add the list of videos to your config file:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">add_new_videos</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">new_videos</span><span class="p">,</span> <span class="n">copy_videos</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If the permission error persists, try starting a new anaconda terminal as administrator (right click &gt; run as administrator) and then starting jupyter notebook with elevated privileges.</p>
+</section>
+<section id="merge-datasets">
+<h2>Merge Datasets<a class="headerlink" href="#merge-datasets" title="Permalink to this headline">¶</a></h2>
+<p>After refining all outlier frames extracted above, merge the datasets to combine old and new labels in your project.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">merge_datasets</span><span class="p">(</span><span class="n">config_path</span><span class="p">)</span>
@@ -440,16 +497,71 @@
 </div>
 </div>
 </div>
+<p><strong>Note:</strong> Make sure that the new videos have been included in the config.yaml file without permission issues (see above).</p>
+</section>
+<section id="re-train-network">
+<h2>Re-Train Network<a class="headerlink" href="#re-train-network" title="Permalink to this headline">¶</a></h2>
+<p>When training a new model with an expanded dataset, you could either choose to start fresh with new data, or use the previous model as pre-trained network for your next model. Although not yet extensively verified, lets belief that transfer learning at least won’t harm the new model.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># change init_weights to use a pre-trained model</span>
-<span class="n">deeplabcut</span><span class="o">.</span><span class="n">train_network</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">displayiters</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">saveiters</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pose_cfg</span> <span class="o">=</span>  <span class="n">filedialog</span><span class="o">.</span><span class="n">askopenfilename</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Choose DeepLabCut pose_cfg.yaml file from dlc-models:&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">webbrowser</span>
+<span class="n">webbrowser</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">pose_cfg</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Please edit init_weights to include the path to the last pre-trained model...&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example of own pre-trained model</span>
+<span class="n">init_weights</span><span class="p">:</span> <span class="n">D</span><span class="p">:</span>\<span class="n">FacialExpression</span>\<span class="n">old</span><span class="o">-</span><span class="n">DLC</span><span class="o">-</span><span class="n">Project</span>\<span class="n">dlc</span><span class="o">-</span><span class="n">models</span>\<span class="n">iteration</span><span class="o">-</span><span class="mi">0</span>\<span class="n">DLCApr14</span><span class="o">-</span><span class="n">trainset95shuffle1</span>\<span class="n">train</span>\<span class="n">snapshot</span><span class="o">-</span><span class="mi">1030000</span>
+</pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">train_network</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">displayiters</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">saveiters</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="analyze-your-new-model-starting-with-part-1">
+<h2>Analyze your new model starting with Part 1<a class="headerlink" href="#analyze-your-new-model-starting-with-part-1" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">videolist</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">config_path</span> <span class="o">=</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">analyze_videos</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">videolist</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">save_as_csv</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">videotype</span><span class="o">=</span><span class="s1">&#39;mp4&#39;</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">filterpredictions</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span><span class="n">videolist</span><span class="p">,</span> <span class="n">videotype</span><span class="o">=</span><span class="s1">&#39;.mp4&#39;</span><span class="p">,</span><span class="n">filtertype</span><span class="o">=</span> <span class="s1">&#39;arima&#39;</span><span class="p">,</span><span class="n">ARdegree</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">MAdegree</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deeplabcut</span><span class="o">.</span><span class="n">create_labeled_video</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="n">videolist</span><span class="p">,</span> <span class="n">videotype</span><span class="o">=</span><span class="s1">&#39;.mp4&#39;</span><span class="p">,</span> <span class="n">filtered</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">trailpoints</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">draw_skeleton</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>…</p>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

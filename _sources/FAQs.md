@@ -1,8 +1,8 @@
 # FAQs
 
-:::{admonition} Is attendence required?
+:::{admonition} Is attendance required?
 :class: question, dropdown
-Yes! This will be an in-person seminar, and active participation will raise your final mark.  In few exceptions the material can be catched up from home, but absence has to be justified in advance.
+Yes! This will be an in-person seminar, and active participation will raise your final mark.  In few exceptions the material can be caught up from home, but absence has to be justified in advance.
 :::
 
 :::{admonition} Is the seminar graded?
