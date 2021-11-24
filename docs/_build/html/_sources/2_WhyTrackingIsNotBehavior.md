@@ -1,14 +1,10 @@
 # Why Tracking is not Behavior
 
-:::{note}
-The content of this book will be expanded and updated throughout the course!
-:::
-
 
 ## What is Behavior - a short recap
-In the last session we considered behavior as a **selection for flexibility**, as the ability of on individual to **move, navigate and interact** with their surrounding in an ever **changing environment**. We learned that behavior can be descibed from different points of view to focus on either the phenomenological, mechanistic, developmental, functional or evolutional charachteristics of behavior.  
+In the last session we considered behavior as a **selection for flexibility**, as the ability of on individual to **move, navigate and interact** with their surrounding in an ever **changing environment**. We learned that behavior can be described from different points of view to focus on either the phenomenological, mechanistic, developmental, functional or evolutionary characteristics of behavior.  
 
-We also concluded that a closer look at *behavior* should differentiate between **dimensionalities of behavior**, from short behavioral motifs, syllabels or movems to short actions and large-scale behavioral patterns. Furthermore, we found it useful to distinguish between the **structure**, the **consequences** and the **spatial relation** of behavior.  
+We also concluded that a closer look at *behavior* should differentiate between **dimensionalities of behavior**, from short behavioral motifs, syllables or movems to short actions and large-scale behavioral patterns. Furthermore, we found it useful to distinguish between the **structure**, the **consequences** and the **spatial relation** of behavior.  
 
 
 ## From Tracking to Behavior
@@ -19,7 +15,7 @@ In {numref}`steps` of the last section we saw how Anderson & Perona (2014) lay o
 "[...] particular techniques in an academic field can lead to methodological bias which itself delineates the meaning of *behavior*."  -  Calhoun & Hady (2021)
 ```
 
-Technological advances in computational ethology have opened new doors for detecting, identifying and tracking individuals, or even multiple bodyparts of individuals simultaneously. But the segmentation of the stream of tracking data into broader anctions, and the clustering of generalized behavioral patterns remains a challenging task, given the little agreement on what *behavior* actually is. 
+Technological advances in computational ethology have opened new doors for detecting, identifying and tracking individuals, or even multiple body parts of individuals simultaneously. But the segmentation of the stream of tracking data into broader actions, and the clustering of generalized behavioral patterns remains a challenging task, given the little agreement on what *behavior* actually is. 
 
 
 ## Definitions of Behavior
@@ -58,7 +54,7 @@ Some of the most common definitions of *behavior* among behavioral biologists:
 ```
 
 ## Disagreement defining Behavior
-In their preprint, Calhoun and Hady (2021) develop a survey about what scientists in different discpilines really understand by behavior. As expected from Levitis et al. (2009), they find high disagreement between groups in their views of what does and what doesn't constitute behavior, but most interestingly they identify stable response clusters to different qualitative definitions of behavior. In {numref}`behaviorclusters` the different clusters indicate consistent differences among disciplines, sub-disciplines of neuroscience, as well as model organism and academic seniority. 
+In their preprint, Calhoun and Hady (2021) develop a survey about what scientists in different disciplines really understand by behavior. As expected from Levitis et al. (2009), they find high disagreement between groups in their views of what does and what doesn't constitute behavior, but most interestingly they identify stable response clusters to different qualitative definitions of behavior. In {numref}`behaviorclusters` the different clusters indicate consistent differences among disciplines, sub-disciplines of neuroscience, as well as model organism and academic seniority. 
 
 ```{figure} content/behaviorclusters.png
 ---

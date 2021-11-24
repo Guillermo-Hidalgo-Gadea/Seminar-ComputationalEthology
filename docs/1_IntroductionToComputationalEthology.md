@@ -1,8 +1,5 @@
 # Introduction to Computational Ethology
 
-:::{note}
-The content of this book will be expanded and updated throughout the course!
-:::
 
 ## Behavior - the what, how, why and when
 We can think of behavior as *relatively fast* changes in the spatiotemporal position of an organism in the environment. Behavior is what allows individuals to **move, navigate and interact** with their surroundings, and helps them adapt to changing environments on a timescale much faster than natural selection. From an ecological perspective, behavior may be considered a **selection for flexibility**.

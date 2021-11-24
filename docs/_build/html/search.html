@@ -84,7 +84,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p class="caption" role="heading">
  <span class="caption-text">
   Course Information
  </span>
@@ -111,7 +111,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Lectures
  </span>
@@ -148,7 +148,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Exercises
  </span>
@@ -176,12 +176,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Part2DLC.html">
-     Part 2: Edit a DeepLabCut Project
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part3DLC.html">
-     Part 3: Expanding your Model
+     Part 2: Edit an existing DeepLabCut Project
     </a>
    </li>
   </ul>
@@ -197,7 +192,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Data sets
  </span>
@@ -209,7 +204,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Feedback
  </span>
@@ -297,13 +292,14 @@
                 
   <h1 id="search-documentation">Search</h1>
   
-  <div id="fallback" class="admonition warning">
-  <script>$('#fallback').hide();</script>
+  <noscript>
+  <div class="admonition warning">
   <p>
     Please activate JavaScript to enable the search
     functionality.
   </p>
   </div>
+  </noscript>
   
   
   <p>
@@ -313,7 +309,7 @@
   
   
   <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
+    <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
     <input type="submit" value="search" />
     <span id="search-progress" style="padding-left: 10px"></span>
   </form>
