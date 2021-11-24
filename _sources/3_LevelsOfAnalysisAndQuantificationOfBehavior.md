@@ -22,7 +22,7 @@ name: dimensionalitylevelconstraints
 Dimensionality of measurement, level of description and degree of constraint in behavioral science, from Gomez-Marin et al., 2014.
 ```
 
-## Exercise: What is a meaningful unit of behavior?
+### Exercise: What is a meaningful unit of behavior?
 Discuss the example presented in {numref}`weatherforecast` to clarify the concepts of degree of constraint, dimensionality of metric and level of description from {numref}`dimensionalitylevelconstraints`.
 
 ```{figure} content/weatherforecast.png
@@ -35,13 +35,13 @@ Two weather forecast differing in dimensionality of measurement, level of descri
 
 Next, think back to the steps in computational ethology presented during the first lecture, and try to find examples for each of the axis in the behavioral space described in {numref}`dimensionalitylevelconstraints`. Try using examples from your own research, as well as typical or every day examples.   
 
-### Degree of constraint
+#### Degree of constraint
 * ...
 * ...
-### Dimensionality of measurement
+#### Dimensionality of measurement
 * ...
 * ...
-### Level of description
+#### Level of description
 * ...
 * ...
 
