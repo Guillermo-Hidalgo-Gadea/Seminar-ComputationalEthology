@@ -5,6 +5,7 @@ So far, we have seen that new technological advances allow computational etholog
 
 But how do we make sense of all of this data? We have seen in the previous lectures that we lack an intuitive, easy solution to investigate *behavior* as a whole, and we often need to narrow our focus to certain definitions of behavior, certain behaviors of interest, or even certain aspects of behavior. 
 
+## Levels of Analysis and other considerations
 The specific **level of analysis** should always be referred to, together with the working definition of behavior in general and specific. Does the given behavioral analysis focus on whisker movement in a head-fixed mouse? Or does it focus on the entire body and locomotion behavior? Or even exploration behavior relative to the environment? Or interacting with a conspecific? Or social behavior in a group of mice? Or the collective nest building behavior of a colony? The level of analysis is closely related to the *unit of observation* and to the *unit of analysis*. Although these concepts sometimes used interchangeably in different sciences, we will use the term *level of analysis* to refer to the set of events or phenomena we are interested in and could be enclosed in a single experimental trial. 
 
 ```{admonition} Quote
