@@ -1,12 +1,8 @@
 # Why Tracking is not Behavior
 
-:::{note}
-The content of this book will be expanded and updated throughout the course!
-:::
-
 
 ## What is Behavior - a short recap
-In the last session we considered behavior as a **selection for flexibility**, as the ability of on individual to **move, navigate and interact** with their surrounding in an ever **changing environment**. We learned that behavior can be described from different points of view to focus on either the phenomenological, mechanistic, developmental, functional or evolutional characteristics of behavior.  
+In the last session we considered behavior as a **selection for flexibility**, as the ability of on individual to **move, navigate and interact** with their surrounding in an ever **changing environment**. We learned that behavior can be described from different points of view to focus on either the phenomenological, mechanistic, developmental, functional or evolutionary characteristics of behavior.  
 
 We also concluded that a closer look at *behavior* should differentiate between **dimensionalities of behavior**, from short behavioral motifs, syllables or movems to short actions and large-scale behavioral patterns. Furthermore, we found it useful to distinguish between the **structure**, the **consequences** and the **spatial relation** of behavior.  
 
