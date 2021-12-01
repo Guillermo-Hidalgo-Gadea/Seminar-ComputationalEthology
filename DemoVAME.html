@@ -53,8 +53,8 @@
     <link rel="shortcut icon" href="_static/icon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Datasets" href="DataSets.html" />
-    <link rel="prev" title="Introduction to Anipose" href="DemoAnipose.html" />
+    <link rel="next" title="Part 1: Local VAME Project with GPU" href="Part1VAME.html" />
+    <link rel="prev" title="Part 2: Edit an existing DeepLabCut Project" href="Part2DLC.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -185,14 +185,31 @@
    </li>
   </ul>
  </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Introduction to VAME
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part1VAME.html">
+     Part 1: Local VAME Project with GPU
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part2VAME.html">
+     Part 2: Cloud VAME Project without GPU
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="DemoAnipose.html">
    Introduction to Anipose
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Introduction to VAME
   </a>
  </li>
 </ul>
@@ -303,6 +320,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentation">
+   Documentation
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -316,9 +351,28 @@
 <p>VAME is a framework to cluster behavioral signals obtained from pose-estimation tools.</p>
 <p><strong>Documentation:</strong> <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME/wiki">https://github.com/LINCellularNeuroscience/VAME/wiki</a><br />
 <strong>Sourcecode:</strong> <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME/">https://github.com/LINCellularNeuroscience/VAME/</a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The content of this book will be expanded and updated throughout the course!</p>
+<p>Variational Animal Motion Embedding (VAME) is a probabilistic machine learning framework for discovery of the latent structure
+of animal behavior given an input time series obtained from markerless pose estimation tools. It is a PyTorch based deep learning framework which leverages the power of recurrent neural networks (RNN) to model sequential data. In order to learn the underlying complex data distribution we use the RNN in a variational autoencoder setting to extract the latent state of the animal in every step of the input time series.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Unfortunately, you will need a GPU to install and run VAME locally on your computer. If that is the case, and you have Anaconda already installed, follow the steps below:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/LINCellularNeuroscience/VAME.git</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">VAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">VAME.yaml</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code></p></li>
+<li><p>install PyTorch from here: <a class="reference external" href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p></li>
+</ol>
+<p>If you have no access to a local GPU, you can always use cloud computing solutions (e.g., Google Colab) to run a test project on a virtual GPU. See Part 2 of todays tutorial to run VAME on Colab.</p>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>Luxem, K., Fuhrmann, F., Kürsch, J., Remy, S., &amp; Bauer, P. (2020). Identifying Behavioral Structure from Deep Variational Embeddings of Animal Motion. <a class="reference external" href="https://doi.org/10.1101/2020.05.14.095430">https://doi.org/10.1101/2020.05.14.095430</a></p>
+<div class="toggle docutils container">
+<iframe width="800" height="500" src="https://www.biorxiv.org/content/10.1101/2020.05.14.095430v2.full.pdf"></iframe>
+</div>
+</section>
+<div class="toctree-wrapper compound">
 </div>
 </section>
 
@@ -352,19 +406,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="DemoAnipose.html" title="previous page">
+        <a class="left-prev" href="Part2DLC.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Introduction to Anipose</p>
+                <p class="prevnext-title">Part 2: Edit an existing DeepLabCut Project</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="DataSets.html" title="next page">
+        <a class="right-next" href="Part1VAME.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Datasets</p>
+                <p class="prevnext-title">Part 1: Local VAME Project with GPU</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
