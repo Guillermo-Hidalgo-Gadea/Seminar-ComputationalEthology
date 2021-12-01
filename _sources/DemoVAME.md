@@ -8,6 +8,15 @@ VAME is a framework to cluster behavioral signals obtained from pose-estimation 
 Variational Animal Motion Embedding (VAME) is a probabilistic machine learning framework for discovery of the latent structure
 of animal behavior given an input time series obtained from markerless pose estimation tools. It is a PyTorch based deep learning framework which leverages the power of recurrent neural networks (RNN) to model sequential data. In order to learn the underlying complex data distribution we use the RNN in a variational autoencoder setting to extract the latent state of the animal in every step of the input time series.
 
+
+```{figure} content/vame.png
+---
+width: 800px
+name: vame
+---
+Architecture of machine learning model in VAME, from Luxem et al., 2020.
+```
+
 ## Installation
 
 Unfortunately, you will need a GPU to install and run VAME locally on your computer. If that is the case, and you have Anaconda already installed, follow the steps below: 
