@@ -28,6 +28,5 @@ If you have no access to a local GPU, you can always use cloud computing solutio
 
 Luxem, K., Fuhrmann, F., Kürsch, J., Remy, S., & Bauer, P. (2020). Identifying Behavioral Structure from Deep Variational Embeddings of Animal Motion. https://doi.org/10.1101/2020.05.14.095430
 
-```{toggle}
+
 <iframe width="800" height="500" src="https://www.biorxiv.org/content/10.1101/2020.05.14.095430v2.full.pdf"></iframe>
-```
