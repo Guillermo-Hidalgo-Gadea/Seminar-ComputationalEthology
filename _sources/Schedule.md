@@ -9,7 +9,7 @@
 |17.11.2021 </br> 12:15pm | IA 1/153 </br> PC-Pool  | Levels of analysis and quantification of behavior | Lecture, Paper-Discussion   |
 |24.11.2021 </br> 12:15pm | IA 1/153 </br> PC-Pool  | Classification of animal behavior | Lecture, Paper-Discussion   |
 |01.12.2021 </br> 12:15pm | IA 1/153 </br> PC-Pool  | Intro to VAME: A crash course  | Hands on   |
-|08.12.2021 </br> 12:15pm | IA 1/153 </br> PC-Pool  | Problems of Spacetime and Multidimensional space | Lecture, Paper-Discussion  |
+|15.12.2021 </br> 12:15pm | IA 1/153 </br> PC-Pool  | Problems of Spacetime and Multidimensional space | Lecture, Paper-Discussion  |
 |22.12.2021 </br> 12:15pm | IA 1/153 </br> PC-Pool  | Data Analysis and Machine Learning in Python | Lecture, Hands on   |
 |   |   | **Holiday Break** |    |
 |12.01.2022 </br> 12:15pm | IA 1/153 </br> PC-Pool  | Intro to Anipose: A crash course | Hands on   |
