@@ -1,0 +1,40 @@
+import vame
+import tkinter
+from tkinter import filedialog
+
+project = 'NewVAMEProject_20211201'
+
+working_directory = filedialog.askdirectory(title = 'Choose a directory for new VAME project')
+
+videos = filedialog.askopenfilenames(title = 'Choose raw videos for new VAME project')
+
+config = vame.init_new_project(project=project, videos=videos, working_directory=working_directory, videotype='.mp4')
+
+config = '/YOUR/WORKING/DIRECTORY/NewVAMEProject_20211201/config.yaml'
+
+vame.egocentric_alignment(config, pose_ref_index=[0,5])
+
+vame.csv_to_numpy(config, datapath='C:\\Research\\VAME\\vame_alpha_release-Mar16-2021\\videos\\pose_estimation\\')
+
+vame.create_trainset(config)
+
+vame.train_model(config)
+
+vame.evaluate_model(config)
+
+vame.pose_segmentation(config)
+
+vame.motif_videos(config, videoType='.mp4')
+
+vame.community(config, show_umap=False, cut_tree=2)
+
+vame.community_videos(config)
+
+vame.visualization(config, label=None) #options: label: None, "motif", "community"
+
+# Note: This function is currently very slow. Once the frames are saved you can create a video
+# or gif via e.g. ImageJ or other tools
+vame.gif(config, pose_ref_index=[0,5], subtract_background=True, start=None, 
+         length=500, max_lag=30, label='community', file_format='.mp4', crop_size=(300,300))
+
+vame.generative_model(config, mode="centers") #options: mode: "sampling", "reconstruction", "centers", "motifs"

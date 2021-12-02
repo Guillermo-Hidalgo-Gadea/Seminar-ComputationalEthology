@@ -5,12 +5,14 @@ So far, we have seen that new technological advances allow computational etholog
 
 But how do we make sense of all of this data? We have seen in the previous lectures that we lack an intuitive, easy solution to investigate *behavior* as a whole, and we often need to narrow our focus to certain definitions of behavior, certain behaviors of interest, or even certain aspects of behavior. 
 
-The specific **level of analysis** should always be referred to, together with the working definition of behavior in general and specific. Does the given behavioral analysis focus on whisker movement in a head-fixed mouse? Or does it focus on the entire body and locomotion behavior? Or even exploration behavior relative to the environment? Or interacting with a conspecific? Or social behavior in a group of mice? Or the collective nest building behavior of a colony? The level of analysis is closely related to the *unit of observation* and to the *unit of analysis*. Although these concepts sometimes used interchangeably in different sciences, we will use the term *level of analysis* to refer to the set of events or phenomena we are interested in and could be enclosed in a single experimental trial. 
-
 ```{admonition} Quote
 :class: tip
 "The main challenge confronting behavioral science is extracting meaning from an ever-increasing amount of information"  -  Gomez-Marin et al., 2014
 ```
+
+## Levels of Analysis and other considerations
+The specific **level of analysis** should always be referred to, together with the working definition of behavior in general and specific. Does the given behavioral analysis focus on whisker movement in a head-fixed mouse? Or does it focus on the entire body and locomotion behavior? Or even exploration behavior relative to the environment? Or interacting with a conspecific? Or social behavior in a group of mice? Or the collective nest building behavior of a colony? The level of analysis is closely related to the *unit of observation* and to the *unit of analysis*. Although these concepts sometimes used interchangeably in different sciences, we will use the term *level of analysis* to refer to the set of events or phenomena we are interested in and could be enclosed in a single experimental trial. 
+
 
 ```{figure} content/dimensionalitylevelconstraints.png
 ---
@@ -20,7 +22,7 @@ name: dimensionalitylevelconstraints
 Dimensionality of measurement, level of description and degree of constraint in behavioral science, from Gomez-Marin et al., 2014.
 ```
 
-## Exercise: What is a meaningful unit of behavior?
+### Exercise: What is a meaningful unit of behavior?
 Discuss the example presented in {numref}`weatherforecast` to clarify the concepts of degree of constraint, dimensionality of metric and level of description from {numref}`dimensionalitylevelconstraints`.
 
 ```{figure} content/weatherforecast.png
@@ -33,14 +35,15 @@ Two weather forecast differing in dimensionality of measurement, level of descri
 
 Next, think back to the steps in computational ethology presented during the first lecture, and try to find examples for each of the axis in the behavioral space described in {numref}`dimensionalitylevelconstraints`. Try using examples from your own research, as well as typical or every day examples.   
 
-### Degree of constraint
+#### Degree of constraint
+* Animals can be freely moving in their natural environment, or in an experimental arena, or constrained to a skinner-box or even head-fixed to the apparatus.
 * ...
+#### Dimensionality of measurement
+* Animal Behavior could be assessed every day to ensure welfare, or every hour to track behavioral patterns. Camera traps could take images every minute, or video recordings could use a frame rate of 10Hz, 30Hz, 100Hz or +170 pictures per second.
+* In addition to the added resolution, experiments can be recorded with multiple cameras from different perspectives, and combined with additional measurements such as noise level, illumination, key responses, as well as physiological and neural activity. 
 * ...
-### Dimensionality of measurement
-* ...
-* ...
-### Level of description
-* ...
+#### Level of description
+* From data collection through data analysis and to the discussion of results the level of description should increase. Starting with the very specific data point in your experimental setup to wider implications for behavior and cognition.
 * ...
 
 

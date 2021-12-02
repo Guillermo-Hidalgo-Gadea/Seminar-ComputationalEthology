@@ -16,8 +16,7 @@ parts:
     - file: 2_WhyTrackingIsNotBehavior
     - file: 3_LevelsOfAnalysisAndQuantificationOfBehavior
     - file: 4_ClassificationOfAnimalBehavior
-    - file: 5_TheProblemsOfSpacetime
-    - file: 6_MeasuringInMultidimensionalSpace
+    - file: 5_ProblemsSpacetimeMultidimensionalSpace
   - caption: Exercises
     chapters:
     - file: HandsOnTutorials
@@ -25,8 +24,11 @@ parts:
       sections: 
       - file: Part1DLC
       - file: Part2DLC
-    - file: DemoAnipose
     - file: DemoVAME 
+      sections:
+      - file: Part1VAME
+      - file: Part2VAME
+    - file: DemoAnipose
   - caption: Data sets
     chapters:
     - file: DataSets

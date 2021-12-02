@@ -37,12 +37,6 @@ DeepEthogram is a machine learning pipeline for supervised behavior classificati
 
 The methods chosen for this seminar (DeepLabCut, VAME, Anipose) are rather selected due to practical experience within our research group and constitute only a very small selection out of the many methods coming out every few months. The paper below by Bohnslav et al., (2021) presenting DeepEthogram was chosen to show some crucial differences with the methods used in our *Hands on Tutorials*.
 
-Unlike **DeepLabCut**, DeepEthogram does not use tracking and skeleton-based action detection. In contrast, it uses the raw pixel data of video recordings to analyze the degree of motion, change, or flow, between frames, as well as spatial features of single images. These features are then used to classify actions, instead of body part tracking coordinates. 
-
-Given the spatial and flow features extracted from raw videos, a training dataset needs to be manually classified with pre-defined behaviors of interest. This becomes a problem for research in which entire behavioral sequences are analyzed without prior expectations on specific behaviors of interest, e.g., in idly or waiting time during delayed response experiments. In contrast, supervised classification may be an advantage in situations in which very specific behaviors are investigated, such as different types of grooming, while ignoring the rest of the behavioral sequence. 
-
-Furthermore, DeepEthogram is a self sufficient tool for behavior classification, while other methods need more or less pre- or post-processing steps. **VAME** for example is an unsupervised classification method (see bonus material) that segments and clusters time series based on statistical thresholds rather than pre-defined descriptions. These motifs need to be interpreted at a later stage to reach a sufficient level of description, but the time segmentation itself provides useful information on the variability or entropy of behavior. Additionally, VAME works with body part coordinates extracted with DeepLabCut, thus separating the tracking and classification into two distinct models. 
-
 ```{figure} content/deepethogram.png
 ---
 width: 800px
@@ -51,7 +45,13 @@ name: deepethogram
 Schematic of DeepEthogram pipeline, from Bohnslav et al., (2021).
 ```
 
-**Important:** Note the separation of spatial and temporal features!  
+Unlike **DeepLabCut**, DeepEthogram does not use tracking and skeleton-based action detection. In contrast, it uses the raw pixel data of video recordings to analyze the degree of motion, change, or flow, between frames, as well as spatial features of single images. These features are then used to classify actions, instead of body part tracking coordinates. 
+
+Given the spatial and optical flow features extracted from raw videos, a training dataset needs to be manually classified with pre-defined behaviors of interest. This becomes a problem for research in which entire behavioral sequences are analyzed without prior expectations on specific behaviors of interest, e.g., in idle or waiting time during delayed response experiments. In contrast, supervised classification may be an advantage in situations in which very specific behaviors are investigated, such as different types of grooming, while ignoring the rest of the behavioral sequence. 
+
+Furthermore, DeepEthogram is a self sufficient tool for behavior classification, while other methods need more or less pre- or post-processing steps. In contrast, **VAME** works with body part coordinates extracted with DeepLabCut, thus separating the tracking and classification into two distinct models. VAME for example is an unsupervised classification method (see bonus material) that segments and clusters time series tracking data based on statistical thresholds rather than pre-defined descriptions. These motifs need to be interpreted at a later stage to reach a sufficient level of description, but the time segmentation itself provides useful information on the variability or entropy of behavior.
+
+**Important:** Note the separation of spatial and temporal features in {numref}`deepethogram`!  
 DeepEthogram uses three different models to classify behavior. First, it extracts *optic flow features* from 11 frames. Then, it analyses *spatial features* from static frames. Lastly, it analyzes both sets of features on longer time sequence to include history and the future  to classify behavior for a given frame. 
 
 

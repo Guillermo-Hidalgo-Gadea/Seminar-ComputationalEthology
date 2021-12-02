@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Classification of Animal Behavior &#8212; Computational Ethology</title>
+    <title>The Problems of Spacetime and Multidimensional Space &#8212; Computational Ethology</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -53,8 +53,8 @@
     <link rel="shortcut icon" href="_static/icon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="The Problems of Spacetime" href="5_TheProblemsOfSpacetime.html" />
-    <link rel="prev" title="Levels of Analysis and Quantification of Animal Behavior" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html" />
+    <link rel="next" title="Hands on Tutorials" href="HandsOnTutorials.html" />
+    <link rel="prev" title="Classification of Animal Behavior" href="4_ClassificationOfAnimalBehavior.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -136,19 +136,14 @@
    Levels of Analysis and Quantification of Animal Behavior
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="4_ClassificationOfAnimalBehavior.html">
    Classification of Animal Behavior
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_TheProblemsOfSpacetime.html">
-   The Problems of Spacetime
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="6_MeasuringInMultidimensionalSpace.html">
-   Measuring in Multidimensional Space
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   The Problems of Spacetime and Multidimensional Space
   </a>
  </li>
 </ul>
@@ -185,14 +180,31 @@
    </li>
   </ul>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="DemoVAME.html">
+   Introduction to VAME
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part1VAME.html">
+     Part 1: Local VAME Project with GPU
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part2VAME.html">
+     Part 2: Cloud VAME Project without GPU
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="DemoAnipose.html">
    Introduction to Anipose
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="DemoVAME.html">
-   Introduction to VAME
   </a>
  </li>
 </ul>
@@ -265,7 +277,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/4_ClassificationOfAnimalBehavior.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/5_ProblemsSpacetimeMultidimensionalSpace.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -282,7 +294,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2F4_ClassificationOfAnimalBehavior.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2F5_ProblemsSpacetimeMultidimensionalSpace.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -309,28 +321,18 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-an-ethogram">
-   What is an Ethogram
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#supervised-or-unsupervised-thats-is-the-question">
-   Supervised or Unsupervised, thats is the question
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#about-deepethogram">
-   About DeepEthogram
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#literature">
    Literature
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bonus-kevin-luxem-university-of-magdeburg">
-   Bonus: Kevin Luxem (University of Magdeburg)
+  <a class="reference internal nav-link" href="#bonus-jesse-marshall-harvard-university">
+   Bonus: Jesse Marshall (Harvard University)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bonus-ii-angjoo-kanazawa-berkley-university">
+   Bonus II: Angjoo Kanazawa (Berkley University)
   </a>
  </li>
 </ul>
@@ -344,60 +346,28 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="classification-of-animal-behavior">
-<h1>Classification of Animal Behavior<a class="headerlink" href="#classification-of-animal-behavior" title="Permalink to this headline">¶</a></h1>
-<p>As discussed in the previous lecture on <em>Quantification of Animal Behavior</em>, one of the most common methods to measure behavior is the segmentation of time series data into discrete units and clustering or embedding the data into motifs or actions. This lecture will give you a better insight into the classification of animal behavior. Other statistical methods to quantify behavior such as feature distributions will be discussed at a later stage during data analysis exercises in python.</p>
-<section id="what-is-an-ethogram">
-<h2>What is an Ethogram<a class="headerlink" href="#what-is-an-ethogram" title="Permalink to this headline">¶</a></h2>
-<p>An <em>Ethogram</em> is a list of behavior descriptions that aims to cover the repertoire of species-typical behavior, typically in the wild, or a pre-defined set of behaviors of interest in experimental or animal welfare settings.</p>
-<p>Typically, researchers observe animal behavior either live on-site, via live-stream from a cozy chair, or asynchronously from large datasets of pre-recorded video material. A scoring sheet of pre-defined behaviors of interest, together with a stopwatch or computer, allow to manually log the occurrence and duration of these behaviors at a given temporal resolution, e.g., every 15 seconds.</p>
-<iframe src="https://www.zsl.org/sites/default/files/media/2015-10/KS2%20Behaviour%20study%20booklet%20-%202015_EDUCATION_0.pdf" frameborder="1" width="800" height="600"></iframe>
-<p><strong>Following the instructions above, try to create your own scoring sheet and measure the behavior in the live-stream below:</strong></p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://nationalzoo.si.edu/webcams/panda-cam">https://nationalzoo.si.edu/webcams/panda-cam</a></p></li>
-<li><p><a class="reference external" href="https://zoo.sandiegozoo.org/cams/ape-cam">https://zoo.sandiegozoo.org/cams/ape-cam</a></p></li>
-</ul>
-</section>
-<section id="supervised-or-unsupervised-thats-is-the-question">
-<h2>Supervised or Unsupervised, thats is the question<a class="headerlink" href="#supervised-or-unsupervised-thats-is-the-question" title="Permalink to this headline">¶</a></h2>
-<p>A manual scoring sheet as used in the exercise above would represent a supervised method for behavior classification. For one thing, you hopefully had an idea of what each behavior should look like, to be included in or excluded from a given category. Thus, you created, implicit or explicitly, a set of rules you used to supervise yourself during every classification. In addition, by using a pre-defined set of categories you probably missed some unexpected behaviors.</p>
-<p>Were you to expand your scoring sheet on the fly by every new behavior you observe, that would represent a somewhat more unsupervised approach. But detecting the new behavior, logging it, and giving it a name (i.e., a category with a set of descriptive qualities) all at once would get messy, quick.</p>
-<p>Machine learning models can help us classify the stream of behavior data in a more objective way, but the considerations above still apply to clarify the difference between supervised and unsupervised methods.</p>
-<figure class="align-default" id="recapterminologyml">
-<a class="reference internal image-reference" href="_images/terminologyML.png"><img alt="_images/terminologyML.png" src="_images/terminologyML.png" style="width: 800px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Key ML terminology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#recapterminologyml" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="about-deepethogram">
-<h2>About DeepEthogram<a class="headerlink" href="#about-deepethogram" title="Permalink to this headline">¶</a></h2>
-<p>DeepEthogram is a machine learning pipeline for supervised behavior classification from raw pixels. This approach, together with several other methods such as JAABA, SimBA, MARS, MotionMapper, Behave-Net, B-SOiD and VAME, certainly represents an important milestone in computational ethology. For one thing, they apply an ingenious combination of machine learning models to analyze and classify behavior from video data; for another, they bring sophisticated machine learning methods closer to the public with intuitive graphical user interfaces and clear user instructions.</p>
-<p>The methods chosen for this seminar (DeepLabCut, VAME, Anipose) are rather selected due to practical experience within our research group and constitute only a very small selection out of the many methods coming out every few months. The paper below by Bohnslav et al., (2021) presenting DeepEthogram was chosen to show some crucial differences with the methods used in our <em>Hands on Tutorials</em>.</p>
-<figure class="align-default" id="deepethogram">
-<a class="reference internal image-reference" href="_images/deepethogram.png"><img alt="_images/deepethogram.png" src="_images/deepethogram.png" style="width: 800px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Schematic of DeepEthogram pipeline, from Bohnslav et al., (2021).</span><a class="headerlink" href="#deepethogram" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-<p>Unlike <strong>DeepLabCut</strong>, DeepEthogram does not use tracking and skeleton-based action detection. In contrast, it uses the raw pixel data of video recordings to analyze the degree of motion, change, or flow, between frames, as well as spatial features of single images. These features are then used to classify actions, instead of body part tracking coordinates.</p>
-<p>Given the spatial and optical flow features extracted from raw videos, a training dataset needs to be manually classified with pre-defined behaviors of interest. This becomes a problem for research in which entire behavioral sequences are analyzed without prior expectations on specific behaviors of interest, e.g., in idle or waiting time during delayed response experiments. In contrast, supervised classification may be an advantage in situations in which very specific behaviors are investigated, such as different types of grooming, while ignoring the rest of the behavioral sequence.</p>
-<p>Furthermore, DeepEthogram is a self sufficient tool for behavior classification, while other methods need more or less pre- or post-processing steps. In contrast, <strong>VAME</strong> works with body part coordinates extracted with DeepLabCut, thus separating the tracking and classification into two distinct models. VAME for example is an unsupervised classification method (see bonus material) that segments and clusters time series tracking data based on statistical thresholds rather than pre-defined descriptions. These motifs need to be interpreted at a later stage to reach a sufficient level of description, but the time segmentation itself provides useful information on the variability or entropy of behavior.</p>
-<p><strong>Important:</strong> Note the separation of spatial and temporal features in <a class="reference internal" href="#deepethogram"><span class="std std-numref">Fig. 16</span></a>!<br />
-DeepEthogram uses three different models to classify behavior. First, it extracts <em>optic flow features</em> from 11 frames. Then, it analyses <em>spatial features</em> from static frames. Lastly, it analyzes both sets of features on longer time sequence to include history and the future  to classify behavior for a given frame.</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="the-problems-of-spacetime-and-multidimensional-space">
+<h1>The Problems of Spacetime and Multidimensional Space<a class="headerlink" href="#the-problems-of-spacetime-and-multidimensional-space" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The content of this book will be expanded and updated throughout the course!</p>
+</div>
 <section id="literature">
 <h2>Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h2>
-<p>Bohnslav, J. P., Wimalasena, N. K., Clausing, K. J., Dai, Y. Y., Yarmolinsky, D. A., Cruz, T., Kashlan, A. D., Chiappe, M. E., Orefice, L. L., Woolf, C. J., &amp; Harvey, C. D. (2021). DeepEthogram, a machine learning pipeline for supervised behavior classification from raw pixels. ELife, 10, e63377. <a class="reference external" href="https://doi.org/10.7554/eLife.63377">https://doi.org/10.7554/eLife.63377</a></p>
+<p>Dunn, T. W. (2021). Geometric deep learning enables 3D kinematic profiling across species and environments. Nature Methods, 18, 17. <a class="reference external" href="https://doi.org/10.1038/s41592-021-01106-6">https://doi.org/10.1038/s41592-021-01106-6</a></p>
 <div class="toggle docutils container">
-<iframe width="800" height="500" src="../../content/Bohnslavetal.2021.pdf"></iframe>
+<iframe width="800" height="500" src="https://sci-hub.hkvisa.net/https://doi.org/10.1038/s41592-021-01106-6"></iframe>
 </div>
 </section>
-<section id="bonus-kevin-luxem-university-of-magdeburg">
-<h2>Bonus: Kevin Luxem (University of Magdeburg)<a class="headerlink" href="#bonus-kevin-luxem-university-of-magdeburg" title="Permalink to this headline">¶</a></h2>
-<p>Unsupervised Quantification of Animal Behavior</p>
-<div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/KevinLuxemUnsupervisedQuantification.html" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+<section id="bonus-jesse-marshall-harvard-university">
+<h2>Bonus: Jesse Marshall (Harvard University)<a class="headerlink" href="#bonus-jesse-marshall-harvard-university" title="Permalink to this headline">¶</a></h2>
+<p>Exiting flatland: measuring, modeling, and synthesizing animal behavior in 3D</p>
+<iframe width="935" height="526" src="https://www.youtube.com/embed/JjFKGQmcgJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
+<section id="bonus-ii-angjoo-kanazawa-berkley-university">
+<h2>Bonus II: Angjoo Kanazawa (Berkley University)<a class="headerlink" href="#bonus-ii-angjoo-kanazawa-berkley-university" title="Permalink to this headline">¶</a></h2>
+<p>TUM AI Lecture Series - Perceiving Humans in the 3D World</p>
+<iframe width="935" height="526" src="https://www.youtube.com/embed/WOuCPT0lXio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -430,19 +400,19 @@ DeepEthogram uses three different models to classify behavior. First, it extract
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html" title="previous page">
+        <a class="left-prev" href="4_ClassificationOfAnimalBehavior.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Levels of Analysis and Quantification of Animal Behavior</p>
+                <p class="prevnext-title">Classification of Animal Behavior</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="5_TheProblemsOfSpacetime.html" title="next page">
+        <a class="right-next" href="HandsOnTutorials.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">The Problems of Spacetime</p>
+                <p class="prevnext-title">Hands on Tutorials</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

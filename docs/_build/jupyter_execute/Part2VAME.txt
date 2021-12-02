@@ -1,0 +1,76 @@
+# Mount drive
+from google.colab import drive
+drive.mount('/content/drive')
+
+!nvidia-smi
+
+# Import some packages ...
+import pip
+import jupyter
+import torchvision
+
+# Install more packages ...
+!pip install pytest-shutil
+!pip install scipy
+!pip install numpy
+!pip install matplotlib
+!pip install pathlib
+!pip install pandas
+!pip install ruamel.yaml
+!pip install sklearn
+!pip install pyyaml
+!pip install opencv-python-headless
+!pip install h5py
+!pip install umap
+!pip install umap-learn
+!pip install networkx
+!pip install tqdm
+
+
+# check pip installed packages
+# !pip list -v
+
+# Download VAME
+!git clone https://github.com/LINCellularNeuroscience/VAME.git
+
+%cd /content/VAME
+!python setup.py install
+
+import vame
+
+project = 'NewVAMEProject_20211201'
+
+working_directory = '/content/drive/MyDrive/VAME_Example'
+
+videos = '/content/drive/MyDrive/VAME_Example/video-1.mp4'
+
+config = vame.init_new_project(project=project, videos=videos, working_directory=working_directory, videotype='.mp4')
+
+config = '/YOUR/WORKING/DIRECTORY/NewVAMEProject_20211201/config.yaml'
+
+vame.egocentric_alignment(config, pose_ref_index=[0,5])
+
+vame.csv_to_numpy(config, datapath='C:\\Research\\VAME\\vame_alpha_release-Mar16-2021\\videos\\pose_estimation\\')
+
+vame.create_trainset(config)
+
+vame.train_model(config)
+
+vame.evaluate_model(config)
+
+vame.pose_segmentation(config)
+
+vame.motif_videos(config, videoType='.mp4')
+
+vame.community(config, show_umap=False, cut_tree=2)
+
+vame.community_videos(config)
+
+vame.visualization(config, label=None) #options: label: None, "motif", "community"
+
+# Note: This function is currently very slow. Once the frames are saved you can create a video
+# or gif via e.g. ImageJ or other tools
+vame.gif(config, pose_ref_index=[0,5], subtract_background=True, start=None, 
+         length=500, max_lag=30, label='community', file_format='.mp4', crop_size=(300,300))
+
+vame.generative_model(config, mode="centers") #options: mode: "sampling", "reconstruction", "centers", "motifs"
