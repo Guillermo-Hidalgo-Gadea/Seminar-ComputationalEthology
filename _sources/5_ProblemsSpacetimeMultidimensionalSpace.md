@@ -22,7 +22,7 @@ name: ZenoDichotomyParadox
 Zeno's Paradox of Dichotomy of continuous Space, from Wikipedia.
 ```
 
-You could turn the dichotomy paradox around and imagine staying stay in front of a wall. Then it should be easy to take a step forward that halves the distance between you and the wall. Take a second step that halves that distance again between you and the wall. Try it again. And again. If you continue halving the distance, will you ever bump your head against the wall?
+You could turn the dichotomy paradox around and imagine staying in front of a wall. Then it should be easy to take a step forward that halves the distance between you and the wall. Take a second step that halves that distance again between you and the wall. Try it again. And again. If you continue halving the distance, will you ever bump your head against the wall?
 
 ### Zeno's Paradox: Achilles and the Tortoise
 
@@ -53,19 +53,22 @@ name: ZenoArrowParadox
 Zeno's Paradox of the Arrow and instantaneous motion, from Wikipedia.
 ```
 
-### Solution: Calculus
+### Solution: Calculus, yes really
 A breakthrough in the study of continuous change was the development of calculus in 17th-century Europe by Isaac Newton and Gottfried Wilhelm Leibniz, but elements of it appeared in ancient Greece, in China and in the Middle East.   
-Using **integration**, **differentiation**, **infinite series** and **limits**, Zeno's paradoxes can be explained. The resolution of the paradox of Achilles and the Tortoise is that, although the series have an infinite number of terms, it has a finite sum, which gives the time necessary for Achilles to catch up with the tortoise. This is the difference between **convergent** and **divergent infinite series**. 
+Using **integration**, **differentiation**, **infinite series** and **limits**, Zeno's paradoxes can be explained. For example, the resolution of the paradox of Achilles and the Tortoise is that, although the series have an infinite number of terms, it has a finite sum, which gives the time necessary for Achilles to catch up with the tortoise. This is the difference between **convergent** and **divergent infinite series**. 
 
 ### Take Home Message
 Without getting into too much detail about the mathematical [foundations of calculus](https://www.maa.org/press/maa-reviews/infinite-powers-how-calculus-reveals-the-secrets-of-the-universe), or the physics of the [curvature of spacetime](https://en.wikipedia.org/wiki/General_relativity) in the general theory of relativity, or the [Planck scale](https://en.wikipedia.org/wiki/Planck_units) of quantum mechanics, what can you make out of this discussion? What does it mean for you to move and behave in spacetime?
 
-
+Try to write a short statement about behavior in spacetime with max. 150 words
+* ...
+* ...
+* ...
 
 ## Measuring in Multidimensional Space
 Given the methods and techniques from Computational Ethology learned in the previous lectures, it seems we have improved vastly our methods of observation using high resolution video imaging. But are video recordings really that good? 
 
-Reducing a given scene to a two dimensional plane on a video frame looses valuable information essential for behavioral analysis. Given specific visual cues, humans have no problem whatsoever reconstructing three dimensional objects and inferring the missing or occluded parts. Computational models are not quite there yet, although promising approaches for 2D to 3D lifting exist (see Bonus II below). 
+Reducing a given scene to a two dimensional plane on a video frame looses valuable information essential for behavioral analysis. Given specific visual cues, humans have no problem whatsoever reconstructing three dimensional objects and inferring the missing or occluded parts. Computational models are not quite there yet, although promising approaches for **2D-to-3D lifting** exist (see Bonus II below). 
 
 ```{figure} content/3Dlifting.png
 ---
@@ -75,7 +78,7 @@ name: 3Dlifting
 2D to 3D lifting techniques.
 ```
 
-Until then, we are stuck with the problem of reconstructing 3D objects from 2D image representations by multi-view synchronized recording and camera triangulation. Different methods have proved to be successful in computational ethology (see Dunn et al., 2021; Karashchuk et al., 2021). But many question remain. How many cameras are needed? Where to position the different cameras?
+Until then, we are stuck with the problem of reconstructing 3D objects from 2D image representations by multi-view synchronized recording and camera **triangulation**. Different methods have proved to be successful in computational ethology (see Dunn et al., 2021; Karashchuk et al., 2021). But many question remain. How many cameras are needed? Where to position the different cameras?
 
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/Demo-Pigeon-Arena.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 
