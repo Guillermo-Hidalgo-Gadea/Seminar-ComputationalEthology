@@ -60,10 +60,15 @@ Using **integration**, **differentiation**, **infinite series** and **limits**, 
 ### Take Home Message
 Without getting into too much detail about the mathematical [foundations of calculus](https://www.maa.org/press/maa-reviews/infinite-powers-how-calculus-reveals-the-secrets-of-the-universe), or the physics of the [curvature of spacetime](https://en.wikipedia.org/wiki/General_relativity) in the general theory of relativity, or the [Planck scale](https://en.wikipedia.org/wiki/Planck_units) of quantum mechanics, what can you make out of this discussion? What does it mean for you to move and behave in spacetime?
 
-Try to write a short statement about behavior in spacetime with max. 150 words
-* "If you consider Zeno’s Arrow-Paradox, the gist of it is that movement is an illusion, because watching movement at a single point in time results in a still image. I would consider this conclusion to be hasty. Movement or behavior as such is dependent on space. Without space there would be no reference as to where something moves or in which direction. Time, however, can tell us how fast a movement is, it can tell us when a behavior started and ended. Behavior is the “When” relative to the “Where” and the “Where” relative to the When”. Taken together, time and space are the “What” that describes behavior. Without either of these you cannot define behavior or movement. Because taking time or space out of the equation makes it unsolvable. The Zeno’s illusion is that the equation does not exist. However, it does. It is the “What” of behavior."
-* ...
-* ...
+**Try to write a short statement about behavior in spacetime with max. 150 words:**
+
+"If you consider Zeno’s Arrow-Paradox, the gist of it is that movement is an illusion, because watching movement at a single point in time results in a still image. I would consider this conclusion to be hasty. Movement or behavior as such is dependent on space. Without space there would be no reference as to where something moves or in which direction. Time, however, can tell us how fast a movement is, it can tell us when a behavior started and ended. Behavior is the “When” relative to the “Where” and the “Where” relative to the When”. Taken together, time and space are the “What” that describes behavior. Without either of these you cannot define behavior or movement. Because taking time or space out of the equation makes it unsolvable. The Zeno’s illusion is that the equation does not exist. However, it does. It is the “What” of behavior."
+
+
+"What is space? What is time? What is behavior? All of these terms describe theoretical constructs - each of them being continuous in nature - and each of them being hard to define. To my knowledge, there is no conclusive definition of the term "behavior" and probably the same is true for the concepts of time and space.  
+For practical purposes in the field of computational ethology, I would define "behavior in spacetime" as the total sum of all the (internal & external) responses to (internal or external) stimulation of an animal in  "time" and "space" as measured in standard metrical time- / length scales.
+However, with respect to Zeno's Paradox, this approach can only be an approximation to what "behavior in space and time" is, but for the purpose of measuring and studying animal behavior with our current understanding, I believe it to be sufficient."
+
 
 ## Measuring in Multidimensional Space
 Given the methods and techniques from Computational Ethology learned in the previous lectures, it seems we have improved vastly our methods of observation using high resolution video imaging. But are video recordings really that good? 
