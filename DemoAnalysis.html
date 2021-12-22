@@ -418,7 +418,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 <h2>Set up Conda Environments<a class="headerlink" href="#set-up-conda-environments" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">analysis</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">analysis</span></code><br />
-<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">math</span> <span class="pre">tkinter</span> <span class="pre">pandas</span> <span class="pre">numpy</span> <span class="pre">mathplotlib</span> <span class="pre">hmmlear</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">ipython</span> <span class="pre">jupyterlab</span> <span class="pre">tkinter</span> <span class="pre">pandas</span> <span class="pre">numpy</span> <span class="pre">mathplotlib</span> </code><br />
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">hmmlearn</span></code></p>
 </section>
 <section id="load-libraries">
 <h2>Load Libraries<a class="headerlink" href="#load-libraries" title="Permalink to this headline">¶</a></h2>
@@ -456,10 +457,20 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Apart from the x-, y-, z-coordinates we are interested in, the anipose output also contains other variables we want to discard for now</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;score&#39;</span><span class="p">)]</span>
 <span class="n">scores</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-
-<span class="n">scores</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
-
-<span class="n">scores</span><span class="o">.</span><span class="n">boxplot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span><span class="o">.</span><span class="n">boxplot</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -468,10 +479,20 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">errors</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">)]</span>
 <span class="n">errors</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-
-<span class="n">errors</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
-
-<span class="n">errors</span><span class="o">.</span><span class="n">boxplot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">errors</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">errors</span><span class="o">.</span><span class="n">boxplot</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
