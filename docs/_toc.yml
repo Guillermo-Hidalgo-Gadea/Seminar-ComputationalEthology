@@ -28,6 +28,7 @@ parts:
       sections:
       - file: Part1VAME
       - file: Part2VAME
+    - file: DemoAnalysis
     - file: DemoAnipose
   - caption: Data sets
     chapters:
