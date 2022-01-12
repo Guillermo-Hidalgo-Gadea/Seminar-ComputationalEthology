@@ -30,6 +30,8 @@ parts:
       - file: Part2VAME
     - file: DemoAnalysis
     - file: DemoAnipose
+      sections:
+      - file: Part1Anipose
   - caption: Data sets
     chapters:
     - file: DataSets
