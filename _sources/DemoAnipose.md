@@ -10,7 +10,7 @@ Anipose is built on DeepLabCut for markerless tracking, and can be used to expan
 
 ```{figure} content/anipose.PNG
 ---
-width: 800px
+width: 600px
 name: anipose
 ---
 Anipose workflow from Karashchuk et al. 2021.
@@ -38,12 +38,12 @@ If you have Anaconda already installed, follow the steps below:
 
 8. `conda install mayavi ffmpeg`
 
-9. `pip install --upgrade apptools``
+9. `pip install --upgrade apptools`
 
 10. check if Anipose was installed with `anipose` 
 
 :::{note}
-When you encounter errors, please check the console output carefully and refer to the known [Github issues](https://github.com/lambdaloop/anipose/issues).
+When you encounter errors (not if, when...), please check the console output carefully and refer to the known [Github issues](https://github.com/lambdaloop/anipose/issues).
 :::
 
 
