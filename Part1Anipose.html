@@ -1,0 +1,737 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>3D triangulation with Anipose &#8212; Computational Ethology</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="_static/icon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Datasets" href="DataSets.html" />
+    <link rel="prev" title="Introduction to Anipose" href="DemoAnipose.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Computational Ethology</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p class="caption" role="heading">
+ <span class="caption-text">
+  Course Information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Schedule.html">
+   Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Literature.html">
+   Literature
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FAQs.html">
+   FAQs
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1_IntroductionToComputationalEthology.html">
+   Introduction to Computational Ethology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2_WhyTrackingIsNotBehavior.html">
+   Why Tracking is not Behavior
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html">
+   Levels of Analysis and Quantification of Animal Behavior
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4_ClassificationOfAnimalBehavior.html">
+   Classification of Animal Behavior
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5_ProblemsSpacetimeMultidimensionalSpace.html">
+   The Problems of Spacetime and Multidimensional Space
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Exercises
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="HandsOnTutorials.html">
+   Hands on Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="DemoDeepLabCut.html">
+   Introduction to DeepLabCut
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part1DLC.html">
+     Part 1: Create a DeepLabCut Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part2DLC.html">
+     Part 2: Edit an existing DeepLabCut Project
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="DemoVAME.html">
+   Introduction to VAME
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part1VAME.html">
+     Part 1: Local VAME Project with GPU
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Part2VAME.html">
+     Part 2: Cloud VAME Project without GPU
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DemoAnalysis.html">
+   Introduction to Data Analysis in Python
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="DemoAnipose.html">
+   Introduction to Anipose
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     3D triangulation with Anipose
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Data sets
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="DataSets.html">
+   Datasets
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Feedback
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="feedbackform.html">
+   Suggestion Box
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contactform.html">
+   Get in touch
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Part1Anipose.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        <a class="issues-button"
+            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2FPart1Anipose.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#starting-a-new-project">
+   Starting a new Project
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-new-project-directory">
+     Create a new project directory
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#before">
+       Before
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#after">
+       After
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#edit-the-config-toml-file">
+     Edit the config.toml file
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-videos">
+   Analyzing videos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#d-triangulation">
+   3D Triangulation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calibrating-cameras">
+     Calibrating cameras
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filter-tracking-errors">
+     Filter tracking errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#triangulate-coordinates">
+     Triangulate coordinates
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-tracking-in-2d-and-3d">
+   Visualize tracking in 2D and 3D
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="d-triangulation-with-anipose">
+<h1>3D triangulation with Anipose<a class="headerlink" href="#d-triangulation-with-anipose" title="Permalink to this headline">¶</a></h1>
+<p>The good news is, we won’t need to do anything in python this time. Anipose is nicely rounded up with a set of console commands to run the entire analysis pipeline without having to code anything ourselves.</p>
+<div style="overflow: auto; height:300pt; width:100%;">Terminal Output:
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(anipose)</span> <span class="go">C:\Users\hidalggc&gt;anipose</span>
+<span class="go">Usage: anipose [OPTIONS] COMMAND [ARGS]...</span>
+
+<span class="go">Options:</span>
+<span class="go">  --version      Show the version and exit.</span>
+<span class="go">  --config FILE  The config file to use instead of the default &quot;config.toml&quot; .</span>
+<span class="go">  --help         Show this message and exit.</span>
+
+<span class="go">Commands:</span>
+<span class="go">  analyze</span>
+<span class="go">  angles</span>
+<span class="go">  calibrate</span>
+<span class="go">  calibration-errors</span>
+<span class="go">  convert-videos</span>
+<span class="go">  draw-calibration</span>
+<span class="go">  extract-frames</span>
+<span class="go">  filter</span>
+<span class="go">  filter-3d</span>
+<span class="go">  label-2d</span>
+<span class="go">  label-2d-filter</span>
+<span class="go">  label-2d-proj</span>
+<span class="go">  label-3d</span>
+<span class="go">  label-3d-filter</span>
+<span class="go">  label-combined</span>
+<span class="go">  label-filter-compare</span>
+<span class="go">  project-2d</span>
+<span class="go">  run-all</span>
+<span class="go">  run-data</span>
+<span class="go">  run-viz</span>
+<span class="go">  summarize-2d</span>
+<span class="go">  summarize-2d-filter</span>
+<span class="go">  summarize-3d</span>
+<span class="go">  summarize-errors</span>
+<span class="go">  tracking-errors</span>
+<span class="go">  train-autoencoder</span>
+<span class="go">  triangulate</span>
+<span class="go">  visualizer</span>
+</pre></div>
+</div>
+</div>
+<section id="starting-a-new-project">
+<h2>Starting a new Project<a class="headerlink" href="#starting-a-new-project" title="Permalink to this headline">¶</a></h2>
+<p>Before we get started with Anipose, we will assume you already have behavioral video data recorded with multiple synchronized cameras. Furthermore, you will need to have a DeepLabCut model trained on this data or in some other way able to analyze your videos. For more information on how to synchronize multiple cameras refer to the anipose <a class="reference external" href="https://anipose.readthedocs.io/en/latest/">website</a> as well as <a class="reference external" href="https://gitlab.ruhr-uni-bochum.de/ikn/syncflir">syncFLIR</a> or <a class="reference external" href="https://github.com/Guillermo-Hidalgo-Gadea/VideoPyToolbox">VideoPyToolbox</a>.<br />
+For this tutorial we will use facial expression data from <a class="reference external" href="https://ruhr-uni-bochum.sciebo.de/s/v63Pwp8R9Ci5Ctd">here</a>.</p>
+<section id="create-a-new-project-directory">
+<h3>Create a new project directory<a class="headerlink" href="#create-a-new-project-directory" title="Permalink to this headline">¶</a></h3>
+<p>When you create a new project, start by giving your folder a clear name. Descriptions such as <code class="docutils literal notranslate"><span class="pre">aniposeProject</span></code> will be meaningless if you have several 3D projects, and your project name may be not enough if you need to have separate directories for DeepLabCut and Anipose.</p>
+<section id="before">
+<h4>Before<a class="headerlink" href="#before" title="Permalink to this headline">¶</a></h4>
+<p>Your new anipose project directory should look something like this:</p>
+<div style="overflow: auto; height:300pt; width:100%;">
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">AniposeFacialExpression_20220112</span>
+<span class="l l-Scalar l-Scalar-Plain">├── config.toml</span>
+<span class="l l-Scalar l-Scalar-Plain">├── subject_1</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── calibration</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_calibration_camA.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_calibration_camB.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_calibration_camC.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── videos-raw</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camA.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camB.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camC.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">├── subject_2</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── calibration</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video2_calibration_camA.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video2_calibration_camB.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video2_calibration_camC.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── videos-raw</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video2_recording_camA.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video2_recording_camB.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video2_recording_camC.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">├── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">└── subject_n</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="after">
+<h4>After<a class="headerlink" href="#after" title="Permalink to this headline">¶</a></h4>
+<p>After the analysis, new directories will be added to your project and the result of each analysis step can be found in the respective folder:</p>
+<div style="overflow: auto; height:300pt; width:100%;">
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">AniposeFacialExpression_20220112</span>
+<span class="l l-Scalar l-Scalar-Plain">├── config.toml</span>
+<span class="l l-Scalar l-Scalar-Plain">├── subject_1</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── calibration</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_calibration_camA.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_calibration_camB.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_calibration_camC.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── calibration.toml</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── detections.pickle</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── pose-2d</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camA.h5</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camA.pickle</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── pose-2d-filtered</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camA.h5</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── pose-3d</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording.csv</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── pose-3d-filtered</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording.csv</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── videos-3d</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording.mp4</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── videos-3d-filtered</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording.mp4</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── videos-labeled</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camA.mp4</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camB.mp4</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camC.mp4</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── videos-labeled-filtered</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camA.mp4</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camB.mp4</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camC.mp4</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">│   └── videos-raw</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camA.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camB.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── Video1_recording_camC.avi</span>
+<span class="l l-Scalar l-Scalar-Plain">│       └── [...]</span>
+<span class="l l-Scalar l-Scalar-Plain">└── subject_n</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="edit-the-config-toml-file">
+<h3>Edit the config.toml file<a class="headerlink" href="#edit-the-config-toml-file" title="Permalink to this headline">¶</a></h3>
+<p>Unfortunately Anipose does not create a template configuration file, and you will need to create the <code class="docutils literal notranslate"><span class="pre">config.toml</span></code> file yourself, while taking into account the intended structure and and parameters. I recommend using the same configuration file from a previous project and editing the respective parts. Specifically the <code class="docutils literal notranslate"><span class="pre">model_folder</span></code>, as well as <code class="docutils literal notranslate"><span class="pre">[labeling]</span></code> and <code class="docutils literal notranslate"><span class="pre">[triangulation]</span></code> parameters.</p>
+<div style="overflow: auto; height:300pt; width:100%;"> config.toml file:
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">project</span> <span class="o">=</span> <span class="s">&#39;FacialExpression_20210414&#39;</span>
+
+<span class="n">model_folder</span> <span class="o">=</span> <span class="s">&#39;D:\3DBHVR\FacialExpression_20210414\DLC-Guillermo-2021-04-14&#39;</span> 
+
+<span class="n">nesting</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">video_extension</span> <span class="o">=</span> <span class="s">&#39;avi&#39;</span>
+
+<span class="k">[calibration]</span>
+<span class="c1"># checkerboard / charuco / aruco</span>
+<span class="n">board_type</span> <span class="o">=</span> <span class="s">&quot;charuco&quot;</span>
+
+<span class="c1"># width and height of grid</span>
+<span class="n">board_size</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="c1"># number of bits in the markers, if aruco/charuco</span>
+<span class="n">board_marker_bits</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="c1"># number of markers in dictionary, if aruco/charuco</span>
+<span class="n">board_marker_dict_number</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="c1"># length of marker side</span>
+<span class="n">board_marker_length</span> <span class="o">=</span> <span class="mi">31</span> <span class="c1"># mm</span>
+
+<span class="c1"># If charuco or checkerboard, square side length</span>
+<span class="n">board_square_side_length</span> <span class="o">=</span> <span class="mi">41</span> <span class="c1"># mm</span>
+
+<span class="n">animal_calibration</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="n">fisheye</span> <span class="o">=</span> <span class="n">false</span> <span class="c1"># depends on the zoom level...</span>
+
+<span class="k">[manual_verification]</span>
+<span class="c1"># true / false</span>
+<span class="n">manually_verify</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="k">[labeling]</span>
+<span class="n">scheme</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="p">[</span><span class="s">&quot;lefteye1&quot;</span><span class="p">,</span> <span class="s">&quot;lefteye3&quot;</span><span class="p">,</span> <span class="s">&quot;lefteye2&quot;</span><span class="p">,</span> <span class="s">&quot;lefteye4&quot;</span><span class="p">,</span> <span class="s">&quot;lefteye1&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s">&quot;righteye1&quot;</span><span class="p">,</span> <span class="s">&quot;righteye3&quot;</span><span class="p">,</span> <span class="s">&quot;righteye2&quot;</span><span class="p">,</span> <span class="s">&quot;righteye4&quot;</span><span class="p">,</span> <span class="s">&quot;righteye1&quot;</span><span class="p">],</span>
+   <span class="p">[</span><span class="s">&quot;nose1&quot;</span><span class="p">,</span> <span class="s">&quot;nose3&quot;</span><span class="p">,</span> <span class="s">&quot;nose2&quot;</span><span class="p">,</span><span class="s">&quot;nose4&quot;</span><span class="p">,</span>  <span class="s">&quot;nose1&quot;</span><span class="p">,</span> <span class="s">&quot;nose2&quot;</span><span class="p">],</span>
+   <span class="p">[</span><span class="s">&quot;lefteyebrow1&quot;</span><span class="p">,</span> <span class="s">&quot;lefteyebrow2&quot;</span><span class="p">,</span> <span class="s">&quot;lefteyebrow3&quot;</span><span class="p">],[</span><span class="s">&quot;righteyebrow1&quot;</span><span class="p">,</span> <span class="s">&quot;righteyebrow2&quot;</span><span class="p">,</span> <span class="s">&quot;righteyebrow3&quot;</span><span class="p">],</span>
+   <span class="p">[</span><span class="s">&quot;mouth1&quot;</span><span class="p">,</span> <span class="s">&quot;mouth3&quot;</span><span class="p">,</span> <span class="s">&quot;mouth2&quot;</span><span class="p">,</span> <span class="s">&quot;mouth4&quot;</span><span class="p">,</span> <span class="s">&quot;mouth1&quot;</span><span class="p">],</span>
+   <span class="p">[</span><span class="s">&quot;leftear&quot;</span><span class="p">,</span> <span class="s">&quot;chin&quot;</span><span class="p">,</span> <span class="s">&quot;rightear&quot;</span><span class="p">]</span> 
+ <span class="p">]</span>
+
+<span class="k">[filter]</span>
+<span class="n">enabled</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">medfilt</span> <span class="o">=</span> <span class="mi">13</span> <span class="c1"># length of median filter</span>
+<span class="n">offset_threshold</span> <span class="o">=</span> <span class="mi">25</span> <span class="c1"># offset from median filter to count as jump</span>
+<span class="n">score_threshold</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="c1"># score below which to count as bad</span>
+<span class="n">spline</span> <span class="o">=</span> <span class="n">true</span> <span class="c1"># interpolate using cubic spline instead of linear</span>
+
+<span class="k">[triangulation]</span>
+<span class="n">triangulate</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">cam_regex</span> <span class="o">=</span> <span class="s">&#39;cam-([A-Z])$&#39;</span>
+<span class="n">optim</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">constraints</span> <span class="o">=</span> <span class="p">[</span>  <span class="c1"># set of constant limb length constraints written out as pairs</span>
+   <span class="k">[&quot;leftear&quot;, &quot;rightear&quot;]]</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="p">[</span> <span class="c1">#An axis is specified as a pair of points, with the axis going from the first to the second point.</span>
+    <span class="p">[</span><span class="s">&quot;z&quot;</span><span class="p">,</span> <span class="s">&quot;chin&quot;</span><span class="p">,</span> <span class="s">&quot;nose1&quot;</span><span class="p">],</span>
+    <span class="k">[&quot;x&quot;, &quot;rightear&quot;, &quot;chin&quot;]]</span>
+
+<span class="n">reference_point</span> <span class="o">=</span> <span class="s">&quot;chin&quot;</span> <span class="c1"># Furthermore, it is often useful to set the zero to a standard reference point. Anipose allows this too.</span>
+
+<span class="n">scale_smooth</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1"># strength of smoothness constraint, higher gives smoother trajectory</span>
+<span class="n">scale_length</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1"># strength of length constraint, higher enforces less variability in limb lengths</span>
+<span class="n">reproj_error_threshold</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># in pixels, for robust triangulation</span>
+<span class="n">score_threshold</span> <span class="o">=</span> <span class="mf">0.6</span> <span class="c1"># score threshold for triangulation</span>
+<span class="n">n_deriv_smooth</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># derivative to minimize for smoothness</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="analyzing-videos">
+<h2>Analyzing videos<a class="headerlink" href="#analyzing-videos" title="Permalink to this headline">¶</a></h2>
+<p>Once the project directory and config.toml files are ready, you should proceed to analyze all your behavioral videos. Anipose will use the DeepLabCut model specified in <code class="docutils literal notranslate"><span class="pre">model_folder</span></code> to track 2D coordinates of all videos in the <code class="docutils literal notranslate"><span class="pre">videos-raw</span></code> directory of every subject.</p>
+<ul class="simple">
+<li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">analyze</span></code></p></li>
+</ul>
+</section>
+<section id="d-triangulation">
+<h2>3D Triangulation<a class="headerlink" href="#d-triangulation" title="Permalink to this headline">¶</a></h2>
+<p>To move from 2D labeled videos to a full 3D reconstruction you will need to triangulate each coordinate from all the different camera angles.</p>
+<section id="calibrating-cameras">
+<h3>Calibrating cameras<a class="headerlink" href="#calibrating-cameras" title="Permalink to this headline">¶</a></h3>
+<p>First calibrate your cameras with the calibration videos in <code class="docutils literal notranslate"><span class="pre">calibration</span></code>. Make sure to have identical labels for each video recording with a distinctive <code class="docutils literal notranslate"><span class="pre">cam_regax</span></code>such as <code class="docutils literal notranslate"><span class="pre">_cam[A-Z]</span></code>. Only calibration videos with the same name will be considered for each calibration.<br />
+If camera calibration is successful, proceed to filtering and triangulation.</p>
+<ul class="simple">
+<li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">calibrate</span></code></p></li>
+</ul>
+</section>
+<section id="filter-tracking-errors">
+<h3>Filter tracking errors<a class="headerlink" href="#filter-tracking-errors" title="Permalink to this headline">¶</a></h3>
+<p>Anipose provides a set of different filters to correct for tracking errors from DeepBalCut. The filtered data show smoother results and is often easier to interpret. You can filter the original 2D tracked coordinates as well as the final 3D triangulated corrdinates</p>
+<ul class="simple">
+<li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">filter</span></code> and <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">filter-3d</span></code></p></li>
+</ul>
+</section>
+<section id="triangulate-coordinates">
+<h3>Triangulate coordinates<a class="headerlink" href="#triangulate-coordinates" title="Permalink to this headline">¶</a></h3>
+<p>Once cameras are calibrated and videos are analyzed, you can proceed to triangulate the 2D coordinates in three dimensions.</p>
+<ul class="simple">
+<li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">triangulte</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="visualize-tracking-in-2d-and-3d">
+<h2>Visualize tracking in 2D and 3D<a class="headerlink" href="#visualize-tracking-in-2d-and-3d" title="Permalink to this headline">¶</a></h2>
+<p>After analysis and triangulation it is necessary to visualize the labeling and filtering results to inspect the tracking accuracy both of the 2D videos and of the final 3D model. You could run each step separately (i.e., <code class="docutils literal notranslate"><span class="pre">label-2d</span></code>, <code class="docutils literal notranslate"><span class="pre">label-2d-filtere</span></code>, etc.) or use the <code class="docutils literal notranslate"><span class="pre">run-viz</span></code> command to run all the visualizations at once.</p>
+<ul class="simple">
+<li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">run-viz</span></code></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="DemoAnipose.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Introduction to Anipose</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="DataSets.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Datasets</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Guillermo Hidalgo Gadea<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
