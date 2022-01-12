@@ -221,20 +221,20 @@ Once the project directory and config.toml files are ready, you should proceed t
 To move from 2D labeled videos to a full 3D reconstruction you will need to triangulate each coordinate from all the different camera angles. 
 
 ### Calibrating cameras 
-First calibrate your cameras with the calibration videos in `calibration`. Make sure to have identical labels for each video recording with a distinctive `cam_regax`such as `_cam[A-Z]`. Only calibration videos with the same name will be considered for each calibration.  
+First calibrate your cameras with the calibration videos in `calibration`. Make sure to have identical labels for each video recording with a distinctive `cam_regex`such as `_cam[A-Z]`. Only calibration videos with the same name will be considered for each calibration.  
 If camera calibration is successful, proceed to filtering and triangulation. 
 
 * use the terminal command: `anipose calibrate`
 
 ### Filter tracking errors
-Anipose provides a set of different filters to correct for tracking errors from DeepBalCut. The filtered data show smoother results and is often easier to interpret. You can filter the original 2D tracked coordinates as well as the final 3D triangulated corrdinates
+Anipose provides a set of different filters to correct for tracking errors from DeepBalCut. The filtered data show smoother results and is often easier to interpret. You can filter the original 2D tracked coordinates as well as the final 3D triangulated coordinates
 
 * use the terminal command: `anipose filter` and `anipose filter-3d`
 
 ### Triangulate coordinates
 Once cameras are calibrated and videos are analyzed, you can proceed to triangulate the 2D coordinates in three dimensions.
-* use the terminal command: `anipose triangulte`
+* use the terminal command: `anipose triangulate`
 
 ## Visualize tracking in 2D and 3D
-After analysis and triangulation it is necessary to visualize the labeling and filtering results to inspect the tracking accuracy both of the 2D videos and of the final 3D model. You could run each step separately (i.e., `label-2d`, `label-2d-filtere`, etc.) or use the `run-viz` command to run all the visualizations at once.
+After analysis and triangulation it is necessary to visualize the labeling and filtering results to inspect the tracking accuracy both of the 2D videos and of the final 3D model. You could run each step separately (i.e., `label-2d`, `label-2d-filter`, etc.) or use the `run-viz` command to run all the visualizations at once.
 * use the terminal command: `anipose run-viz`
