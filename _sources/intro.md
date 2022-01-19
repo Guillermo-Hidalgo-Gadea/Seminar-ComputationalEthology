@@ -10,7 +10,7 @@ You can access this handbook online from [GuillermoHidalgoGadea.com](https://gui
 
 
 :::{note}
-The content of this book will be expanded and updated throughout the course!
+The content of this book will be updated throughout the course and may be subject to changes!
 :::
 
 The content was developed by [Guillermo Hidalgo Gadea](https://GuillermoHidalgoGadea.com) and is available as open source educational resource on [GitHub](https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology), licensed under the MIT License. 
