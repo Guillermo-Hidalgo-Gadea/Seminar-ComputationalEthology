@@ -8,6 +8,10 @@ In poster sessions, students and researchers try to convey their research to an 
 
 <iframe width="800" height="500" src="../../content/HowToPrepareAScientificPoster.pdf"></iframe>
 
+<iframe width="800" height="500" src="https://www.researchgate.net/profile/Franco-Franchignoni/publication/271201104_Research_issues_in_Physical_Rehabilitation_Medicine/links/54c0e01b0cf28eae4a69d04f/Research-issues-in-Physical-Rehabilitation-Medicine.pdf#page=250"></iframe>
+
+
+
 ## Some Poster Examples 
 <iframe src="https://postersmysell.psych.hms.harvard.edu/" frameborder="0.1" width="800" height="600"></iframe>
 
