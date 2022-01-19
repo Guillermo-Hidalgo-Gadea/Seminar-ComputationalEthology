@@ -6,10 +6,7 @@ In poster sessions, students and researchers try to convey their research to an 
 
 ## How to prepare a 'classic' Scientific Poster
 
-<iframe width="800" height="500" src="HowToPrepareAScientificPoster.pdf"></iframe>
-
-<iframe width="800" height="500" src="https://www.researchgate.net/profile/Franco-Franchignoni/publication/271201104_Research_issues_in_Physical_Rehabilitation_Medicine/links/54c0e01b0cf28eae4a69d04f/Research-issues-in-Physical-Rehabilitation-Medicine.pdf#page=250"></iframe>
-
+<iframe width="800" height="700" src="HowToPrepareAScientificPoster.pdf"></iframe>
 
 
 ## Some Poster Examples 
