@@ -32,6 +32,7 @@ parts:
     - file: DemoAnipose
       sections:
       - file: Part1Anipose
+    - file: ScientificPoster
   - caption: Data sets
     chapters:
     - file: DataSets

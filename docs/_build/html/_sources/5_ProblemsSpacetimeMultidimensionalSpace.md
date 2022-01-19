@@ -98,6 +98,11 @@ Dunn, T. W. (2021). Geometric deep learning enables 3D kinematic profiling acros
 <iframe width="800" height="500" src="https://sci-hub.hkvisa.net/https://doi.org/10.1038/s41592-021-01106-6"></iframe>
 ```
 
+Karashchuk, P., Rupp, K. L., Dickinson, E. S., Walling-Bell, S., Sanders, E., Azim, E., Brunton, B. W., & Tuthill, J. C. (2021). Anipose: A toolkit for robust markerless 3D pose estimation. Cell Reports, 36(13), 109730. https://doi.org/10.1016/j.celrep.2021.109730
+
+```{toggle}
+<iframe width="800" height="500" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8498918/pdf/nihms-1744538.pdf"></iframe>
+```
 ## Bonus: Jesse Marshall (Harvard University)
 
 Exiting flatland: measuring, modeling, and synthesizing animal behavior in 3D
