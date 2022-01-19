@@ -59,7 +59,7 @@ DeepEthogram uses three different models to classify behavior. First, it extract
 Bohnslav, J. P., Wimalasena, N. K., Clausing, K. J., Dai, Y. Y., Yarmolinsky, D. A., Cruz, T., Kashlan, A. D., Chiappe, M. E., Orefice, L. L., Woolf, C. J., & Harvey, C. D. (2021). DeepEthogram, a machine learning pipeline for supervised behavior classification from raw pixels. ELife, 10, e63377. https://doi.org/10.7554/eLife.63377
 
 ```{toggle}
-<iframe width="800" height="500" src="../../content/Bohnslavetal.2021.pdf"></iframe>
+<iframe width="800" height="500" src="Bohnslavetal.2021.pdf"></iframe>
 ```
 
 ## Bonus: Kevin Luxem (University of Magdeburg)
