@@ -21,7 +21,7 @@ Technological advances in computational ethology have opened new doors for detec
 ## Definitions of Behavior
 Today we will see from two relevant papers in behavioral biology and neuroscience that scientists, within and between disciplines, not always agree on their definitions of behavior:
 
-* Levitis, D. A., Lidicker Jr, W. Z., & Freund, G. (2009). Behavioural biologists do not agree on what constitutes behaviour. Animal behaviour, 78(1), 103-110.
+* Levitis, D. A., Lidicker Jr, W. Z., & Freund, G. (2009). Behavioural biologists do not agree on what constitutes behaviour. Animal behaviour, 78(1), 103-110. https://doi.org/10.1016/j.anbehav.2009.03.018
 * Calhoun, A., & Hady, A. E. (2021). What is behavior? No seriously, what is it? [Preprint]. Animal Behavior and Cognition. https://doi.org/10.1101/2021.07.04.451053
 
 Some of the most common definitions of *behavior* among behavioral biologists:
@@ -127,6 +127,12 @@ Calhoun, A., & Hady, A. E. (2021). What is behavior? No seriously, what is it? [
 
 ```{toggle}
 <iframe width="800" height="500" src="https://www.biorxiv.org/content/10.1101/2021.07.04.451053v1.full.pdf"></iframe>
+```
+
+Levitis, D. A., Lidicker Jr, W. Z., & Freund, G. (2009). Behavioural biologists do not agree on what constitutes behaviour. Animal behaviour, 78(1), 103-110. https://doi.org/10.1016/j.anbehav.2009.03.018
+
+```{toggle}
+<iframe width="800" height="500" src="https://sci-hub.mksa.top/10.1016/j.anbehav.2009.03.018"></iframe>
 ```
 
 ## Bonus: Talmo Pereira (Princeton University)

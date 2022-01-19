@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome &#8212; Computational Ethology</title>
+    <title>Preparing a Scientific Poster &#8212; Computational Ethology</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -53,7 +53,8 @@
     <link rel="shortcut icon" href="_static/icon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Syllabus" href="Syllabus.html" />
+    <link rel="next" title="Datasets" href="DataSets.html" />
+    <link rel="prev" title="3D triangulation with Anipose" href="Part1Anipose.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -151,7 +152,7 @@
   Exercises
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="HandsOnTutorials.html">
    Hands on Tutorials
@@ -223,8 +224,8 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ScientificPoster.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Preparing a Scientific Poster
   </a>
  </li>
@@ -298,7 +299,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/ScientificPoster.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -315,7 +316,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2FScientificPoster.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -342,13 +343,18 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#course-handbook">
-   Course Handbook
+  <a class="reference internal nav-link" href="#how-to-prepare-a-classic-scientific-poster">
+   How to prepare a ‘classic’ Scientific Poster
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#about-me">
-   About Me
+  <a class="reference internal nav-link" href="#some-poster-examples">
+   Some Poster Examples
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-evaluate-a-scientific-poster">
+   How to evaluate a Scientific Poster
   </a>
  </li>
 </ul>
@@ -362,34 +368,78 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome">
-<h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
-<p><img alt="Cover" src="_images/cover.png" /></p>
-<section id="course-handbook">
-<h2>Course Handbook<a class="headerlink" href="#course-handbook" title="Permalink to this headline">¶</a></h2>
-<p><strong>This is the course handbook for the project seminar Computational Ethology at the Ruhr-University Bochum for the Winter Semester 2021/22.</strong></p>
-<p>In the following pages we will learn what we mean by behavior and how we can measure it. We will discuss common issues and apply some machine learning to track moving body parts with <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a>, triangulate coordinates with <a class="reference external" href="https://github.com/lambdaloop/anipose">Anipose</a> and classify behavior motifs with <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME">VAME</a>.</p>
-<p>You can access this handbook online from <a class="reference external" href="https://guillermohidalgogadea.com/teaching/">GuillermoHidalgoGadea.com</a> or <a class="reference external" href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology">GitHub</a>, and download specific sections as pdf in the upper right corner.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The content of this book will be expanded and updated throughout the course!</p>
-</div>
-<p>The content was developed by <a class="reference external" href="https://GuillermoHidalgoGadea.com">Guillermo Hidalgo Gadea</a> and is available as open source educational resource on <a class="reference external" href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology">GitHub</a>, licensed under the MIT License.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="preparing-a-scientific-poster">
+<h1>Preparing a Scientific Poster<a class="headerlink" href="#preparing-a-scientific-poster" title="Permalink to this headline">¶</a></h1>
+<p>In poster sessions, students and researchers try to convey their research to an audience walking through a busy hall. To reach and engage that audience, posters should be eye-catching, to the point, and easy to understand.</p>
+<iframe width="875" height="492" src="https://www.youtube.com/embed/1RwJbhkCA58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section id="how-to-prepare-a-classic-scientific-poster">
+<h2>How to prepare a ‘classic’ Scientific Poster<a class="headerlink" href="#how-to-prepare-a-classic-scientific-poster" title="Permalink to this headline">¶</a></h2>
+<iframe src="https://www.researchgate.net/profile/Franco-Franchignoni/publication/271201104_Research_issues_in_Physical_Rehabilitation_Medicine/links/54c0e01b0cf28eae4a69d04f/Research-issues-in-Physical-Rehabilitation-Medicine.pdf#page=250" frameborder="0.1" width="800" height="600"></iframe>
 </section>
-<section id="about-me">
-<h2>About Me<a class="headerlink" href="#about-me" title="Permalink to this headline">¶</a></h2>
-<iframe src="https://www.bio.psy.ruhr-uni-bochum.de/members_guillermo.html" frameborder="0.1" width="800" height="600"></iframe>
+<section id="some-poster-examples">
+<h2>Some Poster Examples<a class="headerlink" href="#some-poster-examples" title="Permalink to this headline">¶</a></h2>
+<iframe src="https://postersmysell.psych.hms.harvard.edu/" frameborder="0.1" width="800" height="600"></iframe>
 </section>
-<div class="toctree-wrapper compound">
+<section id="how-to-evaluate-a-scientific-poster">
+<h2>How to evaluate a Scientific Poster<a class="headerlink" href="#how-to-evaluate-a-scientific-poster" title="Permalink to this headline">¶</a></h2>
+<p><strong>Basics</strong></p>
+<div class="toggle docutils container">
+<ul class="simple">
+<li><p>Title and other required sections are present</p></li>
+<li><p>Complete author affiliation &amp; contact information is included</p></li>
+<li><p>The poster conforms to the requirements of the conference or program where it will be presented</p></li>
+<li><p>Font is consistent throughout</p></li>
+<li><p>Spelling is correct throughout</p></li>
+<li><p>Grammar is correct throughout</p></li>
+<li><p>Acronyms are defined on first use</p></li>
+<li><p>Content is appropriate &amp; relevant for audience</p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<p><strong>Design</strong></p>
+<div class="toggle docutils container">
+<ul class="simple">
+<li><p>All text can be easily read from 4 feet away</p></li>
+<li><p>Flow of the poster is easy to follow</p></li>
+<li><p>White space used well</p></li>
+<li><p>Section titles are used consistently</p></li>
+<li><p>Images/graphics are used in place of text whenever possible</p></li>
+<li><p>Bullet points/lists are used in place of text whenever possible</p></li>
+<li><p>All images are relevant and necessary to the poster</p></li>
+<li><p>Charts are correct – i.e. appropriate type for data, data is correct &amp; correctly represented</p></li>
+<li><p>Text color and background color are significant in contrast for easy reading</p></li>
+<li><p>Background color doesn’t obscure or dim text</p></li>
+<li><p>Images are clear, not pixilated or blurry</p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<p><strong>Content</strong></p>
+<div class="toggle docutils container">
+<ul class="simple">
+<li><p>The “story” of the poster is clear</p></li>
+<li><p>The content is focused on 2-3 key points</p></li>
+<li><p>Title is clear &amp; informative of the project</p></li>
+<li><p>Problem, or clinical question, is identified and explained</p></li>
+<li><p>Current evidence related to project is listed</p></li>
+<li><p>Objectives are stated</p></li>
+<li><p>Methods are described</p></li>
+<li><p>Results are presented</p></li>
+<li><p>Conclusions are stated</p></li>
+<li><p>Implications to practice and to other professions are presented</p></li>
+<li><p>References are listed</p></li>
+<li><p>All content is relevant and on the key points</p></li>
+<li><p>Content is not duplicated in text and graphics</p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<p><strong>Oral Presentation</strong></p>
+<div class="toggle docutils container">
+<ul class="simple">
+<li><p>Presenter greets people</p></li>
+<li><p>Presenter is able to give a concise synopsis of poster</p></li>
+<li><p>Presenter is able to explain all diagrams and sections</p></li>
+<li><p>Presenter speaks fluently – i.e. doesn’t stumble, leave sentences/thoughts hanging</p></li>
+<li><p>Presenter has questions to ask viewers</p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
-</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -421,11 +471,20 @@
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="Part1Anipose.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">3D triangulation with Anipose</p>
+            </div>
+        </a>
+    </div>
      <div id="next">
-        <a class="right-next" href="Syllabus.html" title="next page">
+        <a class="right-next" href="DataSets.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Syllabus</p>
+                <p class="prevnext-title">Datasets</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
