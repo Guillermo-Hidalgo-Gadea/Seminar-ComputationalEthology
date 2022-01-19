@@ -6,10 +6,15 @@ In poster sessions, students and researchers try to convey their research to an 
 
 ## How to prepare a 'classic' Scientific Poster
 
+While the status quo of scientific posters is far from perfect (see video above), academic supervisors, organizations and conference may require scientific posters in a pre-defined format. Below you will find a few tips to prepare a scientific poster that meets those expectations. 
+
 <iframe width="800" height="700" src="HowToPrepareAScientificPoster.pdf"></iframe>
 
 
 ## Some Poster Examples 
+As is the case with most skills, preparing and presenting scientific posters can only be learned with experience. Try different layouts and work on multiple drafts of your poster before deciding on the final submission. Take advantage of existing posters to see what other scientists in your field understand by an academic poster. 
+
+
 <iframe src="https://postersmysell.psych.hms.harvard.edu/" frameborder="0.1" width="800" height="600"></iframe>
 
 ## How to evaluate a Scientific Poster
