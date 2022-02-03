@@ -36,6 +36,10 @@ parts:
   - caption: Data sets
     chapters:
     - file: DataSets
+    - file: Posterprojects
+      sections:
+      - file: Poster1
+      - file: Poster2
   - caption: Feedback
     chapters:
     - file: feedbackform
