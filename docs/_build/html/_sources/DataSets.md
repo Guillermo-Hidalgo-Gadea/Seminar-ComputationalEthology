@@ -2,11 +2,11 @@
 
 The best way to learn about the tools and methods presented in this seminar is by getting your hands dirty and playing with video data! This short collection of datasets will help you get started with actual examples in animal behavior. Note that the few videos provided serve the purpose of learning about animal tracking software and data analysis, but do not cover entire experiments necessary for appropriate statistical analysis.
 
-The following datasets were kindly provided as open source material by some authors and developers mentioned below, as well as by colleagues from the Biopsychology department at the Ruhr-University Bochum. Please **refrain from any misuse** of this content. Consult with the lecturer before sharing any material on social media.   
+The following datasets were kindly provided as open source material by some authors and developers mentioned below, as well as by colleagues from the Biopsychology department at the Ruhr-University Bochum. Please **refrain from any misuse** of this content. Consult with the lecturer before sharing any material on social media.
 
 ## Shared Cloud Space
-The data used in the exercises and hands on tutorials can be downloaded from this shared cloud directory on **Sciebo:**[https://ruhr-uni-bochum.sciebo.de/s/vbPMqaYCcUjWA34](https://ruhr-uni-bochum.sciebo.de/s/vbPMqaYCcUjWA34)
 
+The data used in the exercises and hands on tutorials can be downloaded from this shared cloud directory on **Sciebo:** [https://ruhr-uni-bochum.sciebo.de/s/vbPMqaYCcUjWA34](https://ruhr-uni-bochum.sciebo.de/s/vbPMqaYCcUjWA34)
 
 ## Mouse bottom view by [Kevin Luxem](https://github.com/LINCellularNeuroscience/VAME#getting-started)
 
@@ -74,5 +74,3 @@ Six subjects were recorded for up to 60 seconds in a synchronized multi-view set
     * ```pip install youtube_dl```
     * ```cd Downloads```
     * ```youtube-dl 'https://www.youtube.com/watch?v=7j6mGVDfTHM' -f 'bestvideo[ext=mp4]/best[ext=mp4]/best'```
-
-

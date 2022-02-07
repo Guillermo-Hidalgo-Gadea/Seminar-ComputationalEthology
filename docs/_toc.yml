@@ -44,8 +44,3 @@ parts:
     chapters:
     - file: feedbackform
     - file: contactform
-#    - file: archive
-#      sections:
-#      - file: notebooks
-#      - file: markdown
-#      - file: testnotebook
