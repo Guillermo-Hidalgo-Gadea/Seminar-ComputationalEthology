@@ -1,5 +1,5 @@
-# Haven’t I heard your Voice before - Same-different-Categorisation of the Calls of Conspecifics in Pigeons
-Student Name: Paula Gerliz    
-Abstract:    
+# Paula Gerliz
 
-<iframe width="800" height="700" src="POS_Poster1.pdf"></iframe>
+## Haven’t I heard your Voice before - Same-different-Categorisation of the Calls of Conspecifics in Pigeons
+
+<iframe width="900" height="700" src="POS_Poster1.pdf"></iframe>

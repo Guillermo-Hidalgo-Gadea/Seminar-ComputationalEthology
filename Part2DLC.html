@@ -4,12 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Part 2: Edit an existing DeepLabCut Project &#8212; Computational Ethology</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -24,7 +23,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -32,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -42,7 +41,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -56,7 +55,10 @@
     <link rel="next" title="Introduction to VAME" href="DemoVAME.html" />
     <link rel="prev" title="Part 1: Create a DeepLabCut Project" href="Part1DLC.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -68,7 +70,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
@@ -88,7 +95,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Course Information
  </span>
@@ -115,7 +122,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Lectures
  </span>
@@ -147,7 +154,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Exercises
  </span>
@@ -230,7 +237,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Data sets
  </span>
@@ -241,8 +248,30 @@
    Datasets
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Posterprojects.html">
+   Student Posters
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Poster1.html">
+     Paula Gerliz
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Poster2.html">
+     Sarah C. Möser
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Feedback
  </span>
@@ -274,22 +303,22 @@
 
 
           
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
     <div class="topbar container-xl fixed-top">
     <div class="topbar-contents row">
         <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
         <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
             
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
@@ -304,7 +333,7 @@
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -345,6 +374,7 @@
         
         
         
+        
         <button type="button" class="btn btn-secondary topbarbtn"
             onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
                 class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
@@ -355,7 +385,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -400,13 +430,61 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Part 2: Edit an existing DeepLabCut Project</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-existing-deeplabcut-models">
+   Load existing DeepLabCut Models
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyze-new-videos-with-the-previously-trained-model">
+   Analyze new videos with the previously trained model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extract-outlier-frames">
+   Extract outlier frames
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#merge-datasets">
+   Merge Datasets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-train-network">
+   Re-Train Network
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyze-your-new-model-starting-with-part-1">
+   Analyze your new model starting with Part 1
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="part-2-edit-an-existing-deeplabcut-project">
+  <div class="tex2jax_ignore mathjax_ignore section" id="part-2-edit-an-existing-deeplabcut-project">
 <h1>Part 2: Edit an existing DeepLabCut Project<a class="headerlink" href="#part-2-edit-an-existing-deeplabcut-project" title="Permalink to this headline">¶</a></h1>
 <p>Note: Open this jupyter notebook in your DeepLabCut environment.</p>
-<section id="load-existing-deeplabcut-models">
+<div class="section" id="load-existing-deeplabcut-models">
 <h2>Load existing DeepLabCut Models<a class="headerlink" href="#load-existing-deeplabcut-models" title="Permalink to this headline">¶</a></h2>
 <p>Import python libraries needed for this notebook</p>
 <div class="cell docutils container">
@@ -447,8 +525,8 @@
 </div>
 </div>
 </div>
-</section>
-<section id="analyze-new-videos-with-the-previously-trained-model">
+</div>
+<div class="section" id="analyze-new-videos-with-the-previously-trained-model">
 <h2>Analyze new videos with the previously trained model<a class="headerlink" href="#analyze-new-videos-with-the-previously-trained-model" title="Permalink to this headline">¶</a></h2>
 <p>The analysis results in this step will most probably not look as desired, but this is to be expected. Bare in mind, that we are trying to analyze new, unseen videos with a model trained on different data (i.e., either other individuals, other sessions and maybe even different light conditions or camera angles). The goal of this step is to find out where the model fails to generalize and cover this shortcomings.</p>
 <div class="cell docutils container">
@@ -472,8 +550,8 @@
 </div>
 </div>
 </div>
-</section>
-<section id="extract-outlier-frames">
+</div>
+<div class="section" id="extract-outlier-frames">
 <h2>Extract outlier frames<a class="headerlink" href="#extract-outlier-frames" title="Permalink to this headline">¶</a></h2>
 <p>Now this is the interesting part. Instead of including more videos to the project directly, and extracting frames as usual with kmeans, we are taking advantage of the previous model to tell us what frames exactly to label. This active learning step helps us recognize the shortcomings of our model and correct it in a targeted manner.</p>
 <div class="cell docutils container">
@@ -508,8 +586,8 @@
 </div>
 </div>
 <p>If the permission error persists, try starting a new anaconda terminal as administrator (right click &gt; run as administrator) and then starting jupyter notebook with elevated privileges.</p>
-</section>
-<section id="merge-datasets">
+</div>
+<div class="section" id="merge-datasets">
 <h2>Merge Datasets<a class="headerlink" href="#merge-datasets" title="Permalink to this headline">¶</a></h2>
 <p>After refining all outlier frames extracted above, merge the datasets to combine old and new labels in your project.</p>
 <div class="cell docutils container">
@@ -527,8 +605,8 @@
 </div>
 </div>
 <p><strong>Note:</strong> Make sure that the new videos have been included in the config.yaml file without permission issues (see above).</p>
-</section>
-<section id="re-train-network">
+</div>
+<div class="section" id="re-train-network">
 <h2>Re-Train Network<a class="headerlink" href="#re-train-network" title="Permalink to this headline">¶</a></h2>
 <p>When training a new model with an expanded dataset, you could either choose to start fresh with new data, or use the previous model as pre-trained network for your next model. Although not yet extensively verified, lets belief that transfer learning at least won’t harm the new model.</p>
 <div class="cell docutils container">
@@ -556,8 +634,8 @@
 </div>
 </div>
 </div>
-</section>
-<section id="analyze-your-new-model-starting-with-part-1">
+</div>
+<div class="section" id="analyze-your-new-model-starting-with-part-1">
 <h2>Analyze your new model starting with Part 1<a class="headerlink" href="#analyze-your-new-model-starting-with-part-1" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -589,8 +667,8 @@
 </div>
 </div>
 <p>…</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -614,54 +692,42 @@
 
               </div>
               
-        
             
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="Part1DLC.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Part 1: Create a DeepLabCut Project</p>
-            </div>
-        </a>
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Part1DLC.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Part 1: Create a DeepLabCut Project</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="DemoVAME.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introduction to VAME</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="DemoVAME.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Introduction to VAME</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Guillermo Hidalgo Gadea<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By Guillermo Hidalgo Gadea<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>
