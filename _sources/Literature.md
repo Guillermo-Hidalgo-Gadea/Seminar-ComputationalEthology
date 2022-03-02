@@ -45,7 +45,7 @@ ISBN:  9781108745727
 What to do with [![Generic badge](https://img.shields.io/badge/open%20access-no-red.svg)](#finding-research-papers) papers?
 
 ````{toggle}
-First, you probably just hope to be privileged enough to be affiliated to an institute that can provide access to these journals.
+First, you probably just hope to be privileged enough to be affiliated to an institution that can provide access to these journals.
 
 Assuming this is will not be the case at some stage in our career, you should - as a good researcher - make use of any database you can find that may have listed the paper you are looking for, this may include visiting local libraries. If this is still not working,you don't stop there and - as a better researcher - start scraping the web for loose pdf files with e.g. Google Scholar, Research Gate and even in the authors' personal websites.
 
