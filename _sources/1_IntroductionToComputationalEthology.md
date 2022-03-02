@@ -130,7 +130,7 @@ Basic terminology for computational ethology, from Anderson & Perona (2014).
 Anderson, D. J., & Perona, P. (2014). Toward a Science of Computational Ethology. Neuron, 84(1), 18–31. https://doi.org/10.1016/j.neuron.2014.09.005
 
 ```{toggle}
-<iframe width="800" height="500" frameborder="1" src="https://doi.org/10.1016/j.neuron.2014.09.005"></iframe>
+<iframe width="800" height="500" frameborder="1" src="https://pubmed.ncbi.nlm.nih.gov/25277452/"></iframe>
 <!-- 
 <iframe width="800" height="500" frameborder="1" src="https://sci-hub.mksa.top/10.1016/j.neuron.2014.09.005"></iframe>
 -->
