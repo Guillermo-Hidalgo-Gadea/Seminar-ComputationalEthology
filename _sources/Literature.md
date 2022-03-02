@@ -22,6 +22,10 @@
 
 * Pereira, T. D., Shaevitz, J. W., & Murthy, M. (2020). Quantifying behavior to understand the brain. Nature Neuroscience, 23(12), 1537–1549. https://doi.org/10.1038/s41593-020-00734-z
 
+## Finding Research Papers
+
+<iframe width="100%" height="100%" class="js_stacks-search-widget" frameborder="1" scrolling="yes" src="https://essentials.ebsco.com/search/iframe" />
+
 ## Recommended Reading
 
 ```{admonition} Computer Age Statistical Inference
