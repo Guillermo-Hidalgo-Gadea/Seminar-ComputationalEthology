@@ -24,7 +24,7 @@
 
 ## Finding Research Papers
 
-<iframe width="100%" height="100%" class="js_stacks-search-widget" frameborder="1" scrolling="yes" src="https://essentials.ebsco.com/search/iframe" />
+<iframe width="100%" height="100%" class="js_stacks-search-widget" frameborder="1" scrolling="yes" src="https://essentials.ebsco.com/search/iframe">
 
 ## Recommended Reading
 
