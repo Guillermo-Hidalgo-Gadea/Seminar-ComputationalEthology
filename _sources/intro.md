@@ -19,6 +19,8 @@ The content of this book will be updated throughout the course and may be subjec
 ```
 ````
 
+[comment]: # test comment
+
 **This is the course handbook for the project seminar Computational Ethology at the Ruhr-University Bochum for the Winter Semester 2021/22.**
 
 In the following pages we will learn what we mean by animal behavior and how we can measure it. We will discuss common issues and apply some machine learning to track moving body parts with [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut), triangulate coordinates with [Anipose](https://github.com/lambdaloop/anipose) and classify behavior motifs with [VAME](https://github.com/LINCellularNeuroscience/VAME).
