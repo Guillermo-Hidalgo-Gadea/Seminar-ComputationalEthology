@@ -43,7 +43,7 @@ Next, think back to the steps in computational ethology presented during the fir
 #### Dimensionality of measurement
 
 * Animal Behavior could be assessed every day to ensure welfare, or every hour to track behavioral patterns. Camera traps could take images every minute, or video recordings could use a frame rate of 10Hz, 30Hz, 100Hz or +170 pictures per second.
-* In addition to the added resolution, experiments can be recorded with multiple cameras from different perspectives, and combined with additional measurements such as noise level, illumination, key responses, as well as physiological and neural activity. 
+* In addition to the added resolution, experiments can be recorded with multiple cameras from different perspectives, and combined with additional measurements such as noise level, illumination, key responses, as well as physiological and neural activity.
 * ...
 
 #### Level of description
@@ -71,10 +71,3 @@ Computational Ethology is still a very recent field of research, and the high va
 ## Literature
 
 Gomez-Marin, A., Paton, J. J., Kampff, A. R., Costa, R. M., & Mainen, Z. F. (2014). Big behavioral data: Psychology, ethology and the foundations of neuroscience. Nature Neuroscience, 17(11), 1455–1462. https://doi.org/10.1038/nn.3812
-
-```{toggle}
-<iframe width="800" height="500" frameborder="1" src="https://doi.org/10.1038/nn.3812"></iframe>
-<!-- 
-<iframe width="800" height="500" frameborder="1" src="https://sci-hub.mksa.top/10.1038/nn.3812"></iframe>
--->
-```

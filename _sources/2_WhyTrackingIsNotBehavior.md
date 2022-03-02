@@ -15,14 +15,11 @@ In {numref}`steps` of the last section we saw how Anderson & Perona (2014) lay o
 "[...] particular techniques in an academic field can lead to methodological bias which itself delineates the meaning of *behavior*."  -  Calhoun & Hady (2021)
 ```
 
-Technological advances in computational ethology have opened new doors for detecting, identifying and tracking individuals, or even multiple body parts of individuals simultaneously. But the segmentation of the stream of tracking data into broader actions, and the clustering of generalized behavioral patterns remains a challenging task, given the little agreement on what *behavior* actually is. 
+Technological advances in computational ethology have opened new doors for detecting, identifying and tracking individuals, or even multiple body parts of individuals simultaneously. But the segmentation of the stream of tracking data into broader actions, and the clustering of generalized behavioral patterns remains a challenging task, given the little agreement on what *behavior* actually is.
 
 ## Definitions of Behavior
 
-Today we will see from two relevant papers in behavioral biology and neuroscience that scientists, within and between disciplines, not always agree on their definitions of behavior:
-
-* Levitis, D. A., Lidicker Jr, W. Z., & Freund, G. (2009). Behavioural biologists do not agree on what constitutes behaviour. Animal behaviour, 78(1), 103-110. https://doi.org/10.1016/j.anbehav.2009.03.018
-* Calhoun, A., & Hady, A. E. (2021). What is behavior? No seriously, what is it? [Preprint]. Animal Behavior and Cognition. https://doi.org/10.1101/2021.07.04.451053
+Today we will see from two relevant papers in behavioral biology and neuroscience that scientists, within and between disciplines, not always agree on their definitions of behavior.
 
 Some of the most common definitions of *behavior* among behavioral biologists:
 
@@ -120,7 +117,7 @@ Disagreement to behavior questions, from Calhoun & Hady, 2021.
 
 ## Defining your own Behavior of interest
 
-Now that you may have a clearer picture of the mess you are getting into, lets think about your own research project ideas. 
+Now that you may have a clearer picture of the mess you are getting into, lets think about your own research project ideas.
 
 1. Take 5 minutes to think about your research project idea
 2. Take 5 more minutes to think about why you are interested in behavior in this particular setting
@@ -130,18 +127,7 @@ Now that you may have a clearer picture of the mess you are getting into, lets t
 
 Calhoun, A., & Hady, A. E. (2021). What is behavior? No seriously, what is it? [Preprint]. Animal Behavior and Cognition. https://doi.org/10.1101/2021.07.04.451053
 
-```{toggle}
-<iframe width="800" height="500" frameborder="1" src="https://www.biorxiv.org/content/10.1101/2021.07.04.451053v1.full.pdf"></iframe>
-```
-
 Levitis, D. A., Lidicker Jr, W. Z., & Freund, G. (2009). Behavioural biologists do not agree on what constitutes behaviour. Animal behaviour, 78(1), 103-110. https://doi.org/10.1016/j.anbehav.2009.03.018
-
-```{toggle}
-<iframe width="800" height="500" frameborder="1" src="https://doi.org/10.1016/j.anbehav.2009.03.018"></iframe>
-<!-- 
-<iframe width="800" height="500" frameborder="1" src="https://sci-hub.mksa.top/10.1016/j.anbehav.2009.03.018"></iframe>
--->
-```
 
 ## Bonus: Talmo Pereira (Princeton University)
 
