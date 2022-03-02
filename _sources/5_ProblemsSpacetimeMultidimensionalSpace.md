@@ -94,7 +94,10 @@ Until then, we are stuck with the problem of reconstructing 3D objects from 2D i
 Dunn, T. W. (2021). Geometric deep learning enables 3D kinematic profiling across species and environments. Nature Methods, 18, 17. https://doi.org/10.1038/s41592-021-01106-6
 
 ```{toggle}
+<iframe width="800" height="500" frameborder="1" src="https://doi.org/10.1038/s41592-021-01106-6"></iframe>
+<!--
 <iframe width="800" height="500" frameborder="1" src="https://sci-hub.hkvisa.net/https://doi.org/10.1038/s41592-021-01106-6"></iframe>
+-->
 ```
 
 Karashchuk, P., Rupp, K. L., Dickinson, E. S., Walling-Bell, S., Sanders, E., Azim, E., Brunton, B. W., & Tuthill, J. C. (2021). Anipose: A toolkit for robust markerless 3D pose estimation. Cell Reports, 36(13), 109730. https://doi.org/10.1016/j.celrep.2021.109730

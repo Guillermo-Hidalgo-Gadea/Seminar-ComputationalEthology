@@ -1,10 +1,10 @@
 # Introduction to Computational Ethology
 
-
 ## Behavior - the what, how, why and when
+
 We can think of behavior as *relatively fast* changes in the spatiotemporal position of an organism in the environment. Behavior is what allows individuals to **move, navigate and interact** with their surroundings, and helps them adapt to changing environments on a timescale much faster than natural selection. From an ecological perspective, behavior may be considered a **selection for flexibility**.
 
-The biological study of animal behavior is called ethology (see [Konrad Lorenz](https://en.wikipedia.org/wiki/Konrad_Lorenz), [Niko Tinbergen](https://en.wikipedia.org/wiki/Nikolaas_Tinbergen) and [Karl von Frisch](https://en.wikipedia.org/wiki/Karl_von_Frisch)), while psychologists may approach similar questions from perspectives like [behavioral ecology](https://en.wikipedia.org/wiki/Behavioral_ecology) or [comparative cognition](https://en.wikipedia.org/wiki/Comparative_psychology). 
+The biological study of animal behavior is called ethology (see [Konrad Lorenz](https://en.wikipedia.org/wiki/Konrad_Lorenz), [Niko Tinbergen](https://en.wikipedia.org/wiki/Nikolaas_Tinbergen) and [Karl von Frisch](https://en.wikipedia.org/wiki/Karl_von_Frisch)), while psychologists may approach similar questions from perspectives like [behavioral ecology](https://en.wikipedia.org/wiki/Behavioral_ecology) or [comparative cognition](https://en.wikipedia.org/wiki/Comparative_psychology).
 
 In his [*On Aims and Methods of Ethology*](https://www.esf.edu/efb/faculty/documents/tinbergen1963onethology.pdf), Tinbergen lays out four specific questions or levels of analysis to be used for a complete study of behavior (see {numref}`tinbergens4`).
 
@@ -16,8 +16,8 @@ name: tinbergens4
 Tinbergens' four levels of analysis, from Wikipedia.
 ```
 
-
 ## Measuring Behavior
+
 The study of behavior started with rich, naturalistic observations of animals in their natural environments. But these observations were mostly qualitative and anecdotal descriptions, rather than quantitative measurements of behavior (see [George Romanes' *Animal Intelligence*](https://dl.tufts.edu/concern/pdfs/47429n35w) and [Desmond Morris' *The Naked Ape*](https://en.wikipedia.org/wiki/The_Naked_Ape) for such examples).  
 
 A more systematic approach to measuring behavior was achieved by using scoring sheets of pre-defined behaviors of interest, and manually logging the occurrence and duration of these behaviors at a given temporal resolution in specific time intervals. This allowed the quantification of behavior with simple statistics such as the frequency, latency and duration of given behaviors, as well as the relative proportion of several behaviors in given environments.
@@ -25,14 +25,16 @@ A more systematic approach to measuring behavior was achieved by using scoring s
 These observations and manual coding techniques are still popular today, although video recording techniques allow to store data, and score behavior from the lab, instead of in the field. Furthermore, computer-assisted tools allow to score behavior frame-by-frame. More on this will be covered in a future session on [Levels of Analysis and Quantification of Animal Behavior](3_LevelsOfAnalysisAndQuantificationOfBehavior.md).
 
 These methods have some obvious **downsides**:
+
 * slow, time consuming and dull
 * subjective, limited to human vision and language
-* low-dimensional 
+* low-dimensional
 
-Specifically, one of the main problems for Psychology and Neuroscience is that the measurement of behavior is by far **not as accurate as advances in neural recording techniques** such as electroencephalography, optogenetics, pharmacogenetics or optical imaging. How are we then supposed to match cognitive and neural processes to the animals behavioral output? 
+Specifically, one of the main problems for Psychology and Neuroscience is that the measurement of behavior is by far **not as accurate as advances in neural recording techniques** such as electroencephalography, optogenetics, pharmacogenetics or optical imaging. How are we then supposed to match cognitive and neural processes to the animals behavioral output?
 
 ## Computational Ethology
-Computational ethology is a new interdisciplinary field using modern advances in machine learning and machine vision (*computational*) for measuring, describing and analyzing natural behavior in freely moving animals (*ethology*). 
+
+Computational ethology is a new interdisciplinary field using modern advances in machine learning and machine vision (*computational*) for measuring, describing and analyzing natural behavior in freely moving animals (*ethology*).
 
 Take some time to get familiar with the *computational* part of the seminar. In {numref}`terminologyML` you can find basic concepts needed to understand the main technological advances in the field. And in In {numref}`modelsML` you will see a very general distinction between the most popular neural networks used in computational ethology.
 
@@ -80,33 +82,29 @@ name: steps
 Steps in typical computational ethology systems, from Anderson & Perona (2014).
 ```
 
-**Tracking**
+#### Tracking
 
-```{toggle}
 * detection 
 * location/position
 * orientation 
 * centroids, ellipses and poses 
 * trajectory
 * identity
-```
 
-**Action classification**
-```{toggle} 
+#### Action classification
+
 * supervised
 * unsupervised
 * ground truth
 * segmentation
 * clustering
-```
 
-**Behavior analysis**
-```{toggle} 
+#### Behavior analysis**
+
 * ethogram
 * large-scale patterns
 * behavior systems
 * discrete and continuous structure
-```
 
 ### Difficulties
 
@@ -132,13 +130,19 @@ Basic terminology for computational ethology, from Anderson & Perona (2014).
 Anderson, D. J., & Perona, P. (2014). Toward a Science of Computational Ethology. Neuron, 84(1), 18–31. https://doi.org/10.1016/j.neuron.2014.09.005
 
 ```{toggle}
+<iframe width="800" height="500" frameborder="1" src="https://doi.org/10.1016/j.neuron.2014.09.005"></iframe>
+<!-- 
 <iframe width="800" height="500" frameborder="1" src="https://sci-hub.mksa.top/10.1016/j.neuron.2014.09.005"></iframe>
+-->
 ```
 
 Pereira, T. D., Shaevitz, J. W., & Murthy, M. (2020). Quantifying behavior to understand the brain. Nature Neuroscience, 23(12), 1537–1549. https://doi.org/10.1038/s41593-020-00734-z
 
 ```{toggle}
+<iframe width="800" height="500" frameborder="1" src="https://doi.org/10.1038/s41593-020-00734-z"></iframe>
+<!-- 
 <iframe width="800" height="500" frameborder="1" src="https://sci-hub.mksa.top/10.1038/s41593-020-00734-z"></iframe>
+-->
 ```
 
 ## Bonus: Ronald Fisher (Victoria University of Wellington)

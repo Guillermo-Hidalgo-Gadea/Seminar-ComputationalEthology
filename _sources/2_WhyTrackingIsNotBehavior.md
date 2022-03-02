@@ -35,6 +35,7 @@ Some of the most common definitions of *behavior* among behavioral biologists:
 7. Grier & Burk (1992): ‘All observable or otherwise measurable muscular and secretory responses (or lack thereof in some cases) and related phenomena such as changes in blood flow and surface pigments in response to changes in an animal’s internal and external environment’
 
 **True** statements about behavior (by majority vote, see Levitis et al. 2009):
+
 ```{toggle}
 * ‘A developmental change is usually not a behavior.’
 * ‘Behavior is always influenced by the internal processes of the individual.’
@@ -43,6 +44,7 @@ Some of the most common definitions of *behavior* among behavioral biologists:
 ```
 
 **False** statements about behavior (by majority vote, see Levitis et al. 2009):
+
 ```{toggle}
 * ‘Behavior is always in response to the external environment.’
 * ‘A behavior is always an action, rather than a lack of action.’
@@ -55,7 +57,7 @@ Some of the most common definitions of *behavior* among behavioral biologists:
 
 ## Disagreement defining Behavior
 
-In their preprint, Calhoun and Hady (2021) develop a survey about what scientists in different disciplines really understand by behavior. As expected from Levitis et al. (2009), they find high disagreement between groups in their views of what does and what doesn't constitute behavior, but most interestingly they identify stable response clusters to different qualitative definitions of behavior. In {numref}`behaviorclusters` the different clusters indicate consistent differences among disciplines, sub-disciplines of neuroscience, as well as model organism and academic seniority. 
+In their preprint, Calhoun and Hady (2021) develop a survey about what scientists in different disciplines really understand by behavior. As expected from Levitis et al. (2009), they find high disagreement between groups in their views of what does and what doesn't constitute behavior, but most interestingly they identify stable response clusters to different qualitative definitions of behavior. In {numref}`behaviorclusters` the different clusters indicate consistent differences among disciplines, sub-disciplines of neuroscience, as well as model organism and academic seniority.
 
 ```{figure} content/behaviorclusters.png
 ---
@@ -77,7 +79,7 @@ name: definitionarchetypes
 Definitions and Archetypes clustered by Calhoun & Hady, 2021.
 ```
 
-## Sample Questions about Behavior 
+## Sample Questions about Behavior
 
 Most agreed upon statements:
 
@@ -135,7 +137,10 @@ Calhoun, A., & Hady, A. E. (2021). What is behavior? No seriously, what is it? [
 Levitis, D. A., Lidicker Jr, W. Z., & Freund, G. (2009). Behavioural biologists do not agree on what constitutes behaviour. Animal behaviour, 78(1), 103-110. https://doi.org/10.1016/j.anbehav.2009.03.018
 
 ```{toggle}
+<iframe width="800" height="500" frameborder="1" src="https://doi.org/10.1016/j.anbehav.2009.03.018"></iframe>
+<!-- 
 <iframe width="800" height="500" frameborder="1" src="https://sci-hub.mksa.top/10.1016/j.anbehav.2009.03.018"></iframe>
+-->
 ```
 
 ## Bonus: Talmo Pereira (Princeton University)
