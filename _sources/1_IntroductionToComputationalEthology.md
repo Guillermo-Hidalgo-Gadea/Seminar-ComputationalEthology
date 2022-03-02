@@ -52,9 +52,10 @@ name: modelsML
 Key ML models, from Stack Overflow.
 ```
 
-For a more in-depth understanding of machine learning techniques feel free to ask the internet or brows the online materials for the [Computational Neuroscience course from the Neuromatch Academy](https://compneuro.neuromatch.io/tutorials/W2D1_DeepLearning/chapter_title.html). 
+For a more in-depth understanding of machine learning techniques feel free to ask the internet or brows the online materials for the [Computational Neuroscience course from the Neuromatch Academy](https://compneuro.neuromatch.io/tutorials/W2D1_DeepLearning/chapter_title.html).
 
-### Promises 
+### Promises
+
 By successfully and skillfully applying machine learning methods the study of behavior will profit from a more accurate quantification of behavior, while outsourcing the painstaking manual labor of video coding. Computational models will increase the throughput of behavioral experiments by tracking multiple subjects at once, measuring over prolonged time windows, or even in real time. Real time measurements, in turn, pose new possibilities to design closed-loop experiments reactive to subjects' behavior.  
 Computational methods will also increase the dimensionality of behavior, differentiating between short actions and large-scale behavioral patterns, and setting time-accurate context to subjects behavior in the environment.  
 Lastly, specific advances in computer vision revolutionize the way we operationalize the behavior of subjects. See {numref}`levelsofdetail` for an overview of different levels of detail in the tracking of subjects movement.
@@ -68,8 +69,8 @@ Levels of detail in Computational Ethology, from Pereira et al (2020).
 ```
 
 ### Methods
-In {numref}`steps` Anderson & Perona (2014) give an overview of different steps required for a complete system for the measurement of behavior. Try to get familiar with these steps and understand the main differences among them using the keywords below.
 
+In {numref}`steps` Anderson & Perona (2014) give an overview of different steps required for a complete system for the measurement of behavior. Try to get familiar with these steps and understand the main differences among them using the keywords below.
 
 ```{figure} content/stepsince.png
 ---
@@ -80,6 +81,7 @@ Steps in typical computational ethology systems, from Anderson & Perona (2014).
 ```
 
 **Tracking**
+
 ```{toggle}
 * detection 
 * location/position
@@ -107,13 +109,15 @@ Steps in typical computational ethology systems, from Anderson & Perona (2014).
 ```
 
 ### Difficulties
+
 * A new, tech-savvy generation of students is needed willing to cooperate in interdisciplinary teams of biologists, psychologists and computer scientists
-* 3D tracking needs multiple cameras and triangulation, or specialized depth sensors to capture a complete picture of behavior. Skeleton vs surface? 
+* 3D tracking needs multiple cameras and triangulation, or specialized depth sensors to capture a complete picture of behavior. Skeleton vs surface?
 * Generalization: specialized trackers for specific individuals, many methods and no standards, machine teaching is still time consuming, transfer learning, active learning, self-supervised learning
 * Discovery: handcrafted criteria, supervised machine learning, new behaviors, unsupervised learning
 
 ## Describing Behavior
-Working on a new understanding of behavior quantification will need a standardized language to describe behavior. Lets get started with {numref}`terminology`: 
+
+Working on a new understanding of behavior quantification will need a standardized language to describe behavior. Lets get started with {numref}`terminology`:
 
 ```{figure} content/terminologybehavior.png
 ---
@@ -128,17 +132,17 @@ Basic terminology for computational ethology, from Anderson & Perona (2014).
 Anderson, D. J., & Perona, P. (2014). Toward a Science of Computational Ethology. Neuron, 84(1), 18–31. https://doi.org/10.1016/j.neuron.2014.09.005
 
 ```{toggle}
-<iframe width="800" height="500" src="https://sci-hub.mksa.top/10.1016/j.neuron.2014.09.005"></iframe>
+<iframe width="800" height="500" frameborder="1" src="https://sci-hub.mksa.top/10.1016/j.neuron.2014.09.005"></iframe>
 ```
+
 Pereira, T. D., Shaevitz, J. W., & Murthy, M. (2020). Quantifying behavior to understand the brain. Nature Neuroscience, 23(12), 1537–1549. https://doi.org/10.1038/s41593-020-00734-z
 
 ```{toggle}
-<iframe width="800" height="500" src="https://sci-hub.mksa.top/10.1038/s41593-020-00734-z"></iframe>
+<iframe width="800" height="500" frameborder="1" src="https://sci-hub.mksa.top/10.1038/s41593-020-00734-z"></iframe>
 ```
-
 
 ## Bonus: Ronald Fisher (Victoria University of Wellington)
 
 The beginnings of psychology & ethology
 
-<iframe width="935" height="526" src="https://www.youtube.com/embed/KncqqoP7UI4?list=PL6lKKJXBkPSDrRSAHdJhDZOrwyyuRwCz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="935" height="526" src="https://www.youtube.com/embed/KncqqoP7UI4?list=PL6lKKJXBkPSDrRSAHdJhDZOrwyyuRwCz0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
