@@ -22,6 +22,7 @@ Please approach the lecturer after the seminar for any questions, issues or conc
 
 :::{admonition} What about Covid-19?
 :class: question, dropdown
-Unfortunately, the effects of the pandemic still determine life on campus, and the situation keeps changing so rapidly, that we need to stay flexible. As for the winter term 2021/22, in-person seminars are allowed at the Ruhr-University Bochum with proof of vaccination (or 3G regulation), regular ventilation in seminar rooms, keeping a distance of at least 1.5m between students and surgical face masks to be worn inside RUB buildings. Up to date information on changing Covid-19 regulations can be seen [here](https://www.ruhr-uni-bochum.de/en/general-information-about-corona).    
-Nevertheless, this seminar has been deliberately designed to be interactive enough to be used as a tool for independent learning from home, in case the seminar has to be moved online. 
+Unfortunately, the effects of the pandemic still determine life on campus, and the situation keeps changing so rapidly, that we need to stay flexible. As for the winter term 2021/22, in-person seminars are allowed at the Ruhr-University Bochum with proof of vaccination (or 3G regulation), regular ventilation in seminar rooms, keeping a distance of at least 1.5m between students and surgical face masks to be worn inside RUB buildings. Up to date information on changing Covid-19 regulations can be seen [here](https://www.ruhr-uni-bochum.de/en/general-information-about-corona).
+
+Nevertheless, this seminar has been deliberately designed to be interactive enough to be used as a tool for independent learning from home, in case the seminar has to be moved online.
 :::

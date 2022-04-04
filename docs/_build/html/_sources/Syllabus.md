@@ -26,7 +26,7 @@ Programming skills are not necessary, but technical affinity and basic computer 
 3. Levels of Analysis and Quantification of Behavior
    * Structure, spatial relation, and consequence
    * Measuring latencies, frequencies, intensities, or duration?
-4. Classification of Animal Behavior 
+4. Classification of Animal Behavior
    * Ethograms and Expert-Annotations
    * Supervised and Unsupervised machine learning
 5. The Problems of Spacetime
@@ -35,4 +35,3 @@ Programming skills are not necessary, but technical affinity and basic computer 
 6. Measuring in Multidimensional Space
    * Goal oriented research and lost Dimensions
    * 3D Imaging, Triangulation and 2D lifting
-

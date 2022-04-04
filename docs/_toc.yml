@@ -29,6 +29,10 @@ parts:
       - file: Part1VAME
       - file: Part2VAME
     - file: DemoAnalysis
+      sections:
+      - file: datainspection
+      - file: kinematicanalysis
+      - file: machinelearning
     - file: DemoAnipose
       sections:
       - file: Part1Anipose

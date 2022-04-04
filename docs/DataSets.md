@@ -6,7 +6,7 @@ The following datasets were kindly provided as open source material by some auth
 
 ## Shared Cloud Space
 
-The data used in the exercises and hands on tutorials can be downloaded from this shared cloud directory on **Sciebo:** [https://ruhr-uni-bochum.sciebo.de/s/vbPMqaYCcUjWA34](https://ruhr-uni-bochum.sciebo.de/s/vbPMqaYCcUjWA34)
+The data used in the exercises and hands on tutorials can be downloaded from this shared cloud directory on **Sciebo:** [https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj](https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj)
 
 ## Mouse bottom view by [Kevin Luxem](https://github.com/LINCellularNeuroscience/VAME#getting-started)
 
@@ -68,7 +68,7 @@ Six subjects were recorded for up to 60 seconds in a synchronized multi-view set
 
 2) There are some great open source initiatives you could check out that share video repositories of animal behavior data such as [OpenBehavior](https://edspace.american.edu/openbehavior/video-repository/video-repository-2/). Additionally, more and more authors make their video data partially available.  
 
-3) You can also gather video material from online sources like youtube with [Youtube-dl](https://youtube-dl.org/). Please **handle with care**. Downloaded videos should be used only for educational purposes and are not to be distributed. 
+3) You can also gather video material from online sources like youtube with [Youtube-dl](https://youtube-dl.org/). Please **handle with care**. Downloaded videos should be used only for educational purposes and are not to be distributed.
 
     In your terminal execute:
     * ```pip install youtube_dl```

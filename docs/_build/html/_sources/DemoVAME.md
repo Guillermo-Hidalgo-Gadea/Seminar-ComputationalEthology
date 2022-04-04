@@ -17,7 +17,7 @@ Architecture of machine learning model in VAME, from Luxem et al., 2020.
 
 ## Installation
 
-Unfortunately, you will need a GPU to install and run VAME locally on your computer. If that is the case, and you have Anaconda already installed, follow the steps below: 
+Unfortunately, you will need a GPU to install and run VAME locally on your computer. If that is the case, and you have Anaconda already installed, follow the steps below:
 
 1. `git clone https://github.com/LINCellularNeuroscience/VAME.git`
 
@@ -35,4 +35,4 @@ If you have no access to a local GPU, you can always use cloud computing solutio
 
 Luxem, K., Mocellin, P., Fuhrmann, F., Kürsch, J., Remy, S., & Bauer, P. (2022). Identifying Behavioral Structure from Deep Variational Embeddings of Animal Motion. https://doi.org/10.1101/2020.05.14.095430
 
-<iframe width="800" height="500" src="https://www.biorxiv.org/content/10.1101/2020.05.14.095430v3.full.pdf"></iframe>
+<iframe width="800" height="500" frameborder="1" src="https://www.biorxiv.org/content/10.1101/2020.05.14.095430v3.full.pdf"></iframe>
