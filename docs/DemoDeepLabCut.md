@@ -31,4 +31,4 @@ You can then create a designated environment and install DeepLabCut:
 
 Check the DeepLabCut documentation for more background and tips on how to get started.  
 
-<iframe src="https://deeplabcut.github.io/DeepLabCut/docs/intro.html" frameborder="1" width="800" height="600"></iframe>
+<iframe src="https://deeplabcut.github.io/DeepLabCut/README.html" frameborder="1" width="800" height="600"></iframe>

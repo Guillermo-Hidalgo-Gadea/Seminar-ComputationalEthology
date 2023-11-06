@@ -8,8 +8,6 @@ An *Ethogram* is a list of behavior descriptions that aims to cover the repertoi
 
 Typically, researchers observe animal behavior either live on-site, via live-stream from a cozy chair, or asynchronously from large datasets of pre-recorded video material. A scoring sheet of pre-defined behaviors of interest, together with a stopwatch or computer, allow to manually log the occurrence and duration of these behaviors at a given temporal resolution, e.g., every 15 seconds.
 
-<iframe src="https://www.zsl.org/sites/default/files/media/2015-10/KS2%20Behaviour%20study%20booklet%20-%202015_EDUCATION_0.pdf" frameborder="1" width="800" height="600"></iframe>
-
 **Following the instructions above, try to create your own scoring sheet and measure the behavior in the live-stream below:**
 
 * https://nationalzoo.si.edu/webcams/panda-cam
