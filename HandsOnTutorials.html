@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Hands on Tutorials &#8212; Computational Ethology</title>
   
   
@@ -202,16 +203,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Posterprojects.html">Student Posters</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
@@ -388,7 +384,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="hands-on-tutorials">
+  <section class="tex2jax_ignore mathjax_ignore" id="hands-on-tutorials">
 <h1>Hands on Tutorials<a class="headerlink" href="#hands-on-tutorials" title="Permalink to this heading">#</a></h1>
 <p>During the seminar you will get a first impression on how to work with methods for computational ethology such as  <a class="reference external" href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a> to track body parts, <a class="reference external" href="https://github.com/lambdaloop/anipose">Anipose</a> to triangulate coordinated, and <a class="reference external" href="https://github.com/LINCellularNeuroscience/VAME">VAME</a> to classify behavior motifs.<br />
 These methods are <strong>not always easy</strong> to use, and sometimes require a little programming with Python and basic understanding of machine learning and data science. Your goal should be to understand the value of these tools for computational ethology and try to get your hands dirty with a little code.</p>
@@ -396,26 +392,26 @@ These methods are <strong>not always easy</strong> to use, and sometimes require
 <p class="admonition-title">Note</p>
 <p>The following tutorials were created as user friendly as possible, but feel free to approach the lecturer with any questions or use the <strong>Suggestion Box</strong> to give feedback.</p>
 </div>
-<div class="section" id="deeplabcut">
+<section id="deeplabcut">
 <h2><a class="reference internal" href="DemoDeepLabCut.html"><span class="doc std std-doc">DeepLabCut</span></a><a class="headerlink" href="#deeplabcut" title="Permalink to this heading">#</a></h2>
 <p>DeepLabCut is a toolbox for markerless pose estimation of animals performing various tasks. DeepLabCut is an open source package for markerless pose estimation based on transfer learning with deep neural networks (<a class="reference external" href="https://www.nature.com/articles/s41593-018-0209-y">Mathis et al., 2018</a>). It uses algorithms from <a class="reference external" href="https://link.springer.com/chapter/10.1007/978-3-319-46466-4_3">DeeperCut</a>, and an extremely deep neural network pre-trained on a dataset for object detection (<a class="reference external" href="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html">ImageNet</a>). DeepLabCut was originally developed for animal pose estimation, which does not exclude humans, see <a class="reference external" href="https://www.nature.com/articles/s41598-021-83077-4">Namba et al. (2021)</a>, and can also be used to track inanimate objects.</p>
-</div>
-<div class="section" id="anipose">
+</section>
+<section id="anipose">
 <h2><a class="reference internal" href="DemoAnipose.html"><span class="doc std std-doc">Anipose</span></a><a class="headerlink" href="#anipose" title="Permalink to this heading">#</a></h2>
 <p>Anipose is an open-source Python toolkit for robust, markerless 3D pose estimation of animal behavior from multiple camera views. Anipose is built on DeepLabCut for markerless tracking, and can be used to expand existing 2D projects with multiple cameras. It consists of a 3D camera calibration module, triangulation of 2D tracked coordinates, and a set of filters to resolve tracking errors both in 2D and 3D models. Synchronized cameras are needed to record behavior from multiple views, and calibration boards such as <a class="reference external" href="https://docs.opencv.org/3.4/df/d4a/tutorial_charuco_detection.html">ChArUco</a> are used to calculate camera parameters such as relative position and orientation in space.</p>
-</div>
-<div class="section" id="vame">
+</section>
+<section id="vame">
 <h2><a class="reference internal" href="DemoVAME.html"><span class="doc std std-doc">VAME</span></a><a class="headerlink" href="#vame" title="Permalink to this heading">#</a></h2>
 <p>VAME is a framework to cluster behavioral signals obtained from pose-estimation tools with unsupervised machine learning. Variational Animal Motion Embedding (VAME) is a probabilistic machine learning framework developed by Luxem et al., 2022 for discovery of the latent structure of animal behavior given an input time series obtained from markerless pose estimation tools. It is a PyTorch based deep learning framework which leverages the power of recurrent neural networks (RNN) to model sequential data. In order to learn the underlying complex data distribution we use the RNN in a variational autoencoder setting to extract the latent state of the animal in every step of the input time series.</p>
-</div>
-<div class="section" id="literature">
+</section>
+<section id="literature">
 <h2>Literature<a class="headerlink" href="#literature" title="Permalink to this heading">#</a></h2>
 <p>Karashchuk, P., Rupp, K. L., Dickinson, E. S., Walling-Bell, S., Sanders, E., Azim, E., Brunton, B. W., &amp; Tuthill, J. C. (2021). Anipose: A toolkit for robust markerless 3D pose estimation. Cell Reports, 36(13), 109730. <a class="reference external" href="https://doi.org/10.1016/j.celrep.2021.109730">https://doi.org/10.1016/j.celrep.2021.109730</a></p>
 <p>Luxem, K., Mocellin, P., Fuhrmann, F., Kürsch, J., Remy, S., &amp; Bauer, P. (2022). Identifying Behavioral Structure from Deep Variational Embeddings of Animal Motion. <a class="reference external" href="https://doi.org/10.1101/2020.05.14.095430">https://doi.org/10.1101/2020.05.14.095430</a></p>
 <p>Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &amp; Bethge, M. (2018). DeepLabCut: Markerless pose estimation of user-defined body parts with deep learning. Nature Neuroscience, 21(9), 1281–1289. <a class="reference external" href="https://doi.org/10.1038/s41593-018-0209-y">https://doi.org/10.1038/s41593-018-0209-y</a></p>
 <p>Nath, T., Mathis, A., Chen, A. C., Patel, A., Bethge, M., &amp; Mathis, M. W. (2019). Using DeepLabCut for 3D markerless pose estimation across species and behaviors. Nature Protocols, 14(7), 2152–2176. <a class="reference external" href="https://doi.org/10.1038/s41596-019-0176-0">https://doi.org/10.1038/s41596-019-0176-0</a></p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

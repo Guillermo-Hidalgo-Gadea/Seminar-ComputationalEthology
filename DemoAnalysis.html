@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction to Data Analysis in Python &#8212; Computational Ethology</title>
   
   
@@ -202,16 +203,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Posterprojects.html">Student Posters</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
@@ -427,13 +423,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-data-analysis-in-python">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-data-analysis-in-python">
 <h1>Introduction to Data Analysis in Python<a class="headerlink" href="#introduction-to-data-analysis-in-python" title="Permalink to this heading">#</a></h1>
 <p>In this exercise, we will take a look at 3D coordinates of a short facial expression sequence.<br />
 We will learn to work with csv data in python with pandas and numpy, create plots with matplotlib and to sequence time series data with Hidden Markov Models.</p>
 <p>This exercise is based on two blogpost with tips and tricks to <a class="reference external" href="https://guillermohidalgogadea.com/openlabnotebook/upgrade-your-next-zoom-meeting/">analyze facial expression</a> and useful tips to <a class="reference external" href="https://guillermohidalgogadea.com/openlabnotebook/how-to-keep-your-python-code-tidy-with-4-easy-tips/">write clean python code</a>. Follow the links for further information. The following few notebooks will provide more detail on <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">inspection</span></code>, <code class="docutils literal notranslate"><span class="pre">kinematic</span> <span class="pre">analysis</span></code>, and some easy <code class="docutils literal notranslate"><span class="pre">machine</span> <span class="pre">learning</span></code> approaches to analyze your data.</p>
 <p>Please download the .ipynb file and follow along on your computer. Add markdown blocks with notes and comments taken during the class.</p>
-<div class="section" id="data-description">
+<section id="data-description">
 <h2>Data Description<a class="headerlink" href="#data-description" title="Permalink to this heading">#</a></h2>
 <p>The data for this exercise is provided <a class="reference external" href="https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj">here</a>. A short sequence of facial expressions was recorded with two synchronized cameras, tracked with DeepLabCut and triangulated with Anipose for 3D analysis. See the videos below:</p>
 <iframe width="400" height = "200" src="https://www.youtube.com/embed/MZmbhE77eWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -448,8 +444,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="set-up-conda-environments">
+</section>
+<section id="set-up-conda-environments">
 <h2>Set up Conda Environments<a class="headerlink" href="#set-up-conda-environments" title="Permalink to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">analysis</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">analysis</span></code><br />
@@ -457,8 +453,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">hmmlearn</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">--name</span> <span class="pre">analysis</span> <span class="pre">--all</span></code></p>
-</div>
-<div class="section" id="load-libraries">
+</section>
+<section id="load-libraries">
 <h2>Load Libraries<a class="headerlink" href="#load-libraries" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -474,7 +470,7 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-<div class="section" id="load-data">
+<section id="load-data">
 <h3>Load data<a class="headerlink" href="#load-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -486,8 +482,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="inspect-data">
+</section>
+<section id="inspect-data">
 <h3>Inspect Data<a class="headerlink" href="#inspect-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -534,8 +530,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="clean-data">
+</section>
+<section id="clean-data">
 <h3>Clean Data<a class="headerlink" href="#clean-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -545,8 +541,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="egocentric-alignement">
+</section>
+<section id="egocentric-alignement">
 <h3>Egocentric Alignement<a class="headerlink" href="#egocentric-alignement" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -573,8 +569,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="kinematic-features">
+</section>
+<section id="kinematic-features">
 <h3>Kinematic Features<a class="headerlink" href="#kinematic-features" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -630,8 +626,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="hidden-markov-models">
+</section>
+<section id="hidden-markov-models">
 <h3>Hidden Markov Models<a class="headerlink" href="#hidden-markov-models" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -699,8 +695,8 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="additional-plotting">
+</section>
+<section id="additional-plotting">
 <h3>Additional Plotting<a class="headerlink" href="#additional-plotting" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -972,11 +968,11 @@ We will learn to work with csv data in python with pandas and numpy, create plot
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

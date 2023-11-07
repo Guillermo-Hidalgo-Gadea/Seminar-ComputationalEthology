@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Part 2: Edit an existing DeepLabCut Project &#8212; Computational Ethology</title>
   
   
@@ -202,16 +203,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Posterprojects.html">Student Posters</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
@@ -421,10 +417,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="part-2-edit-an-existing-deeplabcut-project">
+  <section class="tex2jax_ignore mathjax_ignore" id="part-2-edit-an-existing-deeplabcut-project">
 <h1>Part 2: Edit an existing DeepLabCut Project<a class="headerlink" href="#part-2-edit-an-existing-deeplabcut-project" title="Permalink to this heading">#</a></h1>
 <p>Note: Open this jupyter notebook in your DeepLabCut environment.</p>
-<div class="section" id="load-existing-deeplabcut-models">
+<section id="load-existing-deeplabcut-models">
 <h2>Load existing DeepLabCut Models<a class="headerlink" href="#load-existing-deeplabcut-models" title="Permalink to this heading">#</a></h2>
 <p>Import python libraries needed for this notebook</p>
 <div class="cell docutils container">
@@ -465,8 +461,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="analyze-new-videos-with-the-previously-trained-model">
+</section>
+<section id="analyze-new-videos-with-the-previously-trained-model">
 <h2>Analyze new videos with the previously trained model<a class="headerlink" href="#analyze-new-videos-with-the-previously-trained-model" title="Permalink to this heading">#</a></h2>
 <p>The analysis results in this step will most probably not look as desired, but this is to be expected. Bare in mind, that we are trying to analyze new, unseen videos with a model trained on different data (i.e., either other individuals, other sessions and maybe even different light conditions or camera angles). The goal of this step is to find out where the model fails to generalize and cover this shortcomings.</p>
 <div class="cell docutils container">
@@ -490,8 +486,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="extract-outlier-frames">
+</section>
+<section id="extract-outlier-frames">
 <h2>Extract outlier frames<a class="headerlink" href="#extract-outlier-frames" title="Permalink to this heading">#</a></h2>
 <p>Now this is the interesting part. Instead of including more videos to the project directly, and extracting frames as usual with kmeans, we are taking advantage of the previous model to tell us what frames exactly to label. This active learning step helps us recognize the shortcomings of our model and correct it in a targeted manner.</p>
 <div class="cell docutils container">
@@ -526,8 +522,8 @@ document.write(`
 </div>
 </div>
 <p>If the permission error persists, try starting a new anaconda terminal as administrator (right click &gt; run as administrator) and then starting jupyter notebook with elevated privileges.</p>
-</div>
-<div class="section" id="merge-datasets">
+</section>
+<section id="merge-datasets">
 <h2>Merge Datasets<a class="headerlink" href="#merge-datasets" title="Permalink to this heading">#</a></h2>
 <p>After refining all outlier frames extracted above, merge the datasets to combine old and new labels in your project.</p>
 <div class="cell docutils container">
@@ -545,8 +541,8 @@ document.write(`
 </div>
 </div>
 <p><strong>Note:</strong> Make sure that the new videos have been included in the config.yaml file without permission issues (see above).</p>
-</div>
-<div class="section" id="re-train-network">
+</section>
+<section id="re-train-network">
 <h2>Re-Train Network<a class="headerlink" href="#re-train-network" title="Permalink to this heading">#</a></h2>
 <p>When training a new model with an expanded dataset, you could either choose to start fresh with new data, or use the previous model as pre-trained network for your next model. Although not yet extensively verified, lets belief that transfer learning at least won’t harm the new model.</p>
 <div class="cell docutils container">
@@ -574,8 +570,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="analyze-your-new-model-starting-with-part-1">
+</section>
+<section id="analyze-your-new-model-starting-with-part-1">
 <h2>Analyze your new model starting with Part 1<a class="headerlink" href="#analyze-your-new-model-starting-with-part-1" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -607,8 +603,8 @@ document.write(`
 </div>
 </div>
 <p>…</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

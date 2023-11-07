@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction to DeepLabCut &#8212; Computational Ethology</title>
   
   
@@ -202,16 +203,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Posterprojects.html">Student Posters</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
@@ -386,17 +382,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-deeplabcut">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-deeplabcut">
 <h1>Introduction to DeepLabCut<a class="headerlink" href="#introduction-to-deeplabcut" title="Permalink to this heading">#</a></h1>
 <p>DeepLabCut is a toolbox for markerless pose estimation of animals performing various tasks.</p>
 <p><strong>Documentation:</strong> <a class="reference external" href="https://deeplabcut.github.io/DeepLabCut/docs/intro.html">https://deeplabcut.github.io/DeepLabCut/docs/intro.html</a><br />
 <strong>Sourcecode:</strong> <a class="github reference external" href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut/DeepLabCut</a></p>
 <p>DeepLabCut is an open source package for markerless pose estimation based on transfer learning with deep neural networks (<a class="reference external" href="https://www.nature.com/articles/s41593-018-0209-y">Mathis et al., 2018</a>). It uses algorithms from <a class="reference external" href="https://link.springer.com/chapter/10.1007/978-3-319-46466-4_3">DeeperCut</a>, and an extremely deep neural network pre-trained on a dataset for object detection (<a class="reference external" href="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html">ImageNet</a>). DeepLabCut was originally developed for animal pose estimation, which does not exclude humans, see <a class="reference external" href="https://www.nature.com/articles/s41598-021-83077-4">Namba et al. (2021)</a>, and can also be used to track inanimate objects.</p>
-<div class="figure align-default" id="dlcworkflow">
+<figure class="align-default" id="dlcworkflow">
 <a class="reference internal image-reference" href="_images/dlcworkflow.PNG"><img alt="_images/dlcworkflow.PNG" src="_images/dlcworkflow.PNG" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">DeepLabCut workflow from Nath et al. 2019.</span><a class="headerlink" href="#dlcworkflow" title="Permalink to this image">#</a></p>
-</div>
-<div class="section" id="installation">
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">DeepLabCut workflow from Nath et al. 2019.</span><a class="headerlink" href="#dlcworkflow" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
 <p>DeepLabCut will need to use python and several python related libraries (i.e, a specific python environment), so the first step should be installing <a class="reference external" href="https://docs.anaconda.com/anaconda/install/">Anaconda</a>.<br />
 You can then create a designated environment and install DeepLabCut:</p>
@@ -411,15 +409,15 @@ You can then create a designated environment and install DeepLabCut:</p>
 </ul>
 </li>
 </ol>
-</div>
-<div class="section" id="documentation">
+</section>
+<section id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading">#</a></h2>
 <p>Check the DeepLabCut documentation for more background and tips on how to get started.</p>
 <iframe src="https://deeplabcut.github.io/DeepLabCut/README.html" frameborder="1" width="800" height="600"></iframe>
-</div>
+</section>
 <div class="toctree-wrapper compound">
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

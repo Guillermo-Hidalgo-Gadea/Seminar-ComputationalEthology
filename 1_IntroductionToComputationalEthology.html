@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction to Computational Ethology &#8212; Computational Ethology</title>
   
   
@@ -202,16 +203,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Posterprojects.html">Student Posters</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
@@ -400,19 +396,21 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-computational-ethology">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-computational-ethology">
 <h1>Introduction to Computational Ethology<a class="headerlink" href="#introduction-to-computational-ethology" title="Permalink to this heading">#</a></h1>
-<div class="section" id="behavior-the-what-how-why-and-when">
+<section id="behavior-the-what-how-why-and-when">
 <h2>Behavior - the what, how, why and when<a class="headerlink" href="#behavior-the-what-how-why-and-when" title="Permalink to this heading">#</a></h2>
 <p>We can think of behavior as <em>relatively fast</em> changes in the spatiotemporal position of an organism in the environment. Behavior is what allows individuals to <strong>move, navigate and interact</strong> with their surroundings, and helps them adapt to changing environments on a timescale much faster than natural selection. From an ecological perspective, behavior may be considered a <strong>selection for flexibility</strong>.</p>
 <p>The biological study of animal behavior is called ethology (see <a class="reference external" href="https://en.wikipedia.org/wiki/Konrad_Lorenz">Konrad Lorenz</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Nikolaas_Tinbergen">Niko Tinbergen</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Karl_von_Frisch">Karl von Frisch</a>), while psychologists may approach similar questions from perspectives like <a class="reference external" href="https://en.wikipedia.org/wiki/Behavioral_ecology">behavioral ecology</a> or <a class="reference external" href="https://en.wikipedia.org/wiki/Comparative_psychology">comparative cognition</a>.</p>
 <p>In his <a class="reference external" href="https://www.esf.edu/efb/faculty/documents/tinbergen1963onethology.pdf"><em>On Aims and Methods of Ethology</em></a>, Tinbergen lays out four specific questions or levels of analysis to be used for a complete study of behavior (see <a class="reference internal" href="#tinbergens4"><span class="std std-numref">Fig. 2</span></a>).</p>
-<div class="figure align-default" id="tinbergens4">
+<figure class="align-default" id="tinbergens4">
 <a class="reference internal image-reference" href="_images/tinbergens4.png"><img alt="_images/tinbergens4.png" src="_images/tinbergens4.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Tinbergens’ four levels of analysis, from Wikipedia.</span><a class="headerlink" href="#tinbergens4" title="Permalink to this image">#</a></p>
-</div>
-</div>
-<div class="section" id="measuring-behavior">
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Tinbergens’ four levels of analysis, from Wikipedia.</span><a class="headerlink" href="#tinbergens4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="measuring-behavior">
 <h2>Measuring Behavior<a class="headerlink" href="#measuring-behavior" title="Permalink to this heading">#</a></h2>
 <p>The study of behavior started with rich, naturalistic observations of animals in their natural environments. But these observations were mostly qualitative and anecdotal descriptions, rather than quantitative measurements of behavior (see <a class="reference external" href="https://dl.tufts.edu/concern/pdfs/47429n35w">George Romanes’ <em>Animal Intelligence</em></a> and <a class="reference external" href="https://en.wikipedia.org/wiki/The_Naked_Ape">Desmond Morris’ <em>The Naked Ape</em></a> for such examples).</p>
 <p>A more systematic approach to measuring behavior was achieved by using scoring sheets of pre-defined behaviors of interest, and manually logging the occurrence and duration of these behaviors at a given temporal resolution in specific time intervals. This allowed the quantification of behavior with simple statistics such as the frequency, latency and duration of given behaviors, as well as the relative proportion of several behaviors in given environments.</p>
@@ -424,38 +422,46 @@ document.write(`
 <li><p>low-dimensional</p></li>
 </ul>
 <p>Specifically, one of the main problems for Psychology and Neuroscience is that the measurement of behavior is by far <strong>not as accurate as advances in neural recording techniques</strong> such as electroencephalography, optogenetics, pharmacogenetics or optical imaging. How are we then supposed to match cognitive and neural processes to the animals behavioral output?</p>
-</div>
-<div class="section" id="computational-ethology">
+</section>
+<section id="computational-ethology">
 <h2>Computational Ethology<a class="headerlink" href="#computational-ethology" title="Permalink to this heading">#</a></h2>
 <p>Computational ethology is a new interdisciplinary field using modern advances in machine learning and machine vision (<em>computational</em>) for measuring, describing and analyzing natural behavior in freely moving animals (<em>ethology</em>).</p>
 <p>Take some time to get familiar with the <em>computational</em> part of the seminar. In <a class="reference internal" href="#terminologyml"><span class="std std-numref">Fig. 3</span></a> you can find basic concepts needed to understand the main technological advances in the field. And in In <a class="reference internal" href="#modelsml"><span class="std std-numref">Fig. 4</span></a> you will see a very general distinction between the most popular neural networks used in computational ethology.</p>
-<div class="figure align-default" id="terminologyml">
+<figure class="align-default" id="terminologyml">
 <a class="reference internal image-reference" href="_images/terminologyML.png"><img alt="_images/terminologyML.png" src="_images/terminologyML.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Key ML terminology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#terminologyml" title="Permalink to this image">#</a></p>
-</div>
-<div class="figure align-default" id="modelsml">
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Key ML terminology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#terminologyml" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="modelsml">
 <a class="reference internal image-reference" href="_images/modelsML.png"><img alt="_images/modelsML.png" src="_images/modelsML.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Key ML models, from Stack Overflow.</span><a class="headerlink" href="#modelsml" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Key ML models, from Stack Overflow.</span><a class="headerlink" href="#modelsml" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>For a more in-depth understanding of machine learning techniques feel free to ask the internet or brows the online materials for the <a class="reference external" href="https://compneuro.neuromatch.io/tutorials/W2D1_DeepLearning/chapter_title.html">Computational Neuroscience course from the Neuromatch Academy</a>.</p>
-<div class="section" id="promises">
+<section id="promises">
 <h3>Promises<a class="headerlink" href="#promises" title="Permalink to this heading">#</a></h3>
 <p>By successfully and skillfully applying machine learning methods the study of behavior will profit from a more accurate quantification of behavior, while outsourcing the painstaking manual labor of video coding. Computational models will increase the throughput of behavioral experiments by tracking multiple subjects at once, measuring over prolonged time windows, or even in real time. Real time measurements, in turn, pose new possibilities to design closed-loop experiments reactive to subjects’ behavior.<br />
 Computational methods will also increase the dimensionality of behavior, differentiating between short actions and large-scale behavioral patterns, and setting time-accurate context to subjects behavior in the environment.<br />
 Lastly, specific advances in computer vision revolutionize the way we operationalize the behavior of subjects. See <a class="reference internal" href="#levelsofdetail"><span class="std std-numref">Fig. 5</span></a> for an overview of different levels of detail in the tracking of subjects movement.</p>
-<div class="figure align-default" id="levelsofdetail">
+<figure class="align-default" id="levelsofdetail">
 <a class="reference internal image-reference" href="_images/levelsofdetail.png"><img alt="_images/levelsofdetail.png" src="_images/levelsofdetail.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Levels of detail in Computational Ethology, from Pereira et al (2020).</span><a class="headerlink" href="#levelsofdetail" title="Permalink to this image">#</a></p>
-</div>
-</div>
-<div class="section" id="methods">
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Levels of detail in Computational Ethology, from Pereira et al (2020).</span><a class="headerlink" href="#levelsofdetail" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="methods">
 <h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h3>
 <p>In <a class="reference internal" href="#steps"><span class="std std-numref">Fig. 6</span></a> Anderson &amp; Perona (2014) give an overview of different steps required for a complete system for the measurement of behavior. Try to get familiar with these steps and understand the main differences among them using the keywords below.</p>
-<div class="figure align-default" id="steps">
+<figure class="align-default" id="steps">
 <a class="reference internal image-reference" href="_images/stepsince.png"><img alt="_images/stepsince.png" src="_images/stepsince.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Steps in typical computational ethology systems, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#steps" title="Permalink to this image">#</a></p>
-</div>
-<div class="section" id="tracking">
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Steps in typical computational ethology systems, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#steps" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="tracking">
 <h4>Tracking<a class="headerlink" href="#tracking" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>detection</p></li>
@@ -465,8 +471,8 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
 <li><p>trajectory</p></li>
 <li><p>identity</p></li>
 </ul>
-</div>
-<div class="section" id="action-classification">
+</section>
+<section id="action-classification">
 <h4>Action classification<a class="headerlink" href="#action-classification" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>supervised</p></li>
@@ -475,8 +481,8 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
 <li><p>segmentation</p></li>
 <li><p>clustering</p></li>
 </ul>
-</div>
-<div class="section" id="behavior-analysis">
+</section>
+<section id="behavior-analysis">
 <h4>Behavior analysis<a class="headerlink" href="#behavior-analysis" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>ethogram</p></li>
@@ -484,9 +490,9 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
 <li><p>behavior systems</p></li>
 <li><p>discrete and continuous structure</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="difficulties">
+</section>
+</section>
+<section id="difficulties">
 <h3>Difficulties<a class="headerlink" href="#difficulties" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>A new, tech-savvy generation of students is needed willing to cooperate in interdisciplinary teams of biologists, psychologists and computer scientists</p></li>
@@ -494,27 +500,29 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
 <li><p>Generalization: specialized trackers for specific individuals, many methods and no standards, machine teaching is still time consuming, transfer learning, active learning, self-supervised learning</p></li>
 <li><p>Discovery: handcrafted criteria, supervised machine learning, new behaviors, unsupervised learning</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="describing-behavior">
+</section>
+</section>
+<section id="describing-behavior">
 <h2>Describing Behavior<a class="headerlink" href="#describing-behavior" title="Permalink to this heading">#</a></h2>
 <p>Working on a new understanding of behavior quantification will need a standardized language to describe behavior. Lets get started with <a class="reference internal" href="#terminology"><span class="std std-numref">Fig. 7</span></a>:</p>
-<div class="figure align-default" id="terminology">
+<figure class="align-default" id="terminology">
 <a class="reference internal image-reference" href="_images/terminologybehavior.png"><img alt="_images/terminologybehavior.png" src="_images/terminologybehavior.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Basic terminology for computational ethology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#terminology" title="Permalink to this image">#</a></p>
-</div>
-</div>
-<div class="section" id="literature">
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Basic terminology for computational ethology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#terminology" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="literature">
 <h2>Literature<a class="headerlink" href="#literature" title="Permalink to this heading">#</a></h2>
 <p>Anderson, D. J., &amp; Perona, P. (2014). Toward a Science of Computational Ethology. Neuron, 84(1), 18–31. <a class="reference external" href="https://doi.org/10.1016/j.neuron.2014.09.005">https://doi.org/10.1016/j.neuron.2014.09.005</a></p>
 <p>Pereira, T. D., Shaevitz, J. W., &amp; Murthy, M. (2020). Quantifying behavior to understand the brain. Nature Neuroscience, 23(12), 1537–1549. <a class="reference external" href="https://doi.org/10.1038/s41593-020-00734-z">https://doi.org/10.1038/s41593-020-00734-z</a></p>
-</div>
-<div class="section" id="bonus-ronald-fisher-victoria-university-of-wellington">
+</section>
+<section id="bonus-ronald-fisher-victoria-university-of-wellington">
 <h2>Bonus: Ronald Fisher (Victoria University of Wellington)<a class="headerlink" href="#bonus-ronald-fisher-victoria-university-of-wellington" title="Permalink to this heading">#</a></h2>
 <p>The beginnings of psychology &amp; ethology</p>
 <iframe width="935" height="526" src="https://www.youtube.com/embed/KncqqoP7UI4?list=PL6lKKJXBkPSDrRSAHdJhDZOrwyyuRwCz0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

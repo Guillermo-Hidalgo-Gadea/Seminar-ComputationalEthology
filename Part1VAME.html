@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Part 1: Local VAME Project with GPU &#8212; Computational Ethology</title>
   
   
@@ -202,16 +203,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Posterprojects.html">Student Posters</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
@@ -432,10 +428,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="part-1-local-vame-project-with-gpu">
+  <section class="tex2jax_ignore mathjax_ignore" id="part-1-local-vame-project-with-gpu">
 <h1>Part 1: Local VAME Project with GPU<a class="headerlink" href="#part-1-local-vame-project-with-gpu" title="Permalink to this heading">#</a></h1>
 <p>Note: Open this jupyter notebook in your VAME environment.</p>
-<div class="section" id="initialize-vame">
+<section id="initialize-vame">
 <h2>Initialize VAME<a class="headerlink" href="#initialize-vame" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -446,12 +442,12 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="download-vame-example-data">
+</section>
+<section id="download-vame-example-data">
 <h2>Download VAME Example Data<a class="headerlink" href="#download-vame-example-data" title="Permalink to this heading">#</a></h2>
 <p>Download <code class="docutils literal notranslate"><span class="pre">video-1.csv</span></code> and <code class="docutils literal notranslate"><span class="pre">video-1.mp4</span></code> from here: <a class="reference external" href="https://drive.google.com/drive/folders/1feCukw2H0teLvaPbwelhD2E2ns_viHFX?usp=sharing">https://drive.google.com/drive/folders/1feCukw2H0teLvaPbwelhD2E2ns_viHFX?usp=sharing</a> and save it to your own Google Drive.</p>
-</div>
-<div class="section" id="step-1-create-a-new-vame-project">
+</section>
+<section id="step-1-create-a-new-vame-project">
 <h2>Step 1: Create a new VAME project<a class="headerlink" href="#step-1-create-a-new-vame-project" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -474,7 +470,7 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="section" id="step-1-1-initiazile-a-vame-project">
+<section id="step-1-1-initiazile-a-vame-project">
 <h3>Step 1.1: Initiazile a VAME Project<a class="headerlink" href="#step-1-1-initiazile-a-vame-project" title="Permalink to this heading">#</a></h3>
 <p>With the variables above, initialize a new project and save the path to the <code class="docutils literal notranslate"><span class="pre">config.yaml</span></code> file as <code class="docutils literal notranslate"><span class="pre">config</span></code>. This will create a new project folder with a predefined structure in your working_directory.</p>
 <div class="cell docutils container">
@@ -492,8 +488,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-1-2-get-your-data-ready">
+</section>
+<section id="step-1-2-get-your-data-ready">
 <h3>Step 1.2: Get your data ready<a class="headerlink" href="#step-1-2-get-your-data-ready" title="Permalink to this heading">#</a></h3>
 <p>First, move your DeepLabCut <code class="docutils literal notranslate"><span class="pre">.csv</span></code> data to the corresponding <code class="docutils literal notranslate"><span class="pre">videos/pose_estimation/</span></code> directory.</p>
 <p>Then, use the function below to align your behavior videos egocentrically given <code class="docutils literal notranslate"><span class="pre">pose_ref_index</span></code> as a list of reference coordinate for alignment. In this case <code class="docutils literal notranslate"><span class="pre">[0,5]</span></code>. Example: 0: snout, 1: forehand_left, 2: forehand_right, 3: hindleft, 4: hindright, 5: tail</p>
@@ -512,8 +508,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-1-3-create-the-training-set">
+</section>
+<section id="step-1-3-create-the-training-set">
 <h3>Step 1.3: Create the Training Set<a class="headerlink" href="#step-1-3-create-the-training-set" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -522,9 +518,9 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="step-2-train-your-vame-model">
+</section>
+</section>
+<section id="step-2-train-your-vame-model">
 <h2>Step 2: Train your VAME Model<a class="headerlink" href="#step-2-train-your-vame-model" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -533,8 +529,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-3-evaluate-the-model">
+</section>
+<section id="step-3-evaluate-the-model">
 <h2>Step 3: Evaluate the model<a class="headerlink" href="#step-3-evaluate-the-model" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -543,8 +539,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-4-motif-segmentation">
+</section>
+<section id="step-4-motif-segmentation">
 <h2>Step 4: Motif segmentation<a class="headerlink" href="#step-4-motif-segmentation" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -553,8 +549,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-5-create-motif-videos">
+</section>
+<section id="step-5-create-motif-videos">
 <h2>Step 5: Create Motif Videos<a class="headerlink" href="#step-5-create-motif-videos" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -563,8 +559,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-6-create-behavioral-hierarchies">
+</section>
+<section id="step-6-create-behavioral-hierarchies">
 <h2>Step 6: Create behavioral hierarchies<a class="headerlink" href="#step-6-create-behavioral-hierarchies" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -573,8 +569,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-7-create-community-videos">
+</section>
+<section id="step-7-create-community-videos">
 <h2>Step 7: Create community videos<a class="headerlink" href="#step-7-create-community-videos" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -583,8 +579,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-8-create-umap-visualization">
+</section>
+<section id="step-8-create-umap-visualization">
 <h2>Step 8: Create UMAP visualization<a class="headerlink" href="#step-8-create-umap-visualization" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -593,8 +589,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-9-create-gif-animation">
+</section>
+<section id="step-9-create-gif-animation">
 <h2>Step 9: Create GIF Animation<a class="headerlink" href="#step-9-create-gif-animation" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -606,8 +602,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="step-10-create-a-generative-model">
+</section>
+<section id="step-10-create-a-generative-model">
 <h2>Step 10: Create a generative model<a class="headerlink" href="#step-10-create-a-generative-model" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -616,8 +612,8 @@ document.write(`
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

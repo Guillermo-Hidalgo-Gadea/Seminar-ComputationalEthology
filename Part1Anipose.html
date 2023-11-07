@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>3D triangulation with Anipose &#8212; Computational Ethology</title>
   
   
@@ -202,16 +203,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Posterprojects.html">Student Posters</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
@@ -401,7 +397,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="d-triangulation-with-anipose">
+  <section class="tex2jax_ignore mathjax_ignore" id="d-triangulation-with-anipose">
 <h1>3D triangulation with Anipose<a class="headerlink" href="#d-triangulation-with-anipose" title="Permalink to this heading">#</a></h1>
 <p>The good news is, we won’t need to do anything in python this time. Anipose is nicely rounded up with a set of console commands to run the entire analysis pipeline without having to code anything ourselves.</p>
 <div style="overflow: auto; height:300pt; width:100%;">Terminal Output:
@@ -445,14 +441,14 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="section" id="starting-a-new-project">
+<section id="starting-a-new-project">
 <h2>Starting a new Project<a class="headerlink" href="#starting-a-new-project" title="Permalink to this heading">#</a></h2>
 <p>Before we get started with Anipose, we will assume you already have behavioral video data recorded with multiple synchronized cameras. Furthermore, you will need to have a DeepLabCut model trained on this data or in some other way able to analyze your videos. For more information on how to synchronize multiple cameras refer to the anipose <a class="reference external" href="https://anipose.readthedocs.io/en/latest/">website</a> as well as <a class="reference external" href="https://gitlab.ruhr-uni-bochum.de/ikn/syncflir">syncFLIR</a> or <a class="reference external" href="https://github.com/Guillermo-Hidalgo-Gadea/VideoPyToolbox">VideoPyToolbox</a>.<br />
 For this tutorial we will use facial expression data from <a class="reference external" href="https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj">here</a>.</p>
-<div class="section" id="create-a-new-project-directory">
+<section id="create-a-new-project-directory">
 <h3>Create a new project directory<a class="headerlink" href="#create-a-new-project-directory" title="Permalink to this heading">#</a></h3>
 <p>When you create a new project, start by giving your folder a clear name. Descriptions such as <code class="docutils literal notranslate"><span class="pre">aniposeProject</span></code> will be meaningless if you have several 3D projects, and your project name may be not enough if you need to have separate directories for DeepLabCut and Anipose.</p>
-<div class="section" id="before">
+<section id="before">
 <h4>Before<a class="headerlink" href="#before" title="Permalink to this heading">#</a></h4>
 <p>Your new anipose project directory should look something like this:</p>
 <div style="overflow: auto; height:300pt; width:100%;">
@@ -485,8 +481,8 @@ For this tutorial we will use facial expression data from <a class="reference ex
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="after">
+</section>
+<section id="after">
 <h4>After<a class="headerlink" href="#after" title="Permalink to this heading">#</a></h4>
 <p>After the analysis, new directories will be added to your project and the result of each analysis step can be found in the respective folder:</p>
 <div style="overflow: auto; height:300pt; width:100%;">
@@ -534,9 +530,9 @@ For this tutorial we will use facial expression data from <a class="reference ex
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="edit-the-config-toml-file">
+</section>
+</section>
+<section id="edit-the-config-toml-file">
 <h3>Edit the config.toml file<a class="headerlink" href="#edit-the-config-toml-file" title="Permalink to this heading">#</a></h3>
 <p>Unfortunately Anipose does not create a template configuration file, and you will need to create the <code class="docutils literal notranslate"><span class="pre">config.toml</span></code> file yourself, while taking into account the intended structure and and parameters. I recommend using the same configuration file from a previous project and editing the respective parts. Specifically the <code class="docutils literal notranslate"><span class="pre">model_folder</span></code>, as well as <code class="docutils literal notranslate"><span class="pre">[labeling]</span></code> and <code class="docutils literal notranslate"><span class="pre">[triangulation]</span></code> parameters.</p>
 <div style="overflow: auto; height:300pt; width:100%;"> config.toml file:
@@ -610,49 +606,49 @@ For this tutorial we will use facial expression data from <a class="reference ex
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="analyzing-videos">
+</section>
+</section>
+<section id="analyzing-videos">
 <h2>Analyzing videos<a class="headerlink" href="#analyzing-videos" title="Permalink to this heading">#</a></h2>
 <p>Once the project directory and config.toml files are ready, you should proceed to analyze all your behavioral videos. Anipose will use the DeepLabCut model specified in <code class="docutils literal notranslate"><span class="pre">model_folder</span></code> to track 2D coordinates of all videos in the <code class="docutils literal notranslate"><span class="pre">videos-raw</span></code> directory of every subject.</p>
 <ul class="simple">
 <li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">analyze</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="d-triangulation">
+</section>
+<section id="d-triangulation">
 <h2>3D Triangulation<a class="headerlink" href="#d-triangulation" title="Permalink to this heading">#</a></h2>
 <p>To move from 2D labeled videos to a full 3D reconstruction you will need to triangulate each coordinate from all the different camera angles.</p>
-<div class="section" id="calibrating-cameras">
+<section id="calibrating-cameras">
 <h3>Calibrating cameras<a class="headerlink" href="#calibrating-cameras" title="Permalink to this heading">#</a></h3>
 <p>First calibrate your cameras with the calibration videos in <code class="docutils literal notranslate"><span class="pre">calibration</span></code>. Make sure to have identical labels for each video recording with a distinctive <code class="docutils literal notranslate"><span class="pre">cam_regex</span></code>such as <code class="docutils literal notranslate"><span class="pre">_cam[A-Z]</span></code>. Only calibration videos with the same name will be considered for each calibration.<br />
 If camera calibration is successful, proceed to filtering and triangulation.</p>
 <ul class="simple">
 <li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">calibrate</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="filter-tracking-errors">
+</section>
+<section id="filter-tracking-errors">
 <h3>Filter tracking errors<a class="headerlink" href="#filter-tracking-errors" title="Permalink to this heading">#</a></h3>
 <p>Anipose provides a set of different filters to correct for tracking errors from DeepBalCut. The filtered data show smoother results and is often easier to interpret. You can filter the original 2D tracked coordinates as well as the final 3D triangulated coordinates</p>
 <ul class="simple">
 <li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">filter</span></code> and <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">filter-3d</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="triangulate-coordinates">
+</section>
+<section id="triangulate-coordinates">
 <h3>Triangulate coordinates<a class="headerlink" href="#triangulate-coordinates" title="Permalink to this heading">#</a></h3>
 <p>Once cameras are calibrated and videos are analyzed, you can proceed to triangulate the 2D coordinates in three dimensions.</p>
 <ul class="simple">
 <li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">triangulate</span></code></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="visualize-tracking-in-2d-and-3d">
+</section>
+</section>
+<section id="visualize-tracking-in-2d-and-3d">
 <h2>Visualize tracking in 2D and 3D<a class="headerlink" href="#visualize-tracking-in-2d-and-3d" title="Permalink to this heading">#</a></h2>
 <p>After analysis and triangulation it is necessary to visualize the labeling and filtering results to inspect the tracking accuracy both of the 2D videos and of the final 3D model. You could run each step separately (i.e., <code class="docutils literal notranslate"><span class="pre">label-2d</span></code>, <code class="docutils literal notranslate"><span class="pre">label-2d-filter</span></code>, etc.) or use the <code class="docutils literal notranslate"><span class="pre">run-viz</span></code> command to run all the visualizations at once.</p>
 <ul class="simple">
 <li><p>use the terminal command: <code class="docutils literal notranslate"><span class="pre">anipose</span> <span class="pre">run-viz</span></code></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
