@@ -6,7 +6,7 @@ The following datasets were kindly provided as open source material by some auth
 
 ## Shared Cloud Space
 
-The data used in the exercises and hands on tutorials can be downloaded from this shared cloud directory on **Sciebo:** [https://ruhr-uni-bochum.sciebo.de/s/vbPMqaYCcUjWA34](https://ruhr-uni-bochum.sciebo.de/s/vbPMqaYCcUjWA34)
+The data used in the exercises and hands on tutorials can be downloaded from this shared cloud directory on **Sciebo:** [https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj](https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj)
 
 ## Mouse bottom view by [Kevin Luxem](https://github.com/LINCellularNeuroscience/VAME#getting-started)
 

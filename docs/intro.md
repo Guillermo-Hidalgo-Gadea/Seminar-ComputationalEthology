@@ -29,4 +29,4 @@ This content is available as open source educational resource, licensed under th
 
 ## About Me
 
-<iframe src="https://news.rub.de/english/2023-08-31-neuroscience-guillermo-hidalgo-gadea-researches-cognitive-processes" frameborder="1" width="1020" height="700"></iframe>
+<iframe src="https://www.bio.psy.ruhr-uni-bochum.de/bpsy/team/guillermo_gadea.html.en" frameborder="1" width="1020" height="700"></iframe>

@@ -49,7 +49,7 @@ Commands:
 ## Starting a new Project
 
 Before we get started with Anipose, we will assume you already have behavioral video data recorded with multiple synchronized cameras. Furthermore, you will need to have a DeepLabCut model trained on this data or in some other way able to analyze your videos. For more information on how to synchronize multiple cameras refer to the anipose [website](https://anipose.readthedocs.io/en/latest/) as well as [syncFLIR](https://gitlab.ruhr-uni-bochum.de/ikn/syncflir) or [VideoPyToolbox](https://github.com/Guillermo-Hidalgo-Gadea/VideoPyToolbox).  
-For this tutorial we will use facial expression data from [here](https://ruhr-uni-bochum.sciebo.de/s/v63Pwp8R9Ci5Ctd).
+For this tutorial we will use facial expression data from [here](https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj).
 
 ### Create a new project directory
 
@@ -222,7 +222,7 @@ n_deriv_smooth = 2 # derivative to minimize for smoothness
 
 ## Analyzing videos
 
-Once the project directory and config.toml files are ready, you should proceed to analyze all your behavioral videos. Anipose will use the DeepLabCut model specified in `model_folder` to track 2D coordinates of all videos in the `videos-raw` directory of every subject. 
+Once the project directory and config.toml files are ready, you should proceed to analyze all your behavioral videos. Anipose will use the DeepLabCut model specified in `model_folder` to track 2D coordinates of all videos in the `videos-raw` directory of every subject.
 
 * use the terminal command: `anipose analyze`
 
