@@ -1,547 +1,419 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduction to Computational Ethology &#8212; Computational Ethology</title>
-    
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '1_IntroductionToComputationalEthology';</script>
     <link rel="shortcut icon" href="_static/icon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Why Tracking is not Behavior" href="2_WhyTrackingIsNotBehavior.html" />
     <link rel="prev" title="FAQs" href="FAQs.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Computational Ethology</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Course Information
- </span>
-</p>
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Computational Ethology - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Computational Ethology - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Information</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="Syllabus.html">
-   Syllabus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Schedule.html">
-   Schedule
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Literature.html">
-   Literature
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="FAQs.html">
-   FAQs
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Schedule.html">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Literature.html">Literature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQs.html">FAQs</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Lectures
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Introduction to Computational Ethology
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2_WhyTrackingIsNotBehavior.html">
-   Why Tracking is not Behavior
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html">
-   Levels of Analysis and Quantification of Animal Behavior
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="4_ClassificationOfAnimalBehavior.html">
-   Classification of Animal Behavior
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="5_ProblemsSpacetimeMultidimensionalSpace.html">
-   The Problems of Spacetime and Multidimensional Space
-  </a>
- </li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to Computational Ethology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_WhyTrackingIsNotBehavior.html">Why Tracking is not Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html">Levels of Analysis and Quantification of Animal Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_ClassificationOfAnimalBehavior.html">Classification of Animal Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_ProblemsSpacetimeMultidimensionalSpace.html">The Problems of Spacetime and Multidimensional Space</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Exercises
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="HandsOnTutorials.html">
-   Hands on Tutorials
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="DemoDeepLabCut.html">
-   Introduction to DeepLabCut
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part1DLC.html">
-     Part 1: Create a DeepLabCut Project
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part2DLC.html">
-     Part 2: Edit an existing DeepLabCut Project
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="DemoVAME.html">
-   Introduction to VAME
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part1VAME.html">
-     Part 1: Local VAME Project with GPU
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part2VAME.html">
-     Part 2: Cloud VAME Project without GPU
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="DemoAnalysis.html">
-   Introduction to Data Analysis in Python
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="DemoAnipose.html">
-   Introduction to Anipose
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part1Anipose.html">
-     3D triangulation with Anipose
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ScientificPoster.html">
-   Preparing a Scientific Poster
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="HandsOnTutorials.html">Hands on Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoDeepLabCut.html">Introduction to DeepLabCut</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1DLC.html">Part 1: Create a DeepLabCut Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2DLC.html">Part 2: Edit an existing DeepLabCut Project</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Data sets
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="DataSets.html">
-   Datasets
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Posterprojects.html">
-   Student Posters
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Poster1.html">
-     Paula Gerliz
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Poster2.html">
-     Sarah C. Möser
-    </a>
-   </li>
-  </ul>
- </li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoVAME.html">Introduction to VAME</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1VAME.html">Part 1: Local VAME Project with GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2VAME.html">Part 2: Cloud VAME Project without GPU</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Feedback
- </span>
-</p>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoAnalysis.html">Introduction to Data Analysis in Python</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="datainspection.html">What does data look like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kinematicanalysis.html">Kinematic analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machinelearning.html">Machine Learning</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoAnipose.html">Introduction to Anipose</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1Anipose.html">3D triangulation with Anipose</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ScientificPoster.html">Preparing a Scientific Poster</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="feedbackform.html">
-   Suggestion Box
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="contactform.html">
-   Get in touch
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
-<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
 <div class="sbt-scroll-pixel-helper"></div>
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            <div class="topbar-left">
-                
-                <label class="nav-toggle-button" for="__navigation">
-                    <div class="visually-hidden">Toggle navigation</div>
-                    <i class="fas fa-bars"></i>
-                </label>
-                
-            </div>
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/1_IntroductionToComputationalEthology.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-</div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
 
-            <!-- Source interaction buttons -->
+<div class="article-header-buttons">
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        
-        <a class="issues-button"
-            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2F1_IntroductionToComputationalEthology.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
+<a href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2F1_IntroductionToComputationalEthology.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
 
-            <!-- Launch buttons -->
+</a>
 
-        </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#behavior-the-what-how-why-and-when">
-   Behavior - the what, how, why and when
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#measuring-behavior">
-   Measuring Behavior
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#computational-ethology">
-   Computational Ethology
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#promises">
-     Promises
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#methods">
-     Methods
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#tracking">
-       Tracking
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#action-classification">
-       Action classification
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#behavior-analysis">
-       Behavior analysis**
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#difficulties">
-     Difficulties
-    </a>
-   </li>
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/1_IntroductionToComputationalEthology.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#describing-behavior">
-   Describing Behavior
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#literature">
-   Literature
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bonus-ronald-fisher-victoria-university-of-wellington">
-   Bonus: Ronald Fisher (Victoria University of Wellington)
-  </a>
- </li>
-</ul>
+</div>
 
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction to Computational Ethology</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#behavior-the-what-how-why-and-when">Behavior - the what, how, why and when</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-behavior">Measuring Behavior</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-ethology">Computational Ethology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#promises">Promises</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking">Tracking</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#action-classification">Action classification</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#behavior-analysis">Behavior analysis</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difficulties">Difficulties</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#describing-behavior">Describing Behavior</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literature">Literature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-ronald-fisher-victoria-university-of-wellington">Bonus: Ronald Fisher (Victoria University of Wellington)</a></li>
+</ul>
             </nav>
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction to Computational Ethology</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#behavior-the-what-how-why-and-when">
-   Behavior - the what, how, why and when
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#measuring-behavior">
-   Measuring Behavior
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#computational-ethology">
-   Computational Ethology
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#promises">
-     Promises
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#methods">
-     Methods
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#tracking">
-       Tracking
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#action-classification">
-       Action classification
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#behavior-analysis">
-       Behavior analysis**
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#difficulties">
-     Difficulties
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#describing-behavior">
-   Describing Behavior
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#literature">
-   Literature
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bonus-ronald-fisher-victoria-university-of-wellington">
-   Bonus: Ronald Fisher (Victoria University of Wellington)
-  </a>
- </li>
-</ul>
 
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            
-              <div>
+              
                 
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-computational-ethology">
-<h1>Introduction to Computational Ethology<a class="headerlink" href="#introduction-to-computational-ethology" title="Permalink to this headline">¶</a></h1>
+<h1>Introduction to Computational Ethology<a class="headerlink" href="#introduction-to-computational-ethology" title="Permalink to this heading">#</a></h1>
 <div class="section" id="behavior-the-what-how-why-and-when">
-<h2>Behavior - the what, how, why and when<a class="headerlink" href="#behavior-the-what-how-why-and-when" title="Permalink to this headline">¶</a></h2>
+<h2>Behavior - the what, how, why and when<a class="headerlink" href="#behavior-the-what-how-why-and-when" title="Permalink to this heading">#</a></h2>
 <p>We can think of behavior as <em>relatively fast</em> changes in the spatiotemporal position of an organism in the environment. Behavior is what allows individuals to <strong>move, navigate and interact</strong> with their surroundings, and helps them adapt to changing environments on a timescale much faster than natural selection. From an ecological perspective, behavior may be considered a <strong>selection for flexibility</strong>.</p>
 <p>The biological study of animal behavior is called ethology (see <a class="reference external" href="https://en.wikipedia.org/wiki/Konrad_Lorenz">Konrad Lorenz</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Nikolaas_Tinbergen">Niko Tinbergen</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Karl_von_Frisch">Karl von Frisch</a>), while psychologists may approach similar questions from perspectives like <a class="reference external" href="https://en.wikipedia.org/wiki/Behavioral_ecology">behavioral ecology</a> or <a class="reference external" href="https://en.wikipedia.org/wiki/Comparative_psychology">comparative cognition</a>.</p>
 <p>In his <a class="reference external" href="https://www.esf.edu/efb/faculty/documents/tinbergen1963onethology.pdf"><em>On Aims and Methods of Ethology</em></a>, Tinbergen lays out four specific questions or levels of analysis to be used for a complete study of behavior (see <a class="reference internal" href="#tinbergens4"><span class="std std-numref">Fig. 2</span></a>).</p>
 <div class="figure align-default" id="tinbergens4">
 <a class="reference internal image-reference" href="_images/tinbergens4.png"><img alt="_images/tinbergens4.png" src="_images/tinbergens4.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Tinbergens’ four levels of analysis, from Wikipedia.</span><a class="headerlink" href="#tinbergens4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Tinbergens’ four levels of analysis, from Wikipedia.</span><a class="headerlink" href="#tinbergens4" title="Permalink to this image">#</a></p>
 </div>
 </div>
 <div class="section" id="measuring-behavior">
-<h2>Measuring Behavior<a class="headerlink" href="#measuring-behavior" title="Permalink to this headline">¶</a></h2>
+<h2>Measuring Behavior<a class="headerlink" href="#measuring-behavior" title="Permalink to this heading">#</a></h2>
 <p>The study of behavior started with rich, naturalistic observations of animals in their natural environments. But these observations were mostly qualitative and anecdotal descriptions, rather than quantitative measurements of behavior (see <a class="reference external" href="https://dl.tufts.edu/concern/pdfs/47429n35w">George Romanes’ <em>Animal Intelligence</em></a> and <a class="reference external" href="https://en.wikipedia.org/wiki/The_Naked_Ape">Desmond Morris’ <em>The Naked Ape</em></a> for such examples).</p>
 <p>A more systematic approach to measuring behavior was achieved by using scoring sheets of pre-defined behaviors of interest, and manually logging the occurrence and duration of these behaviors at a given temporal resolution in specific time intervals. This allowed the quantification of behavior with simple statistics such as the frequency, latency and duration of given behaviors, as well as the relative proportion of several behaviors in given environments.</p>
 <p>These observations and manual coding techniques are still popular today, although video recording techniques allow to store data, and score behavior from the lab, instead of in the field. Furthermore, computer-assisted tools allow to score behavior frame-by-frame. More on this will be covered in a future session on <a class="reference internal" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html"><span class="doc std std-doc">Levels of Analysis and Quantification of Animal Behavior</span></a>.</p>
@@ -554,37 +426,37 @@
 <p>Specifically, one of the main problems for Psychology and Neuroscience is that the measurement of behavior is by far <strong>not as accurate as advances in neural recording techniques</strong> such as electroencephalography, optogenetics, pharmacogenetics or optical imaging. How are we then supposed to match cognitive and neural processes to the animals behavioral output?</p>
 </div>
 <div class="section" id="computational-ethology">
-<h2>Computational Ethology<a class="headerlink" href="#computational-ethology" title="Permalink to this headline">¶</a></h2>
+<h2>Computational Ethology<a class="headerlink" href="#computational-ethology" title="Permalink to this heading">#</a></h2>
 <p>Computational ethology is a new interdisciplinary field using modern advances in machine learning and machine vision (<em>computational</em>) for measuring, describing and analyzing natural behavior in freely moving animals (<em>ethology</em>).</p>
 <p>Take some time to get familiar with the <em>computational</em> part of the seminar. In <a class="reference internal" href="#terminologyml"><span class="std std-numref">Fig. 3</span></a> you can find basic concepts needed to understand the main technological advances in the field. And in In <a class="reference internal" href="#modelsml"><span class="std std-numref">Fig. 4</span></a> you will see a very general distinction between the most popular neural networks used in computational ethology.</p>
 <div class="figure align-default" id="terminologyml">
 <a class="reference internal image-reference" href="_images/terminologyML.png"><img alt="_images/terminologyML.png" src="_images/terminologyML.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Key ML terminology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#terminologyml" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Key ML terminology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#terminologyml" title="Permalink to this image">#</a></p>
 </div>
 <div class="figure align-default" id="modelsml">
 <a class="reference internal image-reference" href="_images/modelsML.png"><img alt="_images/modelsML.png" src="_images/modelsML.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Key ML models, from Stack Overflow.</span><a class="headerlink" href="#modelsml" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Key ML models, from Stack Overflow.</span><a class="headerlink" href="#modelsml" title="Permalink to this image">#</a></p>
 </div>
 <p>For a more in-depth understanding of machine learning techniques feel free to ask the internet or brows the online materials for the <a class="reference external" href="https://compneuro.neuromatch.io/tutorials/W2D1_DeepLearning/chapter_title.html">Computational Neuroscience course from the Neuromatch Academy</a>.</p>
 <div class="section" id="promises">
-<h3>Promises<a class="headerlink" href="#promises" title="Permalink to this headline">¶</a></h3>
+<h3>Promises<a class="headerlink" href="#promises" title="Permalink to this heading">#</a></h3>
 <p>By successfully and skillfully applying machine learning methods the study of behavior will profit from a more accurate quantification of behavior, while outsourcing the painstaking manual labor of video coding. Computational models will increase the throughput of behavioral experiments by tracking multiple subjects at once, measuring over prolonged time windows, or even in real time. Real time measurements, in turn, pose new possibilities to design closed-loop experiments reactive to subjects’ behavior.<br />
 Computational methods will also increase the dimensionality of behavior, differentiating between short actions and large-scale behavioral patterns, and setting time-accurate context to subjects behavior in the environment.<br />
 Lastly, specific advances in computer vision revolutionize the way we operationalize the behavior of subjects. See <a class="reference internal" href="#levelsofdetail"><span class="std std-numref">Fig. 5</span></a> for an overview of different levels of detail in the tracking of subjects movement.</p>
 <div class="figure align-default" id="levelsofdetail">
 <a class="reference internal image-reference" href="_images/levelsofdetail.png"><img alt="_images/levelsofdetail.png" src="_images/levelsofdetail.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Levels of detail in Computational Ethology, from Pereira et al (2020).</span><a class="headerlink" href="#levelsofdetail" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Levels of detail in Computational Ethology, from Pereira et al (2020).</span><a class="headerlink" href="#levelsofdetail" title="Permalink to this image">#</a></p>
 </div>
 </div>
 <div class="section" id="methods">
-<h3>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h3>
+<h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h3>
 <p>In <a class="reference internal" href="#steps"><span class="std std-numref">Fig. 6</span></a> Anderson &amp; Perona (2014) give an overview of different steps required for a complete system for the measurement of behavior. Try to get familiar with these steps and understand the main differences among them using the keywords below.</p>
 <div class="figure align-default" id="steps">
 <a class="reference internal image-reference" href="_images/stepsince.png"><img alt="_images/stepsince.png" src="_images/stepsince.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Steps in typical computational ethology systems, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#steps" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Steps in typical computational ethology systems, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#steps" title="Permalink to this image">#</a></p>
 </div>
 <div class="section" id="tracking">
-<h4>Tracking<a class="headerlink" href="#tracking" title="Permalink to this headline">¶</a></h4>
+<h4>Tracking<a class="headerlink" href="#tracking" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>detection</p></li>
 <li><p>location/position</p></li>
@@ -595,7 +467,7 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
 </ul>
 </div>
 <div class="section" id="action-classification">
-<h4>Action classification<a class="headerlink" href="#action-classification" title="Permalink to this headline">¶</a></h4>
+<h4>Action classification<a class="headerlink" href="#action-classification" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>supervised</p></li>
 <li><p>unsupervised</p></li>
@@ -605,7 +477,7 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
 </ul>
 </div>
 <div class="section" id="behavior-analysis">
-<h4>Behavior analysis**<a class="headerlink" href="#behavior-analysis" title="Permalink to this headline">¶</a></h4>
+<h4>Behavior analysis<a class="headerlink" href="#behavior-analysis" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>ethogram</p></li>
 <li><p>large-scale patterns</p></li>
@@ -615,7 +487,7 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
 </div>
 </div>
 <div class="section" id="difficulties">
-<h3>Difficulties<a class="headerlink" href="#difficulties" title="Permalink to this headline">¶</a></h3>
+<h3>Difficulties<a class="headerlink" href="#difficulties" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>A new, tech-savvy generation of students is needed willing to cooperate in interdisciplinary teams of biologists, psychologists and computer scientists</p></li>
 <li><p>3D tracking needs multiple cameras and triangulation, or specialized depth sensors to capture a complete picture of behavior. Skeleton vs surface?</p></li>
@@ -625,20 +497,20 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
 </div>
 </div>
 <div class="section" id="describing-behavior">
-<h2>Describing Behavior<a class="headerlink" href="#describing-behavior" title="Permalink to this headline">¶</a></h2>
+<h2>Describing Behavior<a class="headerlink" href="#describing-behavior" title="Permalink to this heading">#</a></h2>
 <p>Working on a new understanding of behavior quantification will need a standardized language to describe behavior. Lets get started with <a class="reference internal" href="#terminology"><span class="std std-numref">Fig. 7</span></a>:</p>
 <div class="figure align-default" id="terminology">
 <a class="reference internal image-reference" href="_images/terminologybehavior.png"><img alt="_images/terminologybehavior.png" src="_images/terminologybehavior.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Basic terminology for computational ethology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#terminology" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Basic terminology for computational ethology, from Anderson &amp; Perona (2014).</span><a class="headerlink" href="#terminology" title="Permalink to this image">#</a></p>
 </div>
 </div>
 <div class="section" id="literature">
-<h2>Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h2>
+<h2>Literature<a class="headerlink" href="#literature" title="Permalink to this heading">#</a></h2>
 <p>Anderson, D. J., &amp; Perona, P. (2014). Toward a Science of Computational Ethology. Neuron, 84(1), 18–31. <a class="reference external" href="https://doi.org/10.1016/j.neuron.2014.09.005">https://doi.org/10.1016/j.neuron.2014.09.005</a></p>
 <p>Pereira, T. D., Shaevitz, J. W., &amp; Murthy, M. (2020). Quantifying behavior to understand the brain. Nature Neuroscience, 23(12), 1537–1549. <a class="reference external" href="https://doi.org/10.1038/s41593-020-00734-z">https://doi.org/10.1038/s41593-020-00734-z</a></p>
 </div>
 <div class="section" id="bonus-ronald-fisher-victoria-university-of-wellington">
-<h2>Bonus: Ronald Fisher (Victoria University of Wellington)<a class="headerlink" href="#bonus-ronald-fisher-victoria-university-of-wellington" title="Permalink to this headline">¶</a></h2>
+<h2>Bonus: Ronald Fisher (Victoria University of Wellington)<a class="headerlink" href="#bonus-ronald-fisher-victoria-university-of-wellington" title="Permalink to this heading">#</a></h2>
 <p>The beginnings of psychology &amp; ethology</p>
 <iframe width="935" height="526" src="https://www.youtube.com/embed/KncqqoP7UI4?list=PL6lKKJXBkPSDrRSAHdJhDZOrwyyuRwCz0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -656,7 +528,7 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -664,44 +536,116 @@ Lastly, specific advances in computer vision revolutionize the way we operationa
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="FAQs.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">FAQs</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="FAQs.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">FAQs</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="2_WhyTrackingIsNotBehavior.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="2_WhyTrackingIsNotBehavior.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Why Tracking is not Behavior</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
+                </footer>
+              
+            </div>
             
-        </div>
-    </div>
-    <footer class="footer">
-  <p>
-    
-      By Guillermo Hidalgo Gadea<br/>
-    
-        &copy; Copyright 2022.<br/>
-  </p>
-</footer>
-</main>
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#behavior-the-what-how-why-and-when">Behavior - the what, how, why and when</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-behavior">Measuring Behavior</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-ethology">Computational Ethology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#promises">Promises</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking">Tracking</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#action-classification">Action classification</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#behavior-analysis">Behavior analysis</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difficulties">Difficulties</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#describing-behavior">Describing Behavior</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literature">Literature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-ronald-fisher-victoria-university-of-wellington">Bonus: Ronald Fisher (Victoria University of Wellington)</a></li>
+</ul>
+  </nav></div>
 
-      </div>
-    </div>
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Guillermo Hidalgo Gadea
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

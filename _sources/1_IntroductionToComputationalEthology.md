@@ -99,7 +99,7 @@ Steps in typical computational ethology systems, from Anderson & Perona (2014).
 * segmentation
 * clustering
 
-#### Behavior analysis**
+#### Behavior analysis
 
 * ethogram
 * large-scale patterns

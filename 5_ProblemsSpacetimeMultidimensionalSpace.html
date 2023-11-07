@@ -1,538 +1,421 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Problems of Spacetime and Multidimensional Space &#8212; Computational Ethology</title>
-    
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '5_ProblemsSpacetimeMultidimensionalSpace';</script>
     <link rel="shortcut icon" href="_static/icon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Hands on Tutorials" href="HandsOnTutorials.html" />
     <link rel="prev" title="Classification of Animal Behavior" href="4_ClassificationOfAnimalBehavior.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Computational Ethology</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Course Information
- </span>
-</p>
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Computational Ethology - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Computational Ethology - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Information</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="Syllabus.html">
-   Syllabus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Schedule.html">
-   Schedule
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Literature.html">
-   Literature
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="FAQs.html">
-   FAQs
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Schedule.html">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Literature.html">Literature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQs.html">FAQs</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Lectures
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="1_IntroductionToComputationalEthology.html">
-   Introduction to Computational Ethology
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="2_WhyTrackingIsNotBehavior.html">
-   Why Tracking is not Behavior
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html">
-   Levels of Analysis and Quantification of Animal Behavior
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="4_ClassificationOfAnimalBehavior.html">
-   Classification of Animal Behavior
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   The Problems of Spacetime and Multidimensional Space
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="1_IntroductionToComputationalEthology.html">Introduction to Computational Ethology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_WhyTrackingIsNotBehavior.html">Why Tracking is not Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html">Levels of Analysis and Quantification of Animal Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_ClassificationOfAnimalBehavior.html">Classification of Animal Behavior</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">The Problems of Spacetime and Multidimensional Space</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Exercises
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="HandsOnTutorials.html">
-   Hands on Tutorials
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="DemoDeepLabCut.html">
-   Introduction to DeepLabCut
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part1DLC.html">
-     Part 1: Create a DeepLabCut Project
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part2DLC.html">
-     Part 2: Edit an existing DeepLabCut Project
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="DemoVAME.html">
-   Introduction to VAME
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part1VAME.html">
-     Part 1: Local VAME Project with GPU
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part2VAME.html">
-     Part 2: Cloud VAME Project without GPU
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="DemoAnalysis.html">
-   Introduction to Data Analysis in Python
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="DemoAnipose.html">
-   Introduction to Anipose
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Part1Anipose.html">
-     3D triangulation with Anipose
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ScientificPoster.html">
-   Preparing a Scientific Poster
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="HandsOnTutorials.html">Hands on Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoDeepLabCut.html">Introduction to DeepLabCut</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1DLC.html">Part 1: Create a DeepLabCut Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2DLC.html">Part 2: Edit an existing DeepLabCut Project</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Data sets
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="DataSets.html">
-   Datasets
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Posterprojects.html">
-   Student Posters
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Poster1.html">
-     Paula Gerliz
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Poster2.html">
-     Sarah C. Möser
-    </a>
-   </li>
-  </ul>
- </li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoVAME.html">Introduction to VAME</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1VAME.html">Part 1: Local VAME Project with GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2VAME.html">Part 2: Cloud VAME Project without GPU</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Feedback
- </span>
-</p>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoAnalysis.html">Introduction to Data Analysis in Python</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="datainspection.html">What does data look like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kinematicanalysis.html">Kinematic analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machinelearning.html">Machine Learning</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoAnipose.html">Introduction to Anipose</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1Anipose.html">3D triangulation with Anipose</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ScientificPoster.html">Preparing a Scientific Poster</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="feedbackform.html">
-   Suggestion Box
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="contactform.html">
-   Get in touch
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
-<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
 <div class="sbt-scroll-pixel-helper"></div>
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            <div class="topbar-left">
-                
-                <label class="nav-toggle-button" for="__navigation">
-                    <div class="visually-hidden">Toggle navigation</div>
-                    <i class="fas fa-bars"></i>
-                </label>
-                
-            </div>
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/5_ProblemsSpacetimeMultidimensionalSpace.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-</div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
 
-            <!-- Source interaction buttons -->
+<div class="article-header-buttons">
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        
-        <a class="issues-button"
-            href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2F5_ProblemsSpacetimeMultidimensionalSpace.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
+<a href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2F5_ProblemsSpacetimeMultidimensionalSpace.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
 
-            <!-- Launch buttons -->
+</a>
 
-        </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#continuity-of-space-and-time">
-   Continuity of space and time
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zeno-s-paradox-the-dichotomy">
-     Zeno’s Paradox: The Dichotomy
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zeno-s-paradox-achilles-and-the-tortoise">
-     Zeno’s Paradox: Achilles and the Tortoise
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zeno-s-paradox-the-arrow">
-     Zeno’s Paradox: The Arrow
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solution-calculus-yes-really">
-     Solution: Calculus, yes really
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#take-home-message">
-     Take Home Message
-    </a>
-   </li>
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/5_ProblemsSpacetimeMultidimensionalSpace.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#measuring-in-multidimensional-space">
-   Measuring in Multidimensional Space
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#temporal-synchronization">
-   Temporal Synchronization
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#literature">
-   Literature
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bonus-jesse-marshall-harvard-university">
-   Bonus: Jesse Marshall (Harvard University)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bonus-ii-angjoo-kanazawa-berkley-university">
-   Bonus II: Angjoo Kanazawa (Berkley University)
-  </a>
- </li>
-</ul>
+</div>
 
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Problems of Spacetime and Multidimensional Space</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuity-of-space-and-time">Continuity of space and time</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zeno-s-paradox-the-dichotomy">Zeno’s Paradox: The Dichotomy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zeno-s-paradox-achilles-and-the-tortoise">Zeno’s Paradox: Achilles and the Tortoise</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zeno-s-paradox-the-arrow">Zeno’s Paradox: The Arrow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-calculus-yes-really">Solution: Calculus, yes really</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#take-home-message">Take Home Message</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-in-multidimensional-space">Measuring in Multidimensional Space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-synchronization">Temporal Synchronization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literature">Literature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-jesse-marshall-harvard-university">Bonus: Jesse Marshall (Harvard University)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-ii-angjoo-kanazawa-berkley-university">Bonus II: Angjoo Kanazawa (Berkley University)</a></li>
+</ul>
             </nav>
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>The Problems of Spacetime and Multidimensional Space</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#continuity-of-space-and-time">
-   Continuity of space and time
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zeno-s-paradox-the-dichotomy">
-     Zeno’s Paradox: The Dichotomy
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zeno-s-paradox-achilles-and-the-tortoise">
-     Zeno’s Paradox: Achilles and the Tortoise
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zeno-s-paradox-the-arrow">
-     Zeno’s Paradox: The Arrow
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solution-calculus-yes-really">
-     Solution: Calculus, yes really
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#take-home-message">
-     Take Home Message
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#measuring-in-multidimensional-space">
-   Measuring in Multidimensional Space
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#temporal-synchronization">
-   Temporal Synchronization
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#literature">
-   Literature
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bonus-jesse-marshall-harvard-university">
-   Bonus: Jesse Marshall (Harvard University)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bonus-ii-angjoo-kanazawa-berkley-university">
-   Bonus II: Angjoo Kanazawa (Berkley University)
-  </a>
- </li>
-</ul>
 
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            
-              <div>
+              
                 
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <div class="tex2jax_ignore mathjax_ignore section" id="the-problems-of-spacetime-and-multidimensional-space">
-<h1>The Problems of Spacetime and Multidimensional Space<a class="headerlink" href="#the-problems-of-spacetime-and-multidimensional-space" title="Permalink to this headline">¶</a></h1>
+<h1>The Problems of Spacetime and Multidimensional Space<a class="headerlink" href="#the-problems-of-spacetime-and-multidimensional-space" title="Permalink to this heading">#</a></h1>
 <p>Imagine a pendulum swing like the one in the animation below and think about its resulting trajectory in space and time. In which of the points on this curved trajectory has the pendulum been during the swing? At which points in time has the pendulum been on the trajectory during its swing?</p>
 <div style="width:100%;height:0;padding-bottom:101%;position:relative;"><iframe src="https://giphy.com/embed/TGJCnaADJBLM22w76L" width="100%" height="100%" style="position:absolute" frameBorder="1" class="giphy-embed" allowFullScreen></iframe></div>
 <div class="section" id="continuity-of-space-and-time">
-<h2>Continuity of space and time<a class="headerlink" href="#continuity-of-space-and-time" title="Permalink to this headline">¶</a></h2>
+<h2>Continuity of space and time<a class="headerlink" href="#continuity-of-space-and-time" title="Permalink to this heading">#</a></h2>
 <p>Todays intuition indicates that space and time are continuous. But this has not always been the popular opinion. Continuity needs the concepts of infinity and infinitesimal units of space and time, which, to be honest, are not always intuitive.</p>
 <div class="section" id="zeno-s-paradox-the-dichotomy">
-<h3>Zeno’s Paradox: The Dichotomy<a class="headerlink" href="#zeno-s-paradox-the-dichotomy" title="Permalink to this headline">¶</a></h3>
+<h3>Zeno’s Paradox: The Dichotomy<a class="headerlink" href="#zeno-s-paradox-the-dichotomy" title="Permalink to this heading">#</a></h3>
 <p>Suppose Atalanta wishes to walk to the end of a path, say she is headed to her next seminar. Before she can get there, she must get halfway there. But before she can get halfway there, she must get a quarter of the way there. Before traveling a quarter, she must travel one-eighth; before an eighth, one-sixteenth; and so on.</p>
 <p>This sequence also presents a second problem in that it contains no first distance to run, for any possible (finite) first distance could be divided in half, and hence would not be first after all. Hence, the trip cannot even begin. The paradoxical conclusion then would be that travel over any finite distance can be neither completed nor begun, and so all motion must be an illusion. So much for taking <strong>“the first step”</strong>.</p>
 <div class="figure align-default" id="zenodichotomyparadox">
 <a class="reference internal image-reference" href="_images/ZenoDichotomyParadox.png"><img alt="_images/ZenoDichotomyParadox.png" src="_images/ZenoDichotomyParadox.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">Zeno’s Paradox of Dichotomy of continuous Space, from Wikipedia.</span><a class="headerlink" href="#zenodichotomyparadox" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">Zeno’s Paradox of Dichotomy of continuous Space, from Wikipedia.</span><a class="headerlink" href="#zenodichotomyparadox" title="Permalink to this image">#</a></p>
 </div>
 <p>You could turn the dichotomy paradox around and imagine staying in front of a wall. Then it should be easy to take a step forward that halves the distance between you and the wall. Take a second step that halves that distance again between you and the wall. Try it again. And again. If you continue halving the distance, will you ever bump your head against the wall?</p>
 </div>
 <div class="section" id="zeno-s-paradox-achilles-and-the-tortoise">
-<h3>Zeno’s Paradox: Achilles and the Tortoise<a class="headerlink" href="#zeno-s-paradox-achilles-and-the-tortoise" title="Permalink to this headline">¶</a></h3>
+<h3>Zeno’s Paradox: Achilles and the Tortoise<a class="headerlink" href="#zeno-s-paradox-achilles-and-the-tortoise" title="Permalink to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Quote</p>
 <p>“In a race, the quickest runner can never overtake the slowest, since the pursuer must first reach the point whence the pursued started, so that the slower must always hold a lead.”  -  Zeno of Elea, as recounted by Aristotle</p>
@@ -540,23 +423,23 @@
 <p>In this paradox, Achilles is in a footrace with the tortoise (see <a class="reference internal" href="#zenoachillesparadox"><span class="std std-numref">Fig. 19</span></a>). Achilles allows the tortoise a head start of 100 meters, for example. Suppose that each racer starts running at some constant speed, one faster than the other. After some finite time, Achilles will have run 100 meters, bringing him to the tortoise’s starting point. During this time, the tortoise has run a much shorter distance, say 2 meters. It will then take Achilles some further time to run that distance, by which time the tortoise will have advanced farther; and then more time still to reach this third point, while the tortoise moves ahead. Thus, whenever Achilles arrives somewhere the tortoise has been, he still has some distance to go before he can even reach the tortoise.</p>
 <div class="figure align-default" id="zenoachillesparadox">
 <a class="reference internal image-reference" href="_images/ZenoAchillesParadox.png"><img alt="_images/ZenoAchillesParadox.png" src="_images/ZenoAchillesParadox.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Zeno’s Paradox of Achilles and the Tortoise, from Wikipedia.</span><a class="headerlink" href="#zenoachillesparadox" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Zeno’s Paradox of Achilles and the Tortoise, from Wikipedia.</span><a class="headerlink" href="#zenoachillesparadox" title="Permalink to this image">#</a></p>
 </div>
 </div>
 <div class="section" id="zeno-s-paradox-the-arrow">
-<h3>Zeno’s Paradox: The Arrow<a class="headerlink" href="#zeno-s-paradox-the-arrow" title="Permalink to this headline">¶</a></h3>
+<h3>Zeno’s Paradox: The Arrow<a class="headerlink" href="#zeno-s-paradox-the-arrow" title="Permalink to this heading">#</a></h3>
 <p>In the arrow paradox, Zeno states that for motion to occur, an object must change the position which it occupies. He gives an example of an arrow in flight. He states that in any one (duration-less) instant of time, the arrow is neither moving to where it is, nor to where it is not. It cannot move to where it is not, because no time elapses for it to move there; it cannot move to where it is, because it is already there. In other words, at every instant of time there is no motion occurring. If everything is motionless at every instant, and time is entirely composed of instants, then motion is impossible.</p>
 <div class="figure align-default" id="zenoarrowparadox">
 <a class="reference internal image-reference" href="_images/ZenoArrowParadox.png"><img alt="_images/ZenoArrowParadox.png" src="_images/ZenoArrowParadox.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Zeno’s Paradox of the Arrow and instantaneous motion, from Wikipedia.</span><a class="headerlink" href="#zenoarrowparadox" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Zeno’s Paradox of the Arrow and instantaneous motion, from Wikipedia.</span><a class="headerlink" href="#zenoarrowparadox" title="Permalink to this image">#</a></p>
 </div>
 </div>
 <div class="section" id="solution-calculus-yes-really">
-<h3>Solution: Calculus, yes really<a class="headerlink" href="#solution-calculus-yes-really" title="Permalink to this headline">¶</a></h3>
+<h3>Solution: Calculus, yes really<a class="headerlink" href="#solution-calculus-yes-really" title="Permalink to this heading">#</a></h3>
 <p>A breakthrough in the study of continuous change was the development of calculus in 17th-century Europe by Isaac Newton and Gottfried Wilhelm Leibniz, but elements of it appeared in ancient Greece, in China and in the Middle East. Using <strong>integration</strong>, <strong>differentiation</strong>, <strong>infinite series</strong> and <strong>limits</strong>, Zeno’s paradoxes can be explained. For example, the resolution of the paradox of Achilles and the Tortoise is that, although the series have an infinite number of terms, it has a finite sum, which gives the time necessary for Achilles to catch up with the tortoise. This is the difference between <strong>convergent</strong> and <strong>divergent infinite series</strong>.</p>
 </div>
 <div class="section" id="take-home-message">
-<h3>Take Home Message<a class="headerlink" href="#take-home-message" title="Permalink to this headline">¶</a></h3>
+<h3>Take Home Message<a class="headerlink" href="#take-home-message" title="Permalink to this heading">#</a></h3>
 <p>Without getting into too much detail about the mathematical <a class="reference external" href="https://www.maa.org/press/maa-reviews/infinite-powers-how-calculus-reveals-the-secrets-of-the-universe">foundations of calculus</a>, or the physics of the <a class="reference external" href="https://en.wikipedia.org/wiki/General_relativity">curvature of spacetime</a> in the general theory of relativity, or the <a class="reference external" href="https://en.wikipedia.org/wiki/Planck_units">Planck scale</a> of quantum mechanics, what can you make out of this discussion? What does it mean for you to move and behave in spacetime?</p>
 <p><strong>Try to write a short statement about behavior in spacetime with max. 150 words:</strong></p>
 <p>“If you consider Zeno’s Arrow-Paradox, the gist of it is that movement is an illusion, because watching movement at a single point in time results in a still image. I would consider this conclusion to be hasty. Movement or behavior as such is dependent on space. Without space there would be no reference as to where something moves or in which direction. Time, however, can tell us how fast a movement is, it can tell us when a behavior started and ended. Behavior is the “When” relative to the “Where” and the “Where” relative to the When”. Taken together, time and space are the “What” that describes behavior. Without either of these you cannot define behavior or movement. Because taking time or space out of the equation makes it unsolvable. The Zeno’s illusion is that the equation does not exist. However, it does. It is the “What” of behavior.”</p>
@@ -566,31 +449,31 @@ However, with respect to Zeno’s Paradox, this approach can only be an approxim
 </div>
 </div>
 <div class="section" id="measuring-in-multidimensional-space">
-<h2>Measuring in Multidimensional Space<a class="headerlink" href="#measuring-in-multidimensional-space" title="Permalink to this headline">¶</a></h2>
+<h2>Measuring in Multidimensional Space<a class="headerlink" href="#measuring-in-multidimensional-space" title="Permalink to this heading">#</a></h2>
 <p>Given the methods and techniques from Computational Ethology learned in the previous lectures, it seems we have improved vastly our methods of observation using high resolution video imaging. But are video recordings really that good?</p>
 <p>Reducing a given scene to a two dimensional plane on a video frame looses valuable information essential for behavioral analysis. Given specific visual cues, humans have no problem whatsoever reconstructing three dimensional objects and inferring the missing or occluded parts. Computational models are not quite there yet, although promising approaches for <strong>2D-to-3D lifting</strong> exist (see Bonus II below).</p>
 <div class="figure align-default" id="dlifting">
 <a class="reference internal image-reference" href="_images/3Dlifting.png"><img alt="_images/3Dlifting.png" src="_images/3Dlifting.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">2D to 3D lifting techniques.</span><a class="headerlink" href="#dlifting" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">2D to 3D lifting techniques.</span><a class="headerlink" href="#dlifting" title="Permalink to this image">#</a></p>
 </div>
 <p>Until then, we are stuck with the problem of reconstructing 3D objects from 2D image representations by multi-view synchronized recording and camera <strong>triangulation</strong>. Different methods have proved to be successful in computational ethology (see Dunn et al., 2021; Karashchuk et al., 2021). But many question remain. How many cameras are needed? Where to position the different cameras?</p>
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/Demo-Pigeon-Arena.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 </div>
 <div class="section" id="temporal-synchronization">
-<h2>Temporal Synchronization<a class="headerlink" href="#temporal-synchronization" title="Permalink to this headline">¶</a></h2>
+<h2>Temporal Synchronization<a class="headerlink" href="#temporal-synchronization" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="literature">
-<h2>Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h2>
+<h2>Literature<a class="headerlink" href="#literature" title="Permalink to this heading">#</a></h2>
 <p>Dunn, T. W. (2021). Geometric deep learning enables 3D kinematic profiling across species and environments. Nature Methods, 18, 17. <a class="reference external" href="https://doi.org/10.1038/s41592-021-01106-6">https://doi.org/10.1038/s41592-021-01106-6</a></p>
 <p>Karashchuk, P., Rupp, K. L., Dickinson, E. S., Walling-Bell, S., Sanders, E., Azim, E., Brunton, B. W., &amp; Tuthill, J. C. (2021). Anipose: A toolkit for robust markerless 3D pose estimation. Cell Reports, 36(13), 109730. <a class="reference external" href="https://doi.org/10.1016/j.celrep.2021.109730">https://doi.org/10.1016/j.celrep.2021.109730</a></p>
 </div>
 <div class="section" id="bonus-jesse-marshall-harvard-university">
-<h2>Bonus: Jesse Marshall (Harvard University)<a class="headerlink" href="#bonus-jesse-marshall-harvard-university" title="Permalink to this headline">¶</a></h2>
+<h2>Bonus: Jesse Marshall (Harvard University)<a class="headerlink" href="#bonus-jesse-marshall-harvard-university" title="Permalink to this heading">#</a></h2>
 <p>Exiting flatland: measuring, modeling, and synthesizing animal behavior in 3D</p>
 <iframe width="935" height="526" src="https://www.youtube.com/embed/JjFKGQmcgJw" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="section" id="bonus-ii-angjoo-kanazawa-berkley-university">
-<h2>Bonus II: Angjoo Kanazawa (Berkley University)<a class="headerlink" href="#bonus-ii-angjoo-kanazawa-berkley-university" title="Permalink to this headline">¶</a></h2>
+<h2>Bonus II: Angjoo Kanazawa (Berkley University)<a class="headerlink" href="#bonus-ii-angjoo-kanazawa-berkley-university" title="Permalink to this heading">#</a></h2>
 <p>TUM AI Lecture Series - Perceiving Humans in the 3D World</p>
 <iframe width="935" height="526" src="https://www.youtube.com/embed/WOuCPT0lXio" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
@@ -607,7 +490,7 @@ However, with respect to Zeno’s Paradox, this approach can only be an approxim
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -615,44 +498,113 @@ However, with respect to Zeno’s Paradox, this approach can only be an approxim
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="4_ClassificationOfAnimalBehavior.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Classification of Animal Behavior</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="4_ClassificationOfAnimalBehavior.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Classification of Animal Behavior</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="HandsOnTutorials.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="HandsOnTutorials.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Hands on Tutorials</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
+                </footer>
+              
+            </div>
             
-        </div>
-    </div>
-    <footer class="footer">
-  <p>
-    
-      By Guillermo Hidalgo Gadea<br/>
-    
-        &copy; Copyright 2022.<br/>
-  </p>
-</footer>
-</main>
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuity-of-space-and-time">Continuity of space and time</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zeno-s-paradox-the-dichotomy">Zeno’s Paradox: The Dichotomy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zeno-s-paradox-achilles-and-the-tortoise">Zeno’s Paradox: Achilles and the Tortoise</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zeno-s-paradox-the-arrow">Zeno’s Paradox: The Arrow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-calculus-yes-really">Solution: Calculus, yes really</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#take-home-message">Take Home Message</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-in-multidimensional-space">Measuring in Multidimensional Space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-synchronization">Temporal Synchronization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literature">Literature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-jesse-marshall-harvard-university">Bonus: Jesse Marshall (Harvard University)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-ii-angjoo-kanazawa-berkley-university">Bonus II: Angjoo Kanazawa (Berkley University)</a></li>
+</ul>
+  </nav></div>
 
-      </div>
-    </div>
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Guillermo Hidalgo Gadea
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

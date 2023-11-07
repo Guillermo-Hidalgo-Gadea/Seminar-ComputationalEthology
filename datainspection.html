@@ -1,0 +1,2824 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What does data look like &#8212; Computational Ethology</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'datainspection';</script>
+    <link rel="shortcut icon" href="_static/icon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Kinematic analysis" href="kinematicanalysis.html" />
+    <link rel="prev" title="Introduction to Data Analysis in Python" href="DemoAnalysis.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Computational Ethology - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Computational Ethology - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Schedule.html">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Literature.html">Literature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQs.html">FAQs</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_IntroductionToComputationalEthology.html">Introduction to Computational Ethology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_WhyTrackingIsNotBehavior.html">Why Tracking is not Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_LevelsOfAnalysisAndQuantificationOfBehavior.html">Levels of Analysis and Quantification of Animal Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_ClassificationOfAnimalBehavior.html">Classification of Animal Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_ProblemsSpacetimeMultidimensionalSpace.html">The Problems of Spacetime and Multidimensional Space</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="HandsOnTutorials.html">Hands on Tutorials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoDeepLabCut.html">Introduction to DeepLabCut</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1DLC.html">Part 1: Create a DeepLabCut Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2DLC.html">Part 2: Edit an existing DeepLabCut Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoVAME.html">Introduction to VAME</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1VAME.html">Part 1: Local VAME Project with GPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Part2VAME.html">Part 2: Cloud VAME Project without GPU</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="DemoAnalysis.html">Introduction to Data Analysis in Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">What does data look like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kinematicanalysis.html">Kinematic analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="machinelearning.html">Machine Learning</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="DemoAnipose.html">Introduction to Anipose</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Part1Anipose.html">3D triangulation with Anipose</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ScientificPoster.html">Preparing a Scientific Poster</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data sets</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="DataSets.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Posterprojects.html">Student Posters</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Poster1.html">Paula Gerliz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Poster2.html">Sarah C. Möser</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Feedback</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="feedbackform.html">Suggestion Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contactform.html">Get in touch</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology/issues/new?title=Issue%20on%20page%20%2Fdatainspection.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/datainspection.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>What does data look like</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-libraries-should-i-import">What libraries should I import?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-read-data">How to read data?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-is-my-data-structured">How is my data structured?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-data">Cleaning data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-data-structure">Changing the data structure</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-deeplabcut-data">Reading DeepLabCut Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-my-data-tell-me">What does my data tell me?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-could-my-data-look-like">How could my data look like</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus">Bonus</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="what-does-data-look-like">
+<h1>What does data look like<a class="headerlink" href="#what-does-data-look-like" title="Permalink to this heading">#</a></h1>
+<div class="section" id="what-libraries-should-i-import">
+<h2>What libraries should I import?<a class="headerlink" href="#what-libraries-should-i-import" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-read-data">
+<h2>How to read data?<a class="headerlink" href="#how-to-read-data" title="Permalink to this heading">#</a></h2>
+<p>Dummy data for the following exercises is provided <a class="reference external" href="https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj">here</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="s1">&#39;/Users/guillermo/Downloads/pose-3d.csv&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="how-is-my-data-structured">
+<h2>How is my data structured?<a class="headerlink" href="#how-is-my-data-structured" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 450 entries, 0 to 449
+Columns: 139 entries, lefteye1_x to fnum
+dtypes: float64(138), int64(1)
+memory usage: 488.8 KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(450, 139)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>lefteye1_x</th>
+      <th>lefteye1_y</th>
+      <th>lefteye1_z</th>
+      <th>lefteye1_error</th>
+      <th>lefteye1_ncams</th>
+      <th>lefteye1_score</th>
+      <th>lefteye2_x</th>
+      <th>lefteye2_y</th>
+      <th>lefteye2_z</th>
+      <th>lefteye2_error</th>
+      <th>...</th>
+      <th>M_10</th>
+      <th>M_11</th>
+      <th>M_12</th>
+      <th>M_20</th>
+      <th>M_21</th>
+      <th>M_22</th>
+      <th>center_0</th>
+      <th>center_1</th>
+      <th>center_2</th>
+      <th>fnum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-11.488100</td>
+      <td>-0.391982</td>
+      <td>-6.391103</td>
+      <td>1.938121</td>
+      <td>2.0</td>
+      <td>0.999995</td>
+      <td>14.093313</td>
+      <td>-1.432060</td>
+      <td>-1.898372</td>
+      <td>2.190833</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-11.563727</td>
+      <td>-0.248620</td>
+      <td>-6.538817</td>
+      <td>2.030270</td>
+      <td>2.0</td>
+      <td>0.999996</td>
+      <td>14.219575</td>
+      <td>-1.263471</td>
+      <td>-2.031282</td>
+      <td>1.935011</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-11.630087</td>
+      <td>-0.129231</td>
+      <td>-6.667193</td>
+      <td>1.802676</td>
+      <td>2.0</td>
+      <td>0.999997</td>
+      <td>14.361094</td>
+      <td>-1.127249</td>
+      <td>-2.146595</td>
+      <td>1.606363</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-11.666934</td>
+      <td>-0.057356</td>
+      <td>-6.765140</td>
+      <td>2.019693</td>
+      <td>2.0</td>
+      <td>0.999998</td>
+      <td>14.528884</td>
+      <td>-1.018296</td>
+      <td>-2.235377</td>
+      <td>1.527383</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-11.657633</td>
+      <td>-0.022595</td>
+      <td>-6.825935</td>
+      <td>2.186289</td>
+      <td>2.0</td>
+      <td>0.999998</td>
+      <td>14.727834</td>
+      <td>-0.916615</td>
+      <td>-2.290928</td>
+      <td>1.662191</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>445</th>
+      <td>19.858564</td>
+      <td>-0.186870</td>
+      <td>3.376668</td>
+      <td>1.879663</td>
+      <td>2.0</td>
+      <td>1.000000</td>
+      <td>43.138611</td>
+      <td>-0.935498</td>
+      <td>6.239373</td>
+      <td>2.397886</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>445</td>
+    </tr>
+    <tr>
+      <th>446</th>
+      <td>19.828282</td>
+      <td>-0.197882</td>
+      <td>3.399467</td>
+      <td>1.926345</td>
+      <td>2.0</td>
+      <td>1.000000</td>
+      <td>43.099870</td>
+      <td>-0.936545</td>
+      <td>6.289830</td>
+      <td>2.507487</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>446</td>
+    </tr>
+    <tr>
+      <th>447</th>
+      <td>19.792748</td>
+      <td>-0.197968</td>
+      <td>3.419085</td>
+      <td>1.987387</td>
+      <td>2.0</td>
+      <td>1.000000</td>
+      <td>43.070633</td>
+      <td>-0.924082</td>
+      <td>6.339649</td>
+      <td>2.495454</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>447</td>
+    </tr>
+    <tr>
+      <th>448</th>
+      <td>19.753271</td>
+      <td>-0.185416</td>
+      <td>3.436065</td>
+      <td>1.666125</td>
+      <td>2.0</td>
+      <td>1.000000</td>
+      <td>43.049360</td>
+      <td>-0.899445</td>
+      <td>6.388871</td>
+      <td>2.244805</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>448</td>
+    </tr>
+    <tr>
+      <th>449</th>
+      <td>19.712078</td>
+      <td>-0.173427</td>
+      <td>3.453072</td>
+      <td>1.993099</td>
+      <td>2.0</td>
+      <td>1.000000</td>
+      <td>43.030381</td>
+      <td>-0.879919</td>
+      <td>6.437327</td>
+      <td>2.190697</td>
+      <td>...</td>
+      <td>0.025309</td>
+      <td>0.004592</td>
+      <td>0.999669</td>
+      <td>-0.155911</td>
+      <td>-0.987735</td>
+      <td>0.008484</td>
+      <td>136.712949</td>
+      <td>21.796899</td>
+      <td>59.925219</td>
+      <td>449</td>
+    </tr>
+  </tbody>
+</table>
+<p>450 rows × 139 columns</p>
+</div></div></div>
+</div>
+<div class="section" id="cleaning-data">
+<h3>Cleaning data<a class="headerlink" href="#cleaning-data" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">coords</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="o">~</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span>
+    <span class="s1">&#39;score|error|ncams|fnum|center|M_&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;score&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="changing-the-data-structure">
+<h3>Changing the data structure<a class="headerlink" href="#changing-the-data-structure" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let us transform the data to be centered around a reference point</span>
+<span class="n">centered_coords</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">centered_coords</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+    <span class="k">if</span> <span class="s1">&#39;_x&#39;</span> <span class="ow">in</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="n">centered_coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span>
+                                                                                 <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s2">&quot;nose1_x&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="s1">&#39;_y&#39;</span> <span class="ow">in</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="n">centered_coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span>
+                                                                                 <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s2">&quot;nose1_y&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="s1">&#39;_z&#39;</span> <span class="ow">in</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="n">centered_coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span>
+                                                                                 <span class="n">centered_coords</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s2">&quot;nose1_z&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">centered_coords</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>lefteye1_x</th>
+      <th>lefteye1_y</th>
+      <th>lefteye1_z</th>
+      <th>lefteye2_x</th>
+      <th>lefteye2_y</th>
+      <th>lefteye2_z</th>
+      <th>righteye1_x</th>
+      <th>righteye1_y</th>
+      <th>righteye1_z</th>
+      <th>righteye2_x</th>
+      <th>...</th>
+      <th>lowlip_z</th>
+      <th>llip_x</th>
+      <th>llip_y</th>
+      <th>llip_z</th>
+      <th>rlip_x</th>
+      <th>rlip_y</th>
+      <th>rlip_z</th>
+      <th>chin_x</th>
+      <th>chin_y</th>
+      <th>chin_z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>21.138248</td>
+      <td>0.149274</td>
+      <td>1.339277</td>
+      <td>46.719661</td>
+      <td>-0.890804</td>
+      <td>5.832008</td>
+      <td>-22.571980</td>
+      <td>-0.471520</td>
+      <td>-9.779492</td>
+      <td>-37.820867</td>
+      <td>...</td>
+      <td>-80.979542</td>
+      <td>37.796704</td>
+      <td>-0.980286</td>
+      <td>-67.807799</td>
+      <td>-10.351668</td>
+      <td>1.195690</td>
+      <td>-76.963349</td>
+      <td>19.029902</td>
+      <td>-0.445000</td>
+      <td>-115.416169</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>21.201282</td>
+      <td>0.213704</td>
+      <td>1.322499</td>
+      <td>46.984585</td>
+      <td>-0.801147</td>
+      <td>5.830035</td>
+      <td>-22.538740</td>
+      <td>-0.402639</td>
+      <td>-9.909138</td>
+      <td>-37.677083</td>
+      <td>...</td>
+      <td>-80.990478</td>
+      <td>37.855529</td>
+      <td>-0.946660</td>
+      <td>-67.868614</td>
+      <td>-10.338881</td>
+      <td>1.200735</td>
+      <td>-76.917438</td>
+      <td>19.053691</td>
+      <td>-0.440997</td>
+      <td>-115.518292</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>21.256664</td>
+      <td>0.240579</td>
+      <td>1.302346</td>
+      <td>47.247845</td>
+      <td>-0.757440</td>
+      <td>5.822944</td>
+      <td>-22.508311</td>
+      <td>-0.368747</td>
+      <td>-10.036418</td>
+      <td>-37.536744</td>
+      <td>...</td>
+      <td>-81.001777</td>
+      <td>37.907243</td>
+      <td>-0.940885</td>
+      <td>-67.933516</td>
+      <td>-10.330400</td>
+      <td>1.193681</td>
+      <td>-76.872875</td>
+      <td>19.065735</td>
+      <td>-0.449761</td>
+      <td>-115.618253</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>21.299285</td>
+      <td>0.240397</td>
+      <td>1.274168</td>
+      <td>47.495103</td>
+      <td>-0.720543</td>
+      <td>5.803931</td>
+      <td>-22.480971</td>
+      <td>-0.356541</td>
+      <td>-10.160358</td>
+      <td>-37.410751</td>
+      <td>...</td>
+      <td>-81.009722</td>
+      <td>37.937340</td>
+      <td>-0.950328</td>
+      <td>-68.005056</td>
+      <td>-10.330788</td>
+      <td>1.182822</td>
+      <td>-76.827400</td>
+      <td>19.055308</td>
+      <td>-0.460424</td>
+      <td>-115.710979</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>21.325677</td>
+      <td>0.220319</td>
+      <td>1.235597</td>
+      <td>47.711144</td>
+      <td>-0.673701</td>
+      <td>5.770603</td>
+      <td>-22.456571</td>
+      <td>-0.350904</td>
+      <td>-10.279109</td>
+      <td>-37.310866</td>
+      <td>...</td>
+      <td>-81.007437</td>
+      <td>37.939126</td>
+      <td>-0.940040</td>
+      <td>-68.081264</td>
+      <td>-10.349203</td>
+      <td>1.157687</td>
+      <td>-76.779312</td>
+      <td>19.016472</td>
+      <td>-0.470678</td>
+      <td>-115.789328</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>445</th>
+      <td>23.060752</td>
+      <td>-0.199214</td>
+      <td>1.879664</td>
+      <td>46.340798</td>
+      <td>-0.947842</td>
+      <td>4.742368</td>
+      <td>-19.185499</td>
+      <td>1.345010</td>
+      <td>-6.506368</td>
+      <td>-41.953663</td>
+      <td>...</td>
+      <td>-71.425305</td>
+      <td>43.196517</td>
+      <td>-0.785810</td>
+      <td>-56.866667</td>
+      <td>-18.389502</td>
+      <td>1.428511</td>
+      <td>-66.358897</td>
+      <td>18.667268</td>
+      <td>0.086065</td>
+      <td>-118.640513</td>
+    </tr>
+    <tr>
+      <th>446</th>
+      <td>23.079261</td>
+      <td>-0.215957</td>
+      <td>1.892306</td>
+      <td>46.350848</td>
+      <td>-0.954620</td>
+      <td>4.782669</td>
+      <td>-19.195640</td>
+      <td>1.345283</td>
+      <td>-6.492639</td>
+      <td>-41.925121</td>
+      <td>...</td>
+      <td>-71.434948</td>
+      <td>43.233000</td>
+      <td>-0.798553</td>
+      <td>-56.874906</td>
+      <td>-18.308865</td>
+      <td>1.423512</td>
+      <td>-66.383337</td>
+      <td>18.711471</td>
+      <td>0.078809</td>
+      <td>-118.608907</td>
+    </tr>
+    <tr>
+      <th>447</th>
+      <td>23.092409</td>
+      <td>-0.221658</td>
+      <td>1.901226</td>
+      <td>46.370295</td>
+      <td>-0.947773</td>
+      <td>4.821791</td>
+      <td>-19.207953</td>
+      <td>1.350226</td>
+      <td>-6.479757</td>
+      <td>-41.894597</td>
+      <td>...</td>
+      <td>-71.446489</td>
+      <td>43.267756</td>
+      <td>-0.816412</td>
+      <td>-56.887243</td>
+      <td>-18.231429</td>
+      <td>1.421237</td>
+      <td>-66.409016</td>
+      <td>18.751617</td>
+      <td>0.062069</td>
+      <td>-118.578352</td>
+    </tr>
+    <tr>
+      <th>448</th>
+      <td>23.100727</td>
+      <td>-0.215898</td>
+      <td>1.907636</td>
+      <td>46.396815</td>
+      <td>-0.929927</td>
+      <td>4.860443</td>
+      <td>-19.222547</td>
+      <td>1.355703</td>
+      <td>-6.466862</td>
+      <td>-41.864912</td>
+      <td>...</td>
+      <td>-71.458910</td>
+      <td>43.300950</td>
+      <td>-0.836934</td>
+      <td>-56.901680</td>
+      <td>-18.156717</td>
+      <td>1.420305</td>
+      <td>-66.434610</td>
+      <td>18.788906</td>
+      <td>0.038433</td>
+      <td>-118.547809</td>
+    </tr>
+    <tr>
+      <th>449</th>
+      <td>23.107326</td>
+      <td>-0.207480</td>
+      <td>1.914174</td>
+      <td>46.425629</td>
+      <td>-0.913972</td>
+      <td>4.898429</td>
+      <td>-19.238019</td>
+      <td>1.361772</td>
+      <td>-6.453821</td>
+      <td>-41.835615</td>
+      <td>...</td>
+      <td>-71.471432</td>
+      <td>43.332800</td>
+      <td>-0.859951</td>
+      <td>-56.916573</td>
+      <td>-18.082740</td>
+      <td>1.422841</td>
+      <td>-66.459968</td>
+      <td>18.825424</td>
+      <td>0.014881</td>
+      <td>-118.516762</td>
+    </tr>
+  </tbody>
+</table>
+<p>450 rows × 63 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># What is the difference between pandas Data Frame and numpy Array?</span>
+<span class="n">coords_egocentric</span> <span class="o">=</span> <span class="n">centered_coords</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+<span class="n">coords_egocentric</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 2.11382476e+01,  1.49273730e-01,  1.33927693e+00, ...,
+         1.90299024e+01, -4.45000140e-01, -1.15416169e+02],
+       [ 2.12012820e+01,  2.13704103e-01,  1.32249940e+00, ...,
+         1.90536908e+01, -4.40996722e-01, -1.15518292e+02],
+       [ 2.12566635e+01,  2.40579034e-01,  1.30234553e+00, ...,
+         1.90657352e+01, -4.49760897e-01, -1.15618253e+02],
+       ...,
+       [ 2.30924089e+01, -2.21658316e-01,  1.90122647e+00, ...,
+         1.87516173e+01,  6.20694224e-02, -1.18578352e+02],
+       [ 2.31007267e+01, -2.15897713e-01,  1.90763642e+00, ...,
+         1.87889064e+01,  3.84331742e-02, -1.18547809e+02],
+       [ 2.31073256e+01, -2.07480062e-01,  1.91417434e+00, ...,
+         1.88254245e+01,  1.48810149e-02, -1.18516762e+02]])
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="reading-deeplabcut-data">
+<h2>Reading DeepLabCut Data<a class="headerlink" href="#reading-deeplabcut-data" title="Permalink to this heading">#</a></h2>
+<p>Note that DeepLabCut files contain multiple headers</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># .h5 vs csv with multiple headings</span>
+<span class="n">file</span> <span class="o">=</span> <span class="s1">&#39;/Users/guillermo/Downloads/DLC_data.csv&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/guillermo/opt/anaconda3/lib/python3.8/site-packages/IPython/core/interactiveshell.py:3444: DtypeWarning: Columns (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18) have mixed types.Specify dtype option on import or set low_memory=False.
+  exec(code_obj, self.user_global_ns, self.user_ns)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>scorer</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.1</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.2</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.3</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.4</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.5</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.6</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.7</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.8</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.9</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.10</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.11</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.12</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.13</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.14</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.15</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.16</th>
+      <th>DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000.17</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>bodyparts</td>
+      <td>tophead</td>
+      <td>tophead</td>
+      <td>tophead</td>
+      <td>neckbase</td>
+      <td>neckbase</td>
+      <td>neckbase</td>
+      <td>tailend</td>
+      <td>tailend</td>
+      <td>tailend</td>
+      <td>wingbowleft</td>
+      <td>wingbowleft</td>
+      <td>wingbowleft</td>
+      <td>wingbowright</td>
+      <td>wingbowright</td>
+      <td>wingbowright</td>
+      <td>backcenter</td>
+      <td>backcenter</td>
+      <td>backcenter</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>coords</td>
+      <td>x</td>
+      <td>y</td>
+      <td>likelihood</td>
+      <td>x</td>
+      <td>y</td>
+      <td>likelihood</td>
+      <td>x</td>
+      <td>y</td>
+      <td>likelihood</td>
+      <td>x</td>
+      <td>y</td>
+      <td>likelihood</td>
+      <td>x</td>
+      <td>y</td>
+      <td>likelihood</td>
+      <td>x</td>
+      <td>y</td>
+      <td>likelihood</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>736.8365478515625</td>
+      <td>440.2051086425781</td>
+      <td>0.9999855756759644</td>
+      <td>736.7742309570312</td>
+      <td>521.3764038085938</td>
+      <td>0.9882965683937073</td>
+      <td>855.1517944335938</td>
+      <td>502.51654052734375</td>
+      <td>0.9929274916648865</td>
+      <td>722.4508666992188</td>
+      <td>638.5551147460938</td>
+      <td>0.9817160964012146</td>
+      <td>848.135498046875</td>
+      <td>725.8486328125</td>
+      <td>0.5518141388893127</td>
+      <td>779.173828125</td>
+      <td>637.4671020507812</td>
+      <td>0.9575235247612</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>736.6965732465003</td>
+      <td>439.96420420329684</td>
+      <td>0.9999710321426392</td>
+      <td>736.6901676790957</td>
+      <td>521.3737120583947</td>
+      <td>0.9984785914421082</td>
+      <td>854.1960618426</td>
+      <td>497.6001401711765</td>
+      <td>0.041485220193862915</td>
+      <td>717.9101631977412</td>
+      <td>636.903006227701</td>
+      <td>0.9891084432601929</td>
+      <td>843.8478180157791</td>
+      <td>722.9210467101142</td>
+      <td>0.8639070987701416</td>
+      <td>777.0301382784822</td>
+      <td>636.5131135081384</td>
+      <td>0.9471402168273926</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>735.7040493627546</td>
+      <td>436.7637389370659</td>
+      <td>0.999962568283081</td>
+      <td>736.6576001497499</td>
+      <td>520.317367317496</td>
+      <td>0.9994844198226929</td>
+      <td>855.3453658338591</td>
+      <td>630.6766258156872</td>
+      <td>0.0038163603749126196</td>
+      <td>718.9731625027971</td>
+      <td>637.8714981367024</td>
+      <td>0.9381800889968872</td>
+      <td>709.894219318126</td>
+      <td>604.0449981131718</td>
+      <td>0.14082202315330505</td>
+      <td>777.3939321502603</td>
+      <td>636.2873536219506</td>
+      <td>0.9269355535507202</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>71921</th>
+      <td>71919</td>
+      <td>816.685736</td>
+      <td>394.333402</td>
+      <td>0.996886</td>
+      <td>747.200637</td>
+      <td>430.753285</td>
+      <td>0.99992</td>
+      <td>575.128539</td>
+      <td>563.851408</td>
+      <td>0.999976</td>
+      <td>756.409661</td>
+      <td>354.888011</td>
+      <td>0.999997</td>
+      <td>816.141309</td>
+      <td>446.039971</td>
+      <td>0.999989</td>
+      <td>672.113405</td>
+      <td>479.530765</td>
+      <td>0.999961</td>
+    </tr>
+    <tr>
+      <th>71922</th>
+      <td>71920</td>
+      <td>816.844076</td>
+      <td>394.197315</td>
+      <td>0.993028</td>
+      <td>747.467628</td>
+      <td>430.599931</td>
+      <td>0.999918</td>
+      <td>575.047661</td>
+      <td>564.093645</td>
+      <td>0.999984</td>
+      <td>756.498965</td>
+      <td>354.752492</td>
+      <td>0.999998</td>
+      <td>816.132225</td>
+      <td>445.987682</td>
+      <td>0.999973</td>
+      <td>672.046608</td>
+      <td>479.611423</td>
+      <td>0.999972</td>
+    </tr>
+    <tr>
+      <th>71923</th>
+      <td>71921</td>
+      <td>816.824561</td>
+      <td>393.841141</td>
+      <td>0.991949</td>
+      <td>747.3541</td>
+      <td>430.614478</td>
+      <td>0.999922</td>
+      <td>575.211231</td>
+      <td>564.088919</td>
+      <td>0.999988</td>
+      <td>756.520165</td>
+      <td>354.817808</td>
+      <td>0.999998</td>
+      <td>815.87947</td>
+      <td>446.139886</td>
+      <td>0.99998</td>
+      <td>672.175552</td>
+      <td>479.673533</td>
+      <td>0.999959</td>
+    </tr>
+    <tr>
+      <th>71924</th>
+      <td>71922</td>
+      <td>816.406188</td>
+      <td>393.766398</td>
+      <td>0.992734</td>
+      <td>747.626257</td>
+      <td>430.654457</td>
+      <td>0.999948</td>
+      <td>575.462232</td>
+      <td>564.156158</td>
+      <td>0.999987</td>
+      <td>756.487524</td>
+      <td>354.854141</td>
+      <td>0.999997</td>
+      <td>815.797104</td>
+      <td>446.552003</td>
+      <td>0.999989</td>
+      <td>672.213608</td>
+      <td>479.578535</td>
+      <td>0.999954</td>
+    </tr>
+    <tr>
+      <th>71925</th>
+      <td>71923</td>
+      <td>816.119821</td>
+      <td>393.876178</td>
+      <td>0.993627</td>
+      <td>747.240035</td>
+      <td>430.915333</td>
+      <td>0.999949</td>
+      <td>575.500692</td>
+      <td>563.874192</td>
+      <td>0.999987</td>
+      <td>756.474672</td>
+      <td>354.848543</td>
+      <td>0.999998</td>
+      <td>815.629617</td>
+      <td>446.596012</td>
+      <td>0.999986</td>
+      <td>672.112326</td>
+      <td>479.64037</td>
+      <td>0.999971</td>
+    </tr>
+  </tbody>
+</table>
+<p>71926 rows × 19 columns</p>
+</div></div></div>
+</div>
+<p>You can specify multiple headers in <code class="docutils literal notranslate"><span class="pre">pd.read_csv(file,</span> <span class="pre">header=[0,1,2])</span></code>, but your data frame will be a little more difficult to subset, as columns will be a MultiIndex array.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>scorer</th>
+      <th colspan="18" halign="left">DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>bodyparts</th>
+      <th colspan="3" halign="left">tophead</th>
+      <th colspan="3" halign="left">neckbase</th>
+      <th colspan="3" halign="left">tailend</th>
+      <th colspan="3" halign="left">wingbowleft</th>
+      <th colspan="3" halign="left">wingbowright</th>
+      <th colspan="3" halign="left">backcenter</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>coords</th>
+      <th>x</th>
+      <th>y</th>
+      <th>likelihood</th>
+      <th>x</th>
+      <th>y</th>
+      <th>likelihood</th>
+      <th>x</th>
+      <th>y</th>
+      <th>likelihood</th>
+      <th>x</th>
+      <th>y</th>
+      <th>likelihood</th>
+      <th>x</th>
+      <th>y</th>
+      <th>likelihood</th>
+      <th>x</th>
+      <th>y</th>
+      <th>likelihood</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>736.836548</td>
+      <td>440.205109</td>
+      <td>0.999986</td>
+      <td>736.774231</td>
+      <td>521.376404</td>
+      <td>0.988297</td>
+      <td>855.151794</td>
+      <td>502.516541</td>
+      <td>0.992927</td>
+      <td>722.450867</td>
+      <td>638.555115</td>
+      <td>0.981716</td>
+      <td>848.135498</td>
+      <td>725.848633</td>
+      <td>0.551814</td>
+      <td>779.173828</td>
+      <td>637.467102</td>
+      <td>0.957524</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>736.696573</td>
+      <td>439.964204</td>
+      <td>0.999971</td>
+      <td>736.690168</td>
+      <td>521.373712</td>
+      <td>0.998479</td>
+      <td>854.196062</td>
+      <td>497.600140</td>
+      <td>0.041485</td>
+      <td>717.910163</td>
+      <td>636.903006</td>
+      <td>0.989108</td>
+      <td>843.847818</td>
+      <td>722.921047</td>
+      <td>0.863907</td>
+      <td>777.030138</td>
+      <td>636.513114</td>
+      <td>0.947140</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>735.704049</td>
+      <td>436.763739</td>
+      <td>0.999963</td>
+      <td>736.657600</td>
+      <td>520.317367</td>
+      <td>0.999484</td>
+      <td>855.345366</td>
+      <td>630.676626</td>
+      <td>0.003816</td>
+      <td>718.973163</td>
+      <td>637.871498</td>
+      <td>0.938180</td>
+      <td>709.894219</td>
+      <td>604.044998</td>
+      <td>0.140822</td>
+      <td>777.393932</td>
+      <td>636.287354</td>
+      <td>0.926936</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>734.293249</td>
+      <td>431.819332</td>
+      <td>0.999991</td>
+      <td>735.908934</td>
+      <td>517.310811</td>
+      <td>0.998731</td>
+      <td>827.010097</td>
+      <td>675.563420</td>
+      <td>0.004858</td>
+      <td>721.308479</td>
+      <td>640.070535</td>
+      <td>0.857882</td>
+      <td>796.094113</td>
+      <td>682.185972</td>
+      <td>0.460554</td>
+      <td>777.985463</td>
+      <td>635.496588</td>
+      <td>0.972686</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>732.744517</td>
+      <td>426.053270</td>
+      <td>0.999990</td>
+      <td>735.196591</td>
+      <td>513.924565</td>
+      <td>0.999366</td>
+      <td>791.315112</td>
+      <td>546.063109</td>
+      <td>0.032099</td>
+      <td>723.677384</td>
+      <td>638.630865</td>
+      <td>0.999613</td>
+      <td>811.859656</td>
+      <td>696.591080</td>
+      <td>0.586390</td>
+      <td>779.552232</td>
+      <td>633.139890</td>
+      <td>0.991626</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>71919</th>
+      <td>71919</td>
+      <td>816.685736</td>
+      <td>394.333402</td>
+      <td>0.996886</td>
+      <td>747.200637</td>
+      <td>430.753285</td>
+      <td>0.999920</td>
+      <td>575.128539</td>
+      <td>563.851408</td>
+      <td>0.999976</td>
+      <td>756.409661</td>
+      <td>354.888011</td>
+      <td>0.999997</td>
+      <td>816.141309</td>
+      <td>446.039971</td>
+      <td>0.999989</td>
+      <td>672.113405</td>
+      <td>479.530765</td>
+      <td>0.999961</td>
+    </tr>
+    <tr>
+      <th>71920</th>
+      <td>71920</td>
+      <td>816.844076</td>
+      <td>394.197315</td>
+      <td>0.993028</td>
+      <td>747.467628</td>
+      <td>430.599931</td>
+      <td>0.999918</td>
+      <td>575.047661</td>
+      <td>564.093645</td>
+      <td>0.999984</td>
+      <td>756.498965</td>
+      <td>354.752492</td>
+      <td>0.999998</td>
+      <td>816.132225</td>
+      <td>445.987682</td>
+      <td>0.999973</td>
+      <td>672.046608</td>
+      <td>479.611423</td>
+      <td>0.999972</td>
+    </tr>
+    <tr>
+      <th>71921</th>
+      <td>71921</td>
+      <td>816.824561</td>
+      <td>393.841141</td>
+      <td>0.991949</td>
+      <td>747.354100</td>
+      <td>430.614478</td>
+      <td>0.999922</td>
+      <td>575.211231</td>
+      <td>564.088919</td>
+      <td>0.999988</td>
+      <td>756.520165</td>
+      <td>354.817808</td>
+      <td>0.999998</td>
+      <td>815.879470</td>
+      <td>446.139886</td>
+      <td>0.999980</td>
+      <td>672.175552</td>
+      <td>479.673533</td>
+      <td>0.999959</td>
+    </tr>
+    <tr>
+      <th>71922</th>
+      <td>71922</td>
+      <td>816.406188</td>
+      <td>393.766398</td>
+      <td>0.992734</td>
+      <td>747.626257</td>
+      <td>430.654457</td>
+      <td>0.999948</td>
+      <td>575.462232</td>
+      <td>564.156158</td>
+      <td>0.999987</td>
+      <td>756.487524</td>
+      <td>354.854141</td>
+      <td>0.999997</td>
+      <td>815.797104</td>
+      <td>446.552003</td>
+      <td>0.999989</td>
+      <td>672.213608</td>
+      <td>479.578535</td>
+      <td>0.999954</td>
+    </tr>
+    <tr>
+      <th>71923</th>
+      <td>71923</td>
+      <td>816.119821</td>
+      <td>393.876178</td>
+      <td>0.993627</td>
+      <td>747.240035</td>
+      <td>430.915333</td>
+      <td>0.999949</td>
+      <td>575.500692</td>
+      <td>563.874192</td>
+      <td>0.999987</td>
+      <td>756.474672</td>
+      <td>354.848543</td>
+      <td>0.999998</td>
+      <td>815.629617</td>
+      <td>446.596012</td>
+      <td>0.999986</td>
+      <td>672.112326</td>
+      <td>479.640370</td>
+      <td>0.999971</td>
+    </tr>
+  </tbody>
+</table>
+<p>71924 rows × 19 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MultiIndex([(                                                &#39;scorer&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...),
+            (&#39;DLC_resnet50_Picky_Pigeon_ProjectDec17shuffle1_1030000&#39;, ...)],
+           )
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;bodyparts&#39;, &#39;tophead&#39;, &#39;tophead&#39;, &#39;tophead&#39;, &#39;neckbase&#39;, &#39;neckbase&#39;,
+       &#39;neckbase&#39;, &#39;tailend&#39;, &#39;tailend&#39;, &#39;tailend&#39;, &#39;wingbowleft&#39;,
+       &#39;wingbowleft&#39;, &#39;wingbowleft&#39;, &#39;wingbowright&#39;, &#39;wingbowright&#39;,
+       &#39;wingbowright&#39;, &#39;backcenter&#39;, &#39;backcenter&#39;, &#39;backcenter&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;coords&#39;, &#39;x&#39;, &#39;y&#39;, &#39;likelihood&#39;, &#39;x&#39;, &#39;y&#39;, &#39;likelihood&#39;, &#39;x&#39;, &#39;y&#39;,
+       &#39;likelihood&#39;, &#39;x&#39;, &#39;y&#39;, &#39;likelihood&#39;, &#39;x&#39;, &#39;y&#39;, &#39;likelihood&#39;, &#39;x&#39;, &#39;y&#39;,
+       &#39;likelihood&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Better rename the columns of your data frame to avoid MultiIndex</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;bodyparts_bodyparts&#39;, &#39;tophead_tophead&#39;, &#39;tophead_tophead&#39;,
+       &#39;tophead_tophead&#39;, &#39;neckbase_neckbase&#39;, &#39;neckbase_neckbase&#39;,
+       &#39;neckbase_neckbase&#39;, &#39;tailend_tailend&#39;, &#39;tailend_tailend&#39;,
+       &#39;tailend_tailend&#39;, &#39;wingbowleft_wingbowleft&#39;, &#39;wingbowleft_wingbowleft&#39;,
+       &#39;wingbowleft_wingbowleft&#39;, &#39;wingbowright_wingbowright&#39;,
+       &#39;wingbowright_wingbowright&#39;, &#39;wingbowright_wingbowright&#39;,
+       &#39;backcenter_backcenter&#39;, &#39;backcenter_backcenter&#39;,
+       &#39;backcenter_backcenter&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_col_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span>
+    <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">data</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">new_col_names</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>bodyparts_coords</th>
+      <th>tophead_x</th>
+      <th>tophead_y</th>
+      <th>tophead_likelihood</th>
+      <th>neckbase_x</th>
+      <th>neckbase_y</th>
+      <th>neckbase_likelihood</th>
+      <th>tailend_x</th>
+      <th>tailend_y</th>
+      <th>tailend_likelihood</th>
+      <th>wingbowleft_x</th>
+      <th>wingbowleft_y</th>
+      <th>wingbowleft_likelihood</th>
+      <th>wingbowright_x</th>
+      <th>wingbowright_y</th>
+      <th>wingbowright_likelihood</th>
+      <th>backcenter_x</th>
+      <th>backcenter_y</th>
+      <th>backcenter_likelihood</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>736.836548</td>
+      <td>440.205109</td>
+      <td>0.999986</td>
+      <td>736.774231</td>
+      <td>521.376404</td>
+      <td>0.988297</td>
+      <td>855.151794</td>
+      <td>502.516541</td>
+      <td>0.992927</td>
+      <td>722.450867</td>
+      <td>638.555115</td>
+      <td>0.981716</td>
+      <td>848.135498</td>
+      <td>725.848633</td>
+      <td>0.551814</td>
+      <td>779.173828</td>
+      <td>637.467102</td>
+      <td>0.957524</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>736.696573</td>
+      <td>439.964204</td>
+      <td>0.999971</td>
+      <td>736.690168</td>
+      <td>521.373712</td>
+      <td>0.998479</td>
+      <td>854.196062</td>
+      <td>497.600140</td>
+      <td>0.041485</td>
+      <td>717.910163</td>
+      <td>636.903006</td>
+      <td>0.989108</td>
+      <td>843.847818</td>
+      <td>722.921047</td>
+      <td>0.863907</td>
+      <td>777.030138</td>
+      <td>636.513114</td>
+      <td>0.947140</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>735.704049</td>
+      <td>436.763739</td>
+      <td>0.999963</td>
+      <td>736.657600</td>
+      <td>520.317367</td>
+      <td>0.999484</td>
+      <td>855.345366</td>
+      <td>630.676626</td>
+      <td>0.003816</td>
+      <td>718.973163</td>
+      <td>637.871498</td>
+      <td>0.938180</td>
+      <td>709.894219</td>
+      <td>604.044998</td>
+      <td>0.140822</td>
+      <td>777.393932</td>
+      <td>636.287354</td>
+      <td>0.926936</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>734.293249</td>
+      <td>431.819332</td>
+      <td>0.999991</td>
+      <td>735.908934</td>
+      <td>517.310811</td>
+      <td>0.998731</td>
+      <td>827.010097</td>
+      <td>675.563420</td>
+      <td>0.004858</td>
+      <td>721.308479</td>
+      <td>640.070535</td>
+      <td>0.857882</td>
+      <td>796.094113</td>
+      <td>682.185972</td>
+      <td>0.460554</td>
+      <td>777.985463</td>
+      <td>635.496588</td>
+      <td>0.972686</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>732.744517</td>
+      <td>426.053270</td>
+      <td>0.999990</td>
+      <td>735.196591</td>
+      <td>513.924565</td>
+      <td>0.999366</td>
+      <td>791.315112</td>
+      <td>546.063109</td>
+      <td>0.032099</td>
+      <td>723.677384</td>
+      <td>638.630865</td>
+      <td>0.999613</td>
+      <td>811.859656</td>
+      <td>696.591080</td>
+      <td>0.586390</td>
+      <td>779.552232</td>
+      <td>633.139890</td>
+      <td>0.991626</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>71919</th>
+      <td>71919</td>
+      <td>816.685736</td>
+      <td>394.333402</td>
+      <td>0.996886</td>
+      <td>747.200637</td>
+      <td>430.753285</td>
+      <td>0.999920</td>
+      <td>575.128539</td>
+      <td>563.851408</td>
+      <td>0.999976</td>
+      <td>756.409661</td>
+      <td>354.888011</td>
+      <td>0.999997</td>
+      <td>816.141309</td>
+      <td>446.039971</td>
+      <td>0.999989</td>
+      <td>672.113405</td>
+      <td>479.530765</td>
+      <td>0.999961</td>
+    </tr>
+    <tr>
+      <th>71920</th>
+      <td>71920</td>
+      <td>816.844076</td>
+      <td>394.197315</td>
+      <td>0.993028</td>
+      <td>747.467628</td>
+      <td>430.599931</td>
+      <td>0.999918</td>
+      <td>575.047661</td>
+      <td>564.093645</td>
+      <td>0.999984</td>
+      <td>756.498965</td>
+      <td>354.752492</td>
+      <td>0.999998</td>
+      <td>816.132225</td>
+      <td>445.987682</td>
+      <td>0.999973</td>
+      <td>672.046608</td>
+      <td>479.611423</td>
+      <td>0.999972</td>
+    </tr>
+    <tr>
+      <th>71921</th>
+      <td>71921</td>
+      <td>816.824561</td>
+      <td>393.841141</td>
+      <td>0.991949</td>
+      <td>747.354100</td>
+      <td>430.614478</td>
+      <td>0.999922</td>
+      <td>575.211231</td>
+      <td>564.088919</td>
+      <td>0.999988</td>
+      <td>756.520165</td>
+      <td>354.817808</td>
+      <td>0.999998</td>
+      <td>815.879470</td>
+      <td>446.139886</td>
+      <td>0.999980</td>
+      <td>672.175552</td>
+      <td>479.673533</td>
+      <td>0.999959</td>
+    </tr>
+    <tr>
+      <th>71922</th>
+      <td>71922</td>
+      <td>816.406188</td>
+      <td>393.766398</td>
+      <td>0.992734</td>
+      <td>747.626257</td>
+      <td>430.654457</td>
+      <td>0.999948</td>
+      <td>575.462232</td>
+      <td>564.156158</td>
+      <td>0.999987</td>
+      <td>756.487524</td>
+      <td>354.854141</td>
+      <td>0.999997</td>
+      <td>815.797104</td>
+      <td>446.552003</td>
+      <td>0.999989</td>
+      <td>672.213608</td>
+      <td>479.578535</td>
+      <td>0.999954</td>
+    </tr>
+    <tr>
+      <th>71923</th>
+      <td>71923</td>
+      <td>816.119821</td>
+      <td>393.876178</td>
+      <td>0.993627</td>
+      <td>747.240035</td>
+      <td>430.915333</td>
+      <td>0.999949</td>
+      <td>575.500692</td>
+      <td>563.874192</td>
+      <td>0.999987</td>
+      <td>756.474672</td>
+      <td>354.848543</td>
+      <td>0.999998</td>
+      <td>815.629617</td>
+      <td>446.596012</td>
+      <td>0.999986</td>
+      <td>672.112326</td>
+      <td>479.640370</td>
+      <td>0.999971</td>
+    </tr>
+  </tbody>
+</table>
+<p>71924 rows × 19 columns</p>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="what-does-my-data-tell-me">
+<h2>What does my data tell me?<a class="headerlink" href="#what-does-my-data-tell-me" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Does this make sense?</span>
+<span class="n">coords</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     -19.892839
+1     -19.914494
+2     -19.930776
+3     -19.937752
+4     -19.923985
+         ...    
+445    -6.321469
+446    -6.313084
+447    -6.304621
+448    -6.296241
+449    -6.288533
+Length: 450, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># What about this?</span>
+<span class="n">coords</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>lefteye1_x     18.106572
+lefteye1_y     -0.019333
+lefteye1_z      0.796235
+lefteye2_x     43.672666
+lefteye2_y     -0.645574
+                 ...    
+rlip_y          0.996420
+rlip_z        -74.329763
+chin_x         17.394544
+chin_y         -0.286453
+chin_z       -118.842049
+Length: 63, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">coords</span><span class="p">[</span><span class="s1">&#39;lefteye1_x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>18.10657168922479
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">coords</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>lefteye1_x</th>
+      <th>lefteye1_y</th>
+      <th>lefteye1_z</th>
+      <th>lefteye2_x</th>
+      <th>lefteye2_y</th>
+      <th>lefteye2_z</th>
+      <th>righteye1_x</th>
+      <th>righteye1_y</th>
+      <th>righteye1_z</th>
+      <th>righteye2_x</th>
+      <th>...</th>
+      <th>lowlip_z</th>
+      <th>llip_x</th>
+      <th>llip_y</th>
+      <th>llip_z</th>
+      <th>rlip_x</th>
+      <th>rlip_y</th>
+      <th>rlip_z</th>
+      <th>chin_x</th>
+      <th>chin_y</th>
+      <th>chin_z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>...</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+      <td>450.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>18.106572</td>
+      <td>-0.019333</td>
+      <td>0.796235</td>
+      <td>43.672666</td>
+      <td>-0.645574</td>
+      <td>5.586992</td>
+      <td>-21.632261</td>
+      <td>1.278443</td>
+      <td>-6.218734</td>
+      <td>-44.885085</td>
+      <td>...</td>
+      <td>-77.892073</td>
+      <td>36.387709</td>
+      <td>-0.794339</td>
+      <td>-65.950381</td>
+      <td>-14.813016</td>
+      <td>0.996420</td>
+      <td>-74.329763</td>
+      <td>17.394544</td>
+      <td>-0.286453</td>
+      <td>-118.842049</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>11.434284</td>
+      <td>0.599469</td>
+      <td>3.828957</td>
+      <td>11.505354</td>
+      <td>0.705344</td>
+      <td>4.144886</td>
+      <td>12.124253</td>
+      <td>0.803002</td>
+      <td>4.433668</td>
+      <td>11.226158</td>
+      <td>...</td>
+      <td>6.383489</td>
+      <td>12.088332</td>
+      <td>0.708887</td>
+      <td>5.909938</td>
+      <td>12.327903</td>
+      <td>0.705005</td>
+      <td>5.116139</td>
+      <td>11.669450</td>
+      <td>0.823316</td>
+      <td>3.496960</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>-18.098617</td>
+      <td>-1.145164</td>
+      <td>-6.844781</td>
+      <td>5.858257</td>
+      <td>-1.948370</td>
+      <td>-2.307151</td>
+      <td>-57.526330</td>
+      <td>-1.012775</td>
+      <td>-18.430021</td>
+      <td>-81.767449</td>
+      <td>...</td>
+      <td>-89.068969</td>
+      <td>0.151487</td>
+      <td>-2.103737</td>
+      <td>-76.193362</td>
+      <td>-50.004844</td>
+      <td>-0.675003</td>
+      <td>-84.866708</td>
+      <td>-17.538646</td>
+      <td>-1.985098</td>
+      <td>-125.301249</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>18.225435</td>
+      <td>-0.612380</td>
+      <td>-2.954008</td>
+      <td>43.193416</td>
+      <td>-1.344781</td>
+      <td>2.123240</td>
+      <td>-22.683956</td>
+      <td>0.584199</td>
+      <td>-10.600334</td>
+      <td>-45.410591</td>
+      <td>...</td>
+      <td>-83.604016</td>
+      <td>33.761567</td>
+      <td>-1.246099</td>
+      <td>-70.754029</td>
+      <td>-16.660826</td>
+      <td>0.725735</td>
+      <td>-78.226643</td>
+      <td>15.961120</td>
+      <td>-1.119348</td>
+      <td>-121.885470</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>19.861041</td>
+      <td>-0.047041</td>
+      <td>0.653475</td>
+      <td>46.836783</td>
+      <td>-0.575274</td>
+      <td>5.330278</td>
+      <td>-18.695114</td>
+      <td>1.352917</td>
+      <td>-6.413949</td>
+      <td>-42.622488</td>
+      <td>...</td>
+      <td>-77.400903</td>
+      <td>39.924777</td>
+      <td>-0.819950</td>
+      <td>-67.125851</td>
+      <td>-12.696178</td>
+      <td>1.048074</td>
+      <td>-74.785135</td>
+      <td>18.953581</td>
+      <td>-0.140253</td>
+      <td>-117.925277</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>24.614006</td>
+      <td>0.572676</td>
+      <td>3.737492</td>
+      <td>48.943208</td>
+      <td>-0.011691</td>
+      <td>8.761392</td>
+      <td>-15.253385</td>
+      <td>1.890220</td>
+      <td>-3.227924</td>
+      <td>-39.535513</td>
+      <td>...</td>
+      <td>-72.539818</td>
+      <td>43.852962</td>
+      <td>-0.265885</td>
+      <td>-63.012012</td>
+      <td>-10.172126</td>
+      <td>1.509309</td>
+      <td>-71.510924</td>
+      <td>24.541857</td>
+      <td>0.266672</td>
+      <td>-115.933453</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>34.449984</td>
+      <td>0.968391</td>
+      <td>8.652052</td>
+      <td>60.024778</td>
+      <td>0.420347</td>
+      <td>14.328102</td>
+      <td>-5.669487</td>
+      <td>2.681084</td>
+      <td>2.781161</td>
+      <td>-28.287430</td>
+      <td>...</td>
+      <td>-64.906500</td>
+      <td>53.732858</td>
+      <td>0.461475</td>
+      <td>-54.243952</td>
+      <td>8.041773</td>
+      <td>2.103936</td>
+      <td>-63.094976</td>
+      <td>34.490673</td>
+      <td>0.977069</td>
+      <td>-111.792641</td>
+    </tr>
+  </tbody>
+</table>
+<p>8 rows × 63 columns</p>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="how-could-my-data-look-like">
+<h2>How could my data look like<a class="headerlink" href="#how-could-my-data-look-like" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[&lt;AxesSubplot:title={&#39;center&#39;:&#39;lefteye1_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;lefteye2_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;righteye1_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;righteye2_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;leyebrow1_score&#39;}&gt;],
+       [&lt;AxesSubplot:title={&#39;center&#39;:&#39;leyebrow2_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;leyebrow3_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;reyebrow1_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;reyebrow2_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;reyebrow3_score&#39;}&gt;],
+       [&lt;AxesSubplot:title={&#39;center&#39;:&#39;lear_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;rear_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;nose1_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;nose2_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;nose3_score&#39;}&gt;],
+       [&lt;AxesSubplot:title={&#39;center&#39;:&#39;nose4_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;uplip_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;lowlip_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;llip_score&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;rlip_score&#39;}&gt;],
+       [&lt;AxesSubplot:title={&#39;center&#39;:&#39;chin_score&#39;}&gt;, &lt;AxesSubplot:&gt;,
+        &lt;AxesSubplot:&gt;, &lt;AxesSubplot:&gt;, &lt;AxesSubplot:&gt;]], dtype=object)
+</pre></div>
+</div>
+<img alt="_images/7119a05ca2c6d305f7285970f80005db46726c6b13fd987611d8fc1dcb207d89.png" src="_images/7119a05ca2c6d305f7285970f80005db46726c6b13fd987611d8fc1dcb207d89.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;chin_score&#39;</span><span class="p">,</span> <span class="s1">&#39;lefteye1_score&#39;</span><span class="p">],</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+</pre></div>
+</div>
+<img alt="_images/53eafd8a966274ef455251910a347fdb7fd8b390a46bf0194538487c10d44ec8.png" src="_images/53eafd8a966274ef455251910a347fdb7fd8b390a46bf0194538487c10d44ec8.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_coords</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">coords</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;_x&#39;</span><span class="p">)]</span>
+<span class="n">y_coords</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">coords</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;_y&#39;</span><span class="p">)]</span>
+<span class="n">z_coords</span> <span class="o">=</span> <span class="n">coords</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">coords</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;_z&#39;</span><span class="p">)]</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="n">x_points</span> <span class="o">=</span> <span class="n">x_coords</span><span class="p">[</span><span class="n">t</span><span class="p">:</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">y_points</span> <span class="o">=</span> <span class="n">y_coords</span><span class="p">[</span><span class="n">t</span><span class="p">:</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z_points</span> <span class="o">=</span> <span class="n">z_coords</span><span class="p">[</span><span class="n">t</span><span class="p">:</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter3D</span><span class="p">(</span><span class="n">x_points</span><span class="p">,</span> <span class="n">y_points</span><span class="p">,</span> <span class="n">z_points</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">280</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;X axis&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Y axis&#39;</span><span class="p">,</span> <span class="n">zlabel</span><span class="o">=</span><span class="s1">&#39;Z axis&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;My First Plot&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0.92, &#39;My First Plot&#39;)
+</pre></div>
+</div>
+<img alt="_images/21a363d9d44519b62cf5a9ad4cdc1929e2b963ee4b9093ca385c693eb781cd5f.png" src="_images/21a363d9d44519b62cf5a9ad4cdc1929e2b963ee4b9093ca385c693eb781cd5f.png" />
+</div>
+</div>
+<p>In the following section we will learn to calculate some easy kinematic features to better understand our data.</p>
+</div>
+<div class="section" id="bonus">
+<h2>Bonus<a class="headerlink" href="#bonus" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">face_skeleton</span><span class="p">(</span><span class="n">pose</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The face_skeleton function defines a mesh skeleton by connecting the facial landmarks as defined below.</span>
+<span class="sd">    This function is directly passed to plot_3Dpose. </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">skeletons</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pose</span><span class="p">)):</span>  <span class="c1"># read out n_components from different poses</span>
+
+        <span class="n">lefteye</span> <span class="o">=</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lefteye1_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lefteye2_x&#39;</span><span class="p">]],</span> <span class="p">[</span>
+            <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lefteye1_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lefteye2_y&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lefteye1_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lefteye2_z&#39;</span><span class="p">]]</span>
+        <span class="n">righteye</span> <span class="o">=</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;righteye1_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;righteye2_x&#39;</span><span class="p">]],</span> <span class="p">[</span>
+            <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;righteye1_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;righteye2_y&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;righteye1_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;righteye2_z&#39;</span><span class="p">]]</span>
+        <span class="n">leyebrow</span> <span class="o">=</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;leyebrow1_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;leyebrow2_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;leyebrow3_x&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;leyebrow1_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+                                                                                              <span class="p">[</span><span class="s1">&#39;leyebrow2_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;leyebrow3_y&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;leyebrow1_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;leyebrow2_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;leyebrow3_z&#39;</span><span class="p">]]</span>
+        <span class="n">reyebrow</span> <span class="o">=</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;reyebrow1_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;reyebrow2_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;reyebrow3_x&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;reyebrow1_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+                                                                                              <span class="p">[</span><span class="s1">&#39;reyebrow2_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;reyebrow3_y&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;reyebrow1_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;reyebrow2_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;reyebrow3_z&#39;</span><span class="p">]]</span>
+        <span class="n">nose</span> <span class="o">=</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose1_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose3_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose2_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose4_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose1_x&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose1_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose3_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+                                                                                                                      <span class="p">[</span><span class="s1">&#39;nose2_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose4_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose1_y&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose1_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose3_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose2_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose4_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;nose1_z&#39;</span><span class="p">]]</span>
+        <span class="n">lips</span> <span class="o">=</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;uplip_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;llip_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lowlip_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;rlip_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;uplip_x&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;uplip_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;llip_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+                                                                                                                     <span class="p">[</span><span class="s1">&#39;lowlip_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;rlip_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;uplip_y&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;uplip_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;llip_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lowlip_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;rlip_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;uplip_z&#39;</span><span class="p">]]</span>
+        <span class="n">face</span> <span class="o">=</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;rear_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;chin_x&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lear_x&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;rear_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+                                                                           <span class="p">[</span><span class="s1">&#39;chin_y&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lear_y&#39;</span><span class="p">]],</span> <span class="p">[</span><span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;rear_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;chin_z&#39;</span><span class="p">],</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lear_z&#39;</span><span class="p">]]</span>
+
+        <span class="n">skeleton</span> <span class="o">=</span> <span class="n">lefteye</span><span class="p">,</span> <span class="n">righteye</span><span class="p">,</span> <span class="n">leyebrow</span><span class="p">,</span> <span class="n">reyebrow</span><span class="p">,</span> <span class="n">nose</span><span class="p">,</span> <span class="n">lips</span><span class="p">,</span> <span class="n">face</span>
+        <span class="n">skeletons</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">skeleton</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">skeletons</span>
+
+
+<span class="k">def</span> <span class="nf">plot_3Dpose</span><span class="p">(</span><span class="n">pose</span><span class="p">,</span> <span class="n">elevation</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This plot function takes the average pose coordinates of facial landmarks, creates a skeleton and visualizes the facial expression</span>
+<span class="sd">    in a 3D coordinate system with predefined elevantion and azimuth angles.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">skeletons</span> <span class="o">=</span> <span class="n">face_skeleton</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+
+    <span class="n">ncols</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">nrows</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span><span class="o">/</span><span class="n">ncols</span><span class="p">)</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="n">ncols</span><span class="o">*</span><span class="mi">6</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="n">nrows</span> <span class="o">*</span> <span class="mi">5</span>
+
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span>
+        <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">),</span> <span class="n">subplot_kw</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pose</span><span class="p">))):</span>
+        <span class="n">x_points</span> <span class="o">=</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][[</span><span class="s1">&#39;_x&#39;</span> <span class="ow">in</span> <span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">]]</span>
+        <span class="n">y_points</span> <span class="o">=</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][[</span><span class="s1">&#39;_y&#39;</span> <span class="ow">in</span> <span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">]]</span>
+        <span class="n">z_points</span> <span class="o">=</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">][[</span><span class="s1">&#39;_z&#39;</span> <span class="ow">in</span> <span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">pose</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">]]</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">scatter3D</span><span class="p">(</span><span class="n">x_points</span><span class="p">,</span> <span class="n">y_points</span><span class="p">,</span> <span class="n">z_points</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="n">elevation</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;X axis&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Y axis&#39;</span><span class="p">,</span> <span class="n">zlabel</span><span class="o">=</span><span class="s1">&#39;Z axis&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Predicted Pose: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">skeletons</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">skeletons</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="n">skeletons</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">z</span> <span class="o">=</span> <span class="n">skeletons</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+        <span class="s1">&#39;Hidden Markov Model predictions with N = </span><span class="si">%d</span><span class="s1"> Components&#39;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">pose</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="k">return</span>
+
+
+<span class="k">def</span> <span class="nf">split_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">prediction</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The split_data function will be used to split time series data into smaller </span>
+<span class="sd">    chunks by the prediction variable.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">prediction</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>  <span class="c1"># read out the number of predicted components</span>
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;pred&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">prediction</span>
+    <span class="n">grouped</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">pred</span><span class="p">)</span>
+    <span class="n">predictions</span> <span class="o">=</span> <span class="p">[</span><span class="n">grouped</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+    <span class="n">pose</span> <span class="o">=</span> <span class="p">[</span><span class="n">predictions</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+
+    <span class="k">return</span> <span class="n">predictions</span><span class="p">,</span> <span class="n">pose</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hmmlearn</span> <span class="kn">import</span> <span class="n">hmm</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="c1"># change the number of components you expect to find in your data</span>
+<span class="n">model1</span> <span class="o">=</span> <span class="n">hmm</span><span class="o">.</span><span class="n">GaussianHMM</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">covariance_type</span><span class="o">=</span><span class="s2">&quot;full&quot;</span><span class="p">)</span>
+<span class="n">model1</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span>
+<span class="n">pred1</span> <span class="o">=</span> <span class="n">model1</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">,</span> <span class="n">pose1</span> <span class="o">=</span> <span class="n">split_data</span><span class="p">(</span><span class="n">centered_coords</span><span class="p">,</span> <span class="n">pred1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_3Dpose</span><span class="p">(</span><span class="n">pose1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">280</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/53472196f53b8cbb8b15e5130a787c08b3640adfe0dd598f1796c367b5528451.png" src="_images/53472196f53b8cbb8b15e5130a787c08b3640adfe0dd598f1796c367b5528451.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "Guillermo-Hidalgo-Gadea/Seminar-ComputationalEthology",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="DemoAnalysis.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction to Data Analysis in Python</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="kinematicanalysis.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Kinematic analysis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-libraries-should-i-import">What libraries should I import?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-read-data">How to read data?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-is-my-data-structured">How is my data structured?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-data">Cleaning data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-data-structure">Changing the data structure</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-deeplabcut-data">Reading DeepLabCut Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-my-data-tell-me">What does my data tell me?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-could-my-data-look-like">How could my data look like</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus">Bonus</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Guillermo Hidalgo Gadea
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
