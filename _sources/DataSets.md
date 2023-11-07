@@ -8,7 +8,7 @@ The following datasets were kindly provided as open source material by some auth
 
 The data used in the exercises and hands on tutorials can be downloaded from this shared cloud directory on **Sciebo:** [https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj](https://ruhr-uni-bochum.sciebo.de/s/W7yiHOYQEMQffHj)
 
-## Mouse bottom view by [Kevin Luxem](https://github.com/LINCellularNeuroscience/VAME#getting-started)
+## Mouse bottom view 
 
 Freely behaving mice in open field exploration experiment. Mice were placed in the center of a circular area of transparent Plexiglas floor with diameter of 50 cm surrounded by a transparent Plexiglas wall with height of 50 cm. Mouse behavior was recorded by a CMOS camera (Basler acA2000-165umNIR) equipped with wide angle lens (CVO GM24514MCN, Stemmer Imaging) that was placed centrally 35 cm below the arena. Three infrared light sources (LIU780A, Thorlabs) were placed 70 cm away from the center, providing homogeneous illumination of the recording arena from below. All recordings were performed at dim room light conditions.
 
@@ -16,9 +16,11 @@ Freely behaving mice in open field exploration experiment. Mice were placed in t
 
 ```{toggle}
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-mouse.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+
+Link: https://github.com/LINCellularNeuroscience/VAME#getting-started
 ```
 
-## Fly treadmill by [Pavan Ramdya](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PKKXOE)
+## Fly treadmill
 
 Experiments were performed in the late morning or early afternoon inside a dark imaging chamber. An adult female animal 2–3 days-post-eclosion, was mounted onto a custom stage and allowed to acclimate for 5 min on an air-supported spherical treadmill (Chen et al., 2018). Optogenetic stimulation was performed using a 617 nm LED (Thorlabs, Newton, NJ) pointed at the dorsal thorax through a hole in the stage, and focused with a lens (LA1951, 01" f = 25.4 mm, Thorlabs, Newton, NJ). Tethered flies were otherwise allowed to behave spontaneously.
 We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrasse, Switzerland) 94 mm away from the tethered fly, resulting in a circular camera network with the animal in the center.
@@ -27,10 +29,12 @@ We positioned seven Basler acA1920-155um cameras (FUJIFILM AG, Niederhaslistrass
 
 ```{toggle}
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo-fly.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
+
+Link: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PKKXOE
 ```
 
 
-## Pigeon in Skinnerbox by [Guillermo Hidalgo Gadea](https://www.bio.psy.ruhr-uni-bochum.de/members_guillermo.html)
+## Pigeon in Skinnerbox
 
 A single pigeon was recorded in a Skinnerbox for a short habituation period of 5 minutes. Six synchronized cameras (FLIR BFS) were mounted on the four upper corners of the box and in the two lower corners of the from side. The pigeon did not perform any specific task during the recording.
 
@@ -38,7 +42,7 @@ A single pigeon was recorded in a Skinnerbox for a short habituation period of 5
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo_pigeon_skinnerbox.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
-## Pigeon in Arena by [Mengmeng Li](https://www.bio.psy.ruhr-uni-bochum.de/members_mengmeng.html)
+## Pigeon in Arena
 
 A single pigeon was recorded in a hexagonal arena for a 17 minute session in an open field exploration experiment. Six synchronized cameras (FLIR BFS) were mounted on the upper corners of the arena at 180cm from the ground. The pigeon did not perform any specific task during the recording.
 
@@ -46,7 +50,7 @@ A single pigeon was recorded in a hexagonal arena for a 17 minute session in an 
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/Demo-Pigeon-Arena.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
-## Pigeon top view by [Neslihan Wittek](https://www.bio.psy.ruhr-uni-bochum.de/members_neslihan.html)
+## More Pigeons
 
 A single pigeon was recorded in a rectangular box separated by a clear plexiglas screen. The pigeon had continuous access to food and was recorded from the front and from top view. The pigeon did not perform any specific task during the recording.
 
@@ -54,7 +58,7 @@ A single pigeon was recorded in a rectangular box separated by a clear plexiglas
 <div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><figure style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0;" ><iframe src="https://media.publit.io/file/demo_pigeon_topview.mp4" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow:hidden;" allowfullscreen=""></iframe></figure></div></div>
 ```
 
-## Human Facial Expression by [Guillermo Hidalgo Gadea](https://www.bio.psy.ruhr-uni-bochum.de/members_guillermo.html)
+## Human Facial Expression 
 
 Six subjects were recorded for up to 60 seconds in a synchronized multi-view setting with six cameras (FLIR BFS). Subjects were instructed to display a short sequence of facial expressions of their choice for training purposes.
 
@@ -68,9 +72,9 @@ Six subjects were recorded for up to 60 seconds in a synchronized multi-view set
 
 2) There are some great open source initiatives you could check out that share video repositories of animal behavior data such as [OpenBehavior](https://edspace.american.edu/openbehavior/video-repository/video-repository-2/). Additionally, more and more authors make their video data partially available.  
 
-3) You can also gather video material from online sources like youtube with [Youtube-dl](https://youtube-dl.org/). Please **handle with care**. Downloaded videos should be used only for educational purposes and are not to be distributed.
+3) You can also gather video material from online sources like youtube with [yt-dlp](https://github.com/yt-dlp/yt-dlp). Please **handle with care**. Downloaded videos should be used only for educational purposes and are not to be distributed.
 
     In your terminal execute:
-    * ```pip install youtube_dl```
+    * ```pip install yt-dlp```
     * ```cd Downloads```
-    * ```youtube-dl 'https://www.youtube.com/watch?v=7j6mGVDfTHM' -f 'bestvideo[ext=mp4]/best[ext=mp4]/best'```
+    * ```yt-dlp 'https://www.youtube.com/watch?v=7j6mGVDfTHM'```
